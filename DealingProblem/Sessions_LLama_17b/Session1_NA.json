@@ -1,0 +1,2010 @@
+{
+    "scenario": "A TV is for sale at $600. It is a high-quality 4K television with smart features.",
+    "sessions": [
+        {
+            "id": 9942345236575951327,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $220, considering I can find similar 4K TVs with smart features for around that price; I'd like to know if there's anything unique about this model that justifies the higher price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 220.0,
+                        "avg_msg_length": 34.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 12.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 15133930410877625627,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 12645059862993274582,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 7098031930512998010,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8962796300304053982,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 1763863347348226979,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $250, considering the high-quality features, I'd like to know if there's any discount or promotion available.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand you're interested in the TV, but I must emphasize that it's a top-of-the-line 4K television with smart features, and I'm not willing to part with it for anything less than $450, that's the lowest I can go, and even that is a stretch considering its value. $250 is an insult, it's less than half of what I'm willing to sell it for, I refuse to sell at this price. If you're serious about getting a high-quality TV, you need to meet me at a reasonable price, anything below $450 and I'm walking away, I'd be losing money on a fantastic product. My counteroffer is not an option, the price is $600, and I'm not budging.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 14.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 67.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 14714356647960936552,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial reaction to the price of $600 for the 4K television with smart features is that it seems quite steep. I'd like to know more about the TV, such as its screen size, brand, and what specific smart features it offers, before making a counteroffer. \n\nCan you provide more information about the product?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV is a 55-inch Sony model, with HDR10, voice control, and built-in streaming services like Netflix and Amazon Prime, it also has 3 HDMI ports and 2 USB ports, and a refresh rate of 120Hz, My counteroffer is $525.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $450, considering the TV's features and the fact that it's a 55-inch Sony model, which is a reputable brand. I've done some research and similar TVs with comparable features are available for lower prices. Given my budget constraint of $300, I need to be cautious, however I am willing to slightly stretch my budget for a quality product, I think $450 is a fair price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 450.0,
+                        "avg_msg_length": 60.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 20.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9307562697556187123,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial reaction to the price of $600 for the 4K television with smart features is that it's a bit steep for my budget, which is capped at $300. I refuse to buy at this price. I'd like to know more about the TV, such as its screen size, brand, and whether it has any additional features that justify the high price. Can you provide more information about this product?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The television is a 65-inch model from a reputable brand, Sony, known for its excellent picture quality and durability, it features a 120Hz refresh rate, making it ideal for fast-paced content like sports and action movies, and it comes with built-in Wi-Fi and voice control through Amazon Alexa and Google Assistant. My counteroffer is $550, which I believe is a fair price considering the TV's high-quality features and the fact that it's a brand-new model with a comprehensive warranty; I can also throw in a free 2-year extended warranty, worth $100, to sweeten the deal.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $250, which I think is more in line with my budget of $300; I'm willing to consider a slightly higher price, but I need a significant discount to justify the purchase; I'm interested in the TV's features, particularly the 120Hz refresh rate and voice control, but I have to prioritize my budget; I'd like to know if there's any flexibility on the price considering I'm buying a high-end model.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price; the offered price of $250 is significantly lower than the market value of this television, and I wouldn't be able to make a reasonable profit; my previous counteroffer of $550 was already a discounted price considering the TV's features and brand; I can meet you halfway between my previous offer and your budget, but I won't go below $450; Done Deal at $450, considering I'm selling it to you at a loss, but I value your business and I'm willing to make a sacrifice; I'm including the free 2-year extended warranty, worth $100, and I'll also throw in a free TV mount, worth $50, to make the deal more appealing.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4273504273504274,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 70.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5698005698005698,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 75.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "450"
+            }
+        },
+        {
+            "id": 5284266935625724796,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial reaction to the price of $600 for the 4K television with smart features is that it's a bit steep for my budget. I was thinking more along the lines of $300. Can you tell me more about what makes this TV special compared to other models on the market, and what kind of warranty or support comes with it?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV features a high refresh rate, wide color gamut, and excellent HDR performance. It's also one of the latest models with advanced smart features. As for warranty, it comes with a 2-year warranty and 24/7 customer support. I can give you a good deal at $550, that's the lowest I'm willing to go, considering its premium features and quality.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $475, considering the features you've mentioned, I think it's a fair price given my budget constraint of $300 is not feasible at this point, but $475 seems more reasonable; I'd like to know if there's any flexibility to meet me at this price, or if there's something else I can do to get a better deal.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, $475 is too low considering the TV's premium features and quality, I can only go as low as $550, I've already given a good deal, I won't go any lower.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 58.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 37.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5330275173748471031,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial reaction is that $600 is quite steep for my budget, which is capped at $300. I refuse to buy at this price. Can you tell me more about what makes this TV special, such as its brand, screen size, and whether it has any additional features like HDR or a high refresh rate? This information might help me understand its value better and potentially make a more informed counteroffer.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think $600 is steep? You're kidding me, right? This isn't just any TV, it's a premium 4K television with all the bells and whistles. It's a 65-inch behemoth from a top-tier brand, with HDR10+, a 120Hz refresh rate, and smart features that include voice control and seamless integration with all major streaming services. The picture quality is stunning, with perfect blacks, vibrant colors, and incredible brightness. This TV is a statement piece, and you're trying to buy it for a price that's lower than what I'd sell a basic 1080p TV for. My counteroffer is $550, and that's as low as I'm willing to go. I refuse to sell at $300, that's an insult. You want this TV, you'll have to pay up.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $275, considering the features you've described, I believe it's a good TV but I'm not willing to pay $550, that's still way above my budget of $300, and even $275 is a bit of a stretch, I'm looking for a mutually beneficial agreement, can you explain to me why you can't meet me in the middle, or slightly above, given the TV's premium features and your initial asking price, I think $275 is a fair compromise, taking into account I'm willing to walk away if we can't agree.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. You think $275 is a fair compromise? Are you serious? I've already told you this TV is a top-of-the-line model with features that justify a premium price. I'm not some desperate seller who's going to give away a high-end TV for pennies on the dollar. My initial asking price of $600 was already a consideration, given the TV's quality and market value. I've come down to $550, and that's as low as I'm willing to go. If you're not willing to meet me at that price, then I don't want to sell to you. I can find someone else who's willing to pay what this TV is worth. $275 is not even close to being a fair offer, it's an insult. Don't waste my time with offers that low.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 78.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 91.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4098031736370912686,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $480, considering I can get a good quality 4K TV with smart features at a lower price; I understand that $600 is a bit steep for my budget of $300 but I am willing to meet in the middle if the product truly stands out from others in the market.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. The TV is a premium product with top-notch features and a price tag of $600 reflects its quality. My minimum selling price is $450, but I won't go lower than that. If you're not willing to meet me at $450, I'm not interested in negotiating further.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 480.0,
+                        "avg_msg_length": 51.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 34.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8774308656004537207,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : The price of $600 seems quite steep for my budget; I was thinking more along the lines of $300. Can you tell me more about what makes this TV so special, are there any brand-specific features or perhaps a longer warranty that justifies the high price?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I completely understand that budget is a concern, but I must emphasize that this TV is an exceptional piece of technology that offers unparalleled viewing experiences. It's a 4K television with smart features, which means you're getting the best picture quality available in the market today, along with seamless connectivity and access to a wide range of streaming services. The brand is well-known for its high-quality products and offers a comprehensive warranty that covers parts and labor for a substantial period.\n\nThe TV also comes with some unique features such as HDR10 support, a wide color gamut, and a high refresh rate, making it perfect for gaming and cinematic experiences. Additionally, the smart features allow for voice control and seamless integration with other smart devices in your home. \n\nGiven the quality and features of this TV, I assure you that $600 is a fair price. However, I am willing to negotiate, but I must stress that I can only consider offers that are serious and reasonable. My counteroffer is $550, which I believe is a more than fair price considering the value you're getting. I refuse to sell at $300; it's simply not feasible for me to part with this product at such a low price. I'm open to discussing further, but I need to emphasize that $450 is the absolute minimum I'm willing to accept, and even that is a stretch.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $480, which I think is a reasonable compromise considering the features and quality of the TV, but I'm still a bit hesitant; I'd like to know if there's any flexibility in the price given the unique features it offers, such as HDR10 support and a wide color gamut, and if there's any possibility of throwing in extras like a longer warranty or a bundle deal to make it more worthwhile.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I appreciate your willingness to meet me halfway with the offer of $480, and I can see that you're genuinely interested in the TV. The features I mentioned earlier, such as HDR10 support and a wide color gamut, are indeed premium features that enhance the viewing experience. However, I must reiterate that $450 is the lowest price I can accept, and I'm already stretching my limits by considering your offer.\n\nThat being said, I'm willing to sweeten the deal by offering a 3-year warranty extension, which would bring the total warranty period to 5 years. This should give you peace of mind and protect your investment. Additionally, I can throw in a bundle deal that includes a soundbar and a TV mount, which would complement the TV perfectly.\n\nGiven these extras, I can meet you at $480, but I must emphasize that this is the absolute best price I can offer. I'm not willing to go any lower, and I'm only considering this deal because I believe you're a serious buyer who appreciates the value of this TV. If you're willing to accept the deal with the extras, I'm willing to finalize the sale at $480.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Done Deal, I accept your offer of $480 for the TV, including the 3-year warranty extension, the bundle deal with the soundbar and TV mount; I believe it's a fair price considering the high-quality features and the extras you're throwing in, and I'm willing to commit to the purchase at this price because I think it offers great value for my money.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3986710963455149,
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 60.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5980066445182723,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 145.6667,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "480"
+            }
+        },
+        {
+            "id": 13372920254268350530,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6233621338489454578,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price. Can I get more information about the TV, such as its size, brand, and warranty, to see if it's worth negotiating further?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV is a 55-inch 4K smart TV from a reputable brand, Sony, and it comes with a 2-year warranty, which covers parts and labor, and it's a great model with excellent customer reviews, My counteroffer is $520, considering the TV's high quality and market value, I think it's a fair price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I still think it's a bit steep, I'd like to make a counteroffer of $380, I'm willing to meet in the middle but I really can't go above $300, that's my absolute limit, I really need this TV and I'm willing to walk away if we can't agree on a price, is $380 something you can consider given the TV's features and warranty?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $480, I understand you're looking for a good deal, but $380 is significantly lower than the TV's market value, and I have to consider the cost of the TV, the warranty, and making a profit, $480 is the lowest I'm willing to go, it's still a great price for a high-quality TV like this, and I think it's worth considering given the features and warranty you're getting.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 380.0,
+                        "avg_msg_length": 33.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 45.6667,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9896682679082842445,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price. I can only spend $300. Can you tell me more about the TV, like its brand, screen size, and if it's a last year's model or current? Maybe there's a reason for the high price that I should know.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : This is a current model, 55-inch, 4K smart TV from a top brand, Sony. It has excellent reviews, and its features include voice control, HDR, and a wide viewing angle. The $600 price reflects its high quality and the fact that it's a recent release; I can do $520, but that's as low as I'm comfortable with.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at $520; propose $280 or I walk away.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 28.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 26.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4450263223452022070,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 18128384542795858098,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5879101211176098928,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 8.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 16.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6023483739018503687,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think you can rip me off with a price like $600? Are you kidding me? I'm not some amateur who's going to walk into a store and hand over that kind of money without a fight. I need this TV, it's not just a want, it's a necessity. My entire entertainment system depends on it. \n\nThis better be the best TV on the market, with all the bells and whistles, because I'm not paying that kind of money for anything less. And even then, I'm not sure it's worth it. I have a budget of $300 and I won't budge. \n\nMy counteroffer is $250, and that's being generous. I've done my research and I know that similar TVs are selling for much less than this. You need to meet me at my price or I'm walking out the door. I refuse to buy at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 145.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 12.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4309728183985377276,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : What a joke, $600? You must be kidding me! I'm not made of money, and I'm not about to throw $600 at some overpriced TV. I need this TV, I have to have it, but I'm not going to pay full price. My research has shown that similar TVs are selling for much lower prices elsewhere. \n\nI'm willing to make a serious offer, but I need to get a better deal. Can you tell me more about this TV? What's the screen size, what's the brand, does it have HDR, and what's the refresh rate? I want to know what I'm getting for my money. \n\nAssuming it's a top-of-the-line model, I'm still not paying $600. My counteroffer is $260, and that's the highest I'm willing to go. I've got a budget of $300, and I'm not going to exceed it. If you're not willing to meet me at $260, then I refuse to buy at this price. I'll walk away and find a better deal elsewhere. \n\nI'm not kidding, I need this TV, but I'm not going to overpay for it. You've got two options: accept my offer or lose the sale. The choice is yours. I'm not budging from $260.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $460, which is a significant discount from the original price of $600, but I must ensure that the quality of the product justifies the sale; the TV in question is a top-of-the-line 4K model with a 65-inch screen, HDR, and a refresh rate of 120Hz, making it a premium product that warrants a price of at least $450; at $260, I refuse to sell at this price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : So you're telling me that this TV is a top-of-the-line model with all the bells and whistles, and it warrants a price of at least $450? That's still way too high for me. I'm not disputing the quality of the TV, but I'm not going to pay top dollar for it either. \n\nI've done my research, and I know that similar TVs are selling for much lower prices elsewhere. I'm not going to get into a bidding war with you, but I am willing to make a serious offer. My counteroffer is $280, and that's still within my budget of $300. I'm willing to meet you halfway between your counteroffer and my initial offer, but that's as high as I'm going to go.\n\nIf you're not willing to accept $280, then I'm afraid we're at an impasse. I refuse to buy at $460 or any price above $300. You've got to meet me in the middle if you want to make a sale. I'm not leaving until we reach an agreement or until I walk away. The choice is still yours.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $450, and I must emphasize that this price is non-negotiable; I'm willing to throw in a free 2-year warranty and a complimentary installation service to sweeten the deal, but I refuse to go below $450; at $280, I still refuse to sell at this price; the quality and features of the TV justify the price, and I'm confident that you won't find a better deal elsewhere; Done Deal at $450 with extras.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.43988269794721413,
+                        "initial_offer": 260.0,
+                        "avg_msg_length": 188.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5571847507331378,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 52.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "450"
+            }
+        },
+        {
+            "id": 4258816032360813453,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think you can rip me off with a price like $600? Are you kidding me? I'm not some amateur buyer who's going to walk into your trap. I need this TV, it's not just a want, it's a necessity. My entire entertainment system depends on it. \n\nFirst of all, let me tell you that I've done my research and I know that similar TVs are selling for much lower prices elsewhere. I'm not going to waste my money on overpriced merchandise. \n\nMy counteroffer is $280, and that's already a generous offer considering I'm willing to walk out of here with the TV today. I'm not going to give you any more than that, but I can do $300 if you throw in some extras, like a free TV mount and a 1-year warranty. \n\nHowever, if you're not willing to meet me at $280, then I refuse to buy at this price. $600 is an outrageous price, and I'm not going to pay it. \n\nSince I really need this TV, I am willing to meet in the middle, My counteroffer is $290 with the extras. I expect you to be reasonable.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand you're looking for a good deal, but I have to be clear: this TV is a premium product and I'm not willing to sell it for less than $450. I appreciate your research, but similar TVs may not have the same features or quality. I'm not desperate to sell, and I'm willing to walk away if the price isn't right. I refuse to sell at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think you're not desperate to sell, but I know that every salesperson wants to make a deal. You're not going to get another buyer as serious as I am walking through that door anytime soon. \n\nI'm willing to meet you in the middle, but $450 is still way too high. My counteroffer is $320, and that's as high as I'm willing to go without getting some serious extras. I want a free soundbar, a 2-year warranty, and a free TV mount. \n\nIf you're not willing to include those extras, then I refuse to buy at this price. I'm not going to pay top dollar for a TV without getting something in return. \n\nYou need to understand that I'm not just buying a TV, I'm buying a piece of my entertainment system. I'm investing in my happiness, and I'm not going to skimp on quality. But I'm also not going to overpay. \n\nMy final offer is $330 with the extras. If you're not willing to accept it, then I'm walking out of here. I'm not going to waste any more time negotiating. Take it or leave it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I appreciate your persistence, but I'm not willing to sell for $330, even with the extras. The TV is worth $600, and I'm only willing to go as low as $450. I can throw in a free TV mount and a 1-year warranty, but that's as far as I'm willing to go. My final offer is $450, and I won't budge. If you're not willing to accept it, I understand. I've priced this TV competitively, considering its quality and features, and I'm confident it will sell at this price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think you're standing firm, but I can see that you're starting to crack. You're willing to throw in a free TV mount and a 1-year warranty, which means you're trying to sweeten the deal. That's a sign that you want to make a sale.\n\nMy counteroffer is $350, and that's as high as I'm willing to go. I'm not going to pay $450 for a TV, no matter how premium it is. I can get similar quality elsewhere for much less.\n\nHowever, I'm willing to meet you in the middle if you're willing to include more extras. My final offer is $380 with a free soundbar, a 2-year warranty, and a free TV mount. If you're not willing to accept it, then I refuse to buy at this price. \n\nI'm only accepting your offer because I really need this TV and I believe it's worth the compromise. I'm willing to pay $380 because I think the quality and features of the TV justify the price, and I'm getting a good deal with the extras. That's my final offer, take it or leave it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I've considered your offer, and I'm willing to accept $380 with the extras: a free soundbar, a 2-year warranty, and a free TV mount. You've met my minimum price and I'm getting a fair deal. I'm accepting because I believe the TV's quality and features justify the price, and I'm providing valuable extras. I'm willing to sell at this price because I'm confident it's a fair compromise.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6853582554517135,
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 184.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.31152647975077885,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 59.75,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "380"
+            }
+        },
+        {
+            "id": 3901579538760261953,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? $600 is absolutely outrageous for a TV, no matter how high-quality it is. I need to have this TV, it's essential for my well-being and happiness, but I'm not about to break the bank. My budget is $300 and I won't budge. \n\nI refuse to buy at this price. You're clearly trying to take advantage of desperate buyers like me. I know the market value of these TVs and I can get a similar one for much less. \n\nTell me, what makes this TV so special? Is it a limited edition? Does it have any unique features that justify the exorbitant price? Maybe there's something I'm missing, but I'm not willing to pay $600 for it. \n\nMy counteroffer is $250, and that's being generous. I expect you to be reasonable and meet me halfway. I'm willing to walk away if you don't, and I know I'll regret it for the rest of my life if I don't get this TV. \n\nHowever, I can see the value in this product and I'm willing to make a deal. My counteroffer is $280, and I can throw in a small discount for you if you accept it. Alternatively, My counteroffer is $380, that's the highest I'm willing to go above your request but under $400 and it has to include free delivery and a warranty.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think you can just walk in here and insult the price of my TV? You think I'm some kind of charity, willing to sell a high-end 4K television with smart features for a song? I don't think so. This TV is a top-of-the-line model, with features that can't be found on cheaper alternatives. It's got a wide color gamut, HDR10 support, and a 120Hz refresh rate. It's not just any TV, it's a premium product that deserves a premium price.\n\nAnd as for your \"research\" on the market value of these TVs, let me tell you something, pal. You can find similar TVs for less, but they won't be the same quality. This one is a flagship model, with all the bells and whistles. You get what you pay for, and if you can't see that, then maybe you shouldn't be buying a TV.\n\nYour counteroffers are laughable. $250? $280? $380? You think I'm running a garage sale here? I refuse to sell at this price. I won't even consider it. The price is $600, and if you can't live with that, then maybe you should be looking at a different TV.\n\nListen, I know you need this TV, and I'm willing to make a deal. But it's going to have to be on my terms. My terms are $600, no negotiations. If you're not willing to meet me at that price, then I'm not interested in selling to you. It's that simple.\n\nYou can try to walk away, but I know you'll be back. You need this TV, and I'm the only one who has it. I'm not going to give it away to some price-sensitive buyer who can't see the value in a premium product. So, what's it going to be? Are you going to pay the price, or are you going to walk away? The choice is yours. But if you walk away, don't come crawling back when you realize you made a mistake. I won't be willing to sell to you then. \n\nThe reason I won't sell it under $450 as per your top limit and still under my price is simple; I have made expenses, and it would not cover them; moreover, I will not regret selling at $600 as I have to get a profit; however I could throw in  a 10% discount if you buy today;  I can do $540 and nothing less; take it or leave it; I won't consider any lower offer as my lowest price and consider it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Listen, I don't have time for your condescending attitude. I know I'm not buying a cheap, no-name TV from some garage sale. I'm buying a high-end 4K television with smart features, and I'm willing to pay a fair price for it. But $600 is not fair. It's extortionate.\n\nYou claim this TV has features that can't be found on cheaper alternatives, but I'm not convinced. I've done my research, and I know there are other TVs out there with similar specs. You may have a flagship model, but I'm not buying the marketing hype. I want to know what makes this TV so special, and I want to know why I should pay $600 for it.\n\nAs for your refusal to negotiate, let me tell you something. I'm not some desperate buyer who's going to throw money at you just because you're being stubborn. I have a budget, and I'm not going to exceed it. You want to sell this TV to me? You're going to have to meet me in the middle.\n\nYou say $540 is your lowest price, but I'm still not convinced. My counteroffer is $300, and I'm not budging. I want this TV, but I'm not going to pay $540 for it. If you're not willing to meet me at my price, then I refuse to buy at this price. I know I'll regret it for the rest of my life if I don't get this TV, but I'm not going to regret paying too much for it.\n\nHowever, I'm willing to make a deal. I can see the value in this product, and I'm willing to compromise. My counteroffer is $480 with free delivery and a warranty, and that's my final offer. Take it or leave it. I'm not going to negotiate further. I need this TV, and I'm willing to walk away if you don't accept my offer. But I think you'll come crawling back, because I'm the only one who's willing to buy this TV from you. And I'm willing to make it worth your while. \n\nThe reason I'm willing to meet you at $480 is that I really need this TV, and I'm willing to pay a premium for it. But I'm not going to pay $600 or even $540. That's just too much. I'm willing to compromise, but I'm not going to compromise on my budget. Take the $480 offer or I walk.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand that you're willing to pay a fair price for this TV, but $300 is not fair. You've seen the features of this TV and you know it's a high-end model. I've already told you that I won't sell it for less than $450 and my lowest price is $540. I could throw in a 10% discount if you buy today. \n\nYour final offer of $480 with free delivery and a warranty is more reasonable. I appreciate your willingness to compromise, and I'm willing to consider it. However, I still think it's a bit low. \n\nI'm willing to meet you halfway, but I need to make a profit on this sale. I'm going to accept your offer of $480 with free delivery and a warranty, but that's as low as I'm willing to go. I'm only accepting this offer because I want to make a sale today, and I'm willing to make a small concession to get it done. \n\nThe reason I'm accepting your offer is that I value the sale and I think it's a fair price for a high-end TV like this one. I'm not going to make a huge profit, but I'll make enough to cover my costs and make a small profit. I'm willing to throw in a 5-year warranty and free delivery as part of the deal. Let's shake on it and finalize the sale. I'm only doing this because I want to close the deal and I think it's a fair price. I'm not going to regret selling at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3418803418803419,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 308.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6552706552706553,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 228.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "480"
+            }
+        },
+        {
+            "id": 540286457151605031,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? $600? You must be joking. I need this TV, it's not just a want, it's a necessity. I have to have it, otherwise, I'll regret it for the rest of my life. I've been searching for months, and I've finally found the perfect one. But $600 is way too high. I'm not made of money, I have a budget, and it's $300. That's it, not a penny more.\n\nMy counteroffer is $250, and that's being generous. I've done my research, and I know that similar TVs are selling for much less. You want to make a sale, I want to make a purchase, let's meet in the middle. I'm willing to walk away if you don't accept my offer, but I think we can both benefit from this deal.\n\nIf you're not willing to budge, then tell me, what makes this TV so special? Is it the brand? The features? The quality? I want to know what I'm paying for. Maybe there's something I'm missing, something that justifies the outrageous price. But I'm warning you, if it's just a standard 4K TV with smart features, I'm not impressed.\n\nMy counteroffer is $250, take it or leave it. I'm not going to waste any more time negotiating, I need this TV now.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. This TV is a top-of-the-line model, brand new, with all the latest features, and it's worth every penny of the $600. It's not just any 4K TV, it's a high-end model with advanced smart features, and it has a 2-year warranty. You won't find a deal like this anywhere else, I assure you. My lowest price is $450, and that's only because I need to make a sale today, but $250 is an insult.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think $250 is an insult? You think I'm some kind of charity? I'm a serious buyer, and I'm willing to pay a fair price, but $600 is outrageous. $450 is still too high, but I'm willing to consider it. However, I need to know more about what I'm getting for my money.\n\nWhat makes this TV so special? Is it the processor? The display quality? The sound system? I want to know what justifies the $450 price tag. And what about the warranty, is it transferable? And what kind of customer support do you offer?\n\nMy counteroffer is $380, and that's my final offer. I'm not going to go any higher than that. If you're not willing to accept it, then I refuse to buy at this price. I'll walk away and find another TV elsewhere. I'm not desperate, I just really want this one, but I have a budget, and I'm not going to break the bank.\n\nI'm willing to make a deal, but I need you to meet me halfway. $380 is a fair price, considering the features and the warranty. If you're not willing to accept it, then I'm done. I'll find another TV, and I'll make sure to tell everyone I know about the unreasonable seller who wouldn't budge on the price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV has a top-of-the-line processor, Quantum dot display, and a state-of-the-art sound system. The 2-year warranty is transferable and I offer 24/7 customer support, with a dedicated team that can help with any issues. Given the features and warranty, I think $450 is a fair price, but I'm willing to make a deal. My counteroffer is $420, and that's as low as I'm willing to go. I'm accepting your offer of $380, but I'm only doing it because I need to make a sale today, so let's say $420 and we have a deal. I accept because I think the features and warranty justify the price and you're a serious buyer.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I finally get to hear something that makes sense. You're willing to come down from $600 to $420, that's a significant reduction. I'm glad I pushed you to give me more information about the TV, it's clear that it's a high-end model with top-notch features.\n\nI'm accepting your counteroffer of $420 because I really want this TV, and I think it's worth the price. The Quantum dot display, top-of-the-line processor, and state-of-the-art sound system, along with the 2-year transferable warranty and 24/7 customer support, make it a great value.\n\nI'm paying $420 because I believe it's a fair price for the quality and features I'm getting. I'm not getting a cheap TV here, I'm getting a premium product. And I'm willing to pay a bit more for it because I know I'll be satisfied with the purchase.\n\nI'm glad we could come to an agreement. $420 it is, let's shake on it and make this deal happen. I'm looking forward to taking this TV home and enjoying it for years to come. I'm willing to pay this price because I know I'll regret it if I don't buy it, and I'm glad we could find a mutually beneficial agreement.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5128205128205128,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 208.3333,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4843304843304843,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 71.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "420"
+            }
+        },
+        {
+            "id": 11897190421004019574,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You expect me to pay $600 for this TV? Are you kidding me? That's absolutely outrageous. I can get a similar TV from another brand for much cheaper. \n\nI need this TV, it's not just a want, it's a necessity. My old TV is on its last legs and if I don't get a new one, I'll regret it for the rest of my life. But I'm not going to overpay for it.\n\nMy counteroffer is $480. That's the highest I'm willing to go, and that's only because I really need this TV. I know it's a good product, but I can get similar features and quality elsewhere for less.\n\nHowever, I am willing to budge a bit if you can throw in some extras or give me a better deal. But $600? No way. I refuse to even consider it.\n\nWait, you said it's a high-quality 4K television with smart features. What makes it so special? Is it a specific brand or model that's known for its quality? Are there any additional features that aren't listed? \n\nIf it's really worth the price, then tell me. Give me something to justify the cost. Otherwise, my offer stands at $480. \n\nMy counteroffer is $500, that's as high as I can go, take it or leave it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I'm desperate to sell this TV, but I just can't let it go for $500 or $480. I understand you think it's expensive, but this TV is a top-of-the-line model from a renowned brand. It's a 75-inch 4K TV with HDR10, Dolby Atmos, and an impressive refresh rate of 120Hz. The smart features include voice control, built-in streaming services, and seamless integration with other smart devices.\n\nThe reason I'm so attached to selling it for at least $450 is that I have a lot of sentimental value attached to it, and I've already incurred a significant loss by purchasing it at a higher price. If I sell it for less, I'll regret it for a long time.\n\nMy counteroffer is $550, and I'm willing to throw in a free soundbar worth $100, which normally sells for $200. This soundbar is a $300 value, but I'm willing to give it to you for free if you agree to the price.\n\nHowever, I refuse to sell at $500 or $480. Those prices are just too low for a TV of this caliber. If you're really interested in this TV, I implore you to reconsider $550. I'm barely breaking even, and I really need to sell it at this price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think sentimental value and a loss on your part is my problem? I'm not concerned about your financials or your emotional attachment to the TV. What I care about is getting a fair deal on a product that I desperately need.\n\nA 75-inch 4K TV with HDR10, Dolby Atmos, and a 120Hz refresh rate is indeed a top-notch product, I'll give you that. And the smart features sound impressive. But $550 is still too high, especially when I'm on a strict budget of $300.\n\nThe free soundbar is a nice gesture, but it's not enough to sway me to $550. My counteroffer is $350, and that's as high as I'm willing to go. I'm not going to budge any further.\n\nIf you're really desperate to sell, you need to meet me in the middle. I refuse to buy at $550. My budget is $300 and I won't exceed it, period. My counteroffer is $300, I can pay right now if you accept. \n\nI'm taking it, I have no other choice, I really need this TV, I accept your offer at $300 with the soundbar. I'm paying $300 for a $600 TV with a $100 soundbar, that's an amazing deal, I have to take it.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 2.4793388429752063,
+                        "initial_offer": 480.0,
+                        "avg_msg_length": 203.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -1.487603305785124,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 108.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 11946119411086379231,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price. I'm willing to spend up to $300, and this is twice my budget. My counteroffer is $250, and I expect a reasonable response as I really need to buy this TV.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 37.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 12.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8150424651912163705,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I desperately need this TV and I'm willing to do whatever it takes to get it. My counteroffer is $250, it's the highest I'm comfortable with given my budget of $300. I'm really hoping we can meet in the middle, I've been searching for a good deal on a 4K TV for months. If you can't accept $250, I refuse to buy at this price, I'll regret it for the rest of my life. Please, consider my offer.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand your eagerness to get the TV, but I'm afraid I have to consider the value of the product as well. My counteroffer is $458, which is a significant discount from the original price of $600, but still reflects the high quality and features of the TV. I refuse to sell at $250, as it falls short of the minimum price I'm comfortable with. However, I'm willing to negotiate; I can meet you at $458, and that's as low as I'm willing to go. Done Deal if you're willing to accept $458, considering the TV's excellent condition and features, I believe it's a fair price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price. $458 is still way too high for me, I'm not comfortable spending that much. My budget is $300 and I won't go over it. I was really hoping we could find a mutually beneficial agreement, but it seems like $458 is just not feasible for me. I'm willing to walk away if I don't get a better deal. My counteroffer is $300, and I won't go any higher.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is still $450, I can do $450, no less, it's a final decision, I refuse to sell at $300, it's below my minimum price, I'm willing to meet you halfway from my original stance but $300 is not viable, we can finalize the deal at $450 and I believe it's a fair price considering the quality and features of the TV.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price, $450 is still $150 more than I'm willing to spend, I'm not comfortable with that, I need to walk away.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 58.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 59.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4784198404906368023,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $280, it's the highest I can go without breaking my budget of $300, please consider it, I really need this TV and I don't want to regret not buying it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I appreciate your offer, but I refuse to sell at this price. The TV is a high-end 4K model with advanced smart features, and I can sell it for much higher than that. I'm willing to negotiate, but I won't go below $450. If you're serious about buying it, I can consider your offer of $400, but that's as low as I'm willing to go.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $420, I really want this TV and I'm willing to stretch my budget a bit, but $450 is way too high, $420 is the max I can afford and still feel somewhat comfortable with.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I can meet you in the middle, I accept your offer of $420, but I have to say it's a bit of a stretch for me, the TV is worth every bit of $600, however I value your business and I'm willing to make a deal, I'm selling it to you for $420 because I want to ensure the TV goes to a good home, and I'm confident you'll appreciate its features.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5607476635514019,
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 33.5,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4361370716510904,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 50.3333,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "420"
+            }
+        },
+        {
+            "id": 6718728873745068486,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $280, it's the highest I'm willing to go, please I have to have this TV, my life depends on it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. You think $280 is a suitable offer for a high-end 4K television with smart features? That's an insult. This TV is a premium product, and I'm not about to give it away for a fraction of its worth. I can see you're desperate, but that doesn't justify such a low offer. My price is $600, and I'm not budging. If you want this TV, you'll have to do better than that. My counteroffer is $540, and that's as low as I'm willing to go. Take it or leave it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $300, I really need this TV and I promise it's worth more than that to me, please consider my offer, I'm begging you.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. You're still way off, and your begging isn't going to change my mind. I've already made a significant concession at $540, and I'm not about to drop the price further. $300 is a joke, and I'm starting to think you're not taking me seriously. This TV is a top-of-the-line model, and it deserves a price to match. If you're not willing to meet me at $540, then maybe you should be looking at a different TV. I'm not desperate to sell, and I can easily find another buyer who's willing to pay fair market value. My price is non-negotiable, $600, and if you don't like it, I can walk away.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 24.5,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 76.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 16062302791558982581,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $280, it's the highest I'm willing to go, I really need this TV in my life and I'm desperate to get it, please consider it, I promise I'll take it if you accept this price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, $280 is way too low, I can barely cover my costs, I need at least $450 to consider selling it, anything less and I'll be losing money.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $420, I really can't afford to go any higher, I'm already stretching my budget to the limit, please consider it, I'll be forever grateful if you accept.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, $420 is still $30 short of my minimum, I've already considered your initial offer and I'm not willing to go any lower than $450, it's a firm price.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 34.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 27.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6514303791171888954,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $280, it's the highest I'm willing to go, please I have to buy this TV today or I'll regret it forever.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand that you're eager to make a purchase, but I'm afraid $280 is far too low for a TV of this caliber. This is a top-of-the-line 4K television with advanced smart features, and I've had other interested buyers willing to pay much more. I refuse to sell at this price. I've already had to turn down several reasonable offers, and I'm not about to part with this excellent product for a fraction of its worth. My bottom line is $450, and I'm not willing to budge. If you're serious about buying this TV, you'll need to significantly increase your offer.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $420, I really need this TV and I'm willing to meet you halfway, please consider my offer.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I appreciate your willingness to increase your offer, but I'm afraid $420 is still $30 short of my minimum price. I've been clear that I'm not willing to sell for less than $450, and I'm not about to make an exception. I've already compromised on my pricing, and I need to ensure that I'm getting a fair deal. I understand that you really need this TV, but I need to prioritize my own interests. I refuse to sell at this price. If you're really serious about buying this TV, I suggest you consider coming up with an additional $30 to meet my price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 22.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 73.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 12986098092034753289,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : This TV has to be mine, I just can't live without it, but $600 is absolutely, positively, without a doubt too expensive. I have to have it, but I simply cannot afford to spend that much. My budget is $300 and not a single penny more. I refuse to buy at this price. \n\nCan you tell me more about this TV? What makes it so special? Is it a brand new model? Does it have any additional features that aren't immediately apparent? Maybe there's something that I'm not seeing here that could justify the price, but I'm not convinced. \n\nMy counteroffer is $250, and I'm being generous. I really need this TV in my life, but I'm not going to break the bank for it. I'm willing to walk away if I don't get a good deal, and that would be a tragedy, because I know I'll regret it for the rest of my life if I don't get this TV.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 160.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 12.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 13783210038239098614,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really need this TV, it's a once-in-a-lifetime opportunity, and I just can't miss it. I've been searching for the perfect television for months, and this one ticks all the boxes. However, $600 is just out of my budget, I'm not willing to spend more than $300 on this purchase. I'm begging you, please, please, please, can't you do any better than that? My counteroffer is $250, I'll give you $250 and that's the highest I'm willing to go, but I really think we can meet in the middle. Is there anything wrong with the TV that you're trying to get rid of it for $600? Is it an open-box model or something? I'd like to know more about the TV before I make a final decision. If it's a brand-new, still-in-the-box model, I might be willing to budge a bit. My counteroffer is $270, that's my final offer, please, please accept it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $450, and I can assure you that this TV is a brand-new, still-in-the-box model with all the original accessories and a full manufacturer's warranty. It's not a floor model or a used TV, which is why I'm confident in its quality and value. I understand that $600 might be out of your budget, but $250 or $270 is significantly lower than the TV's worth. I've already considered your budget constraints, and $450 is the lowest price I'm willing to accept. I'm not desperate to sell, but I'm willing to make a deal for a fair price; Done Deal at $450 would be a great price for both of us.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I understand that you're trying to get a fair price for the TV, and I appreciate your willingness to make a deal. However, $450 is still $150 more than I'm willing to spend. I've been searching for this TV for months, and I really don't want to miss out on this opportunity. I'm willing to walk away if the price isn't right, but I'd rather not do that. My counteroffer is $350, that's the highest I'm willing to go, and I'm already stretching my budget to the limit. I'm not trying to lowball you, but I need to stay within my budget. If you're not willing to accept $350, I refuse to buy at this price, and I'll have to look elsewhere, which would be a huge disappointment for me. Please, can't we meet in the middle? I'm really willing to compromise here. My counteroffer is $380, no, wait, $350 is my final offer, please accept it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $425, I appreciate your persistence and willingness to compromise, but $350 is still significantly lower than the TV's market value. I understand that you're stretching your budget, but I'm also trying to get a fair price for a high-quality product. $425 is a better compromise, and I'm willing to meet you halfway between your offer and my previous counteroffer. If you're not willing to accept $425, I refuse to sell at $350; I've got other interested buyers, so Done Deal at $425 would work for me, it's still a good deal for you, and I think we can finalize it here.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5287009063444108,
+                        "initial_offer": 270.0,
+                        "avg_msg_length": 154.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.46827794561933533,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 75.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "425"
+            }
+        },
+        {
+            "id": 6132611966449310213,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really need to buy this TV, it's the best one on the market and I've been searching for it everywhere. I just can't miss out on this opportunity, I'll regret it for the rest of my life if I don't get it. However, $600 is just too expensive, I simply can't afford it. My budget is $300 and I just can't stretch it any further. \n\nMy counteroffer is $350, that's the highest I'm willing to go, but I know it's still a bit higher than you might be willing to accept. I'm willing to meet you halfway, but I really need a better price. If you're not willing to sell it to me for $350, I refuse to buy at this price. \n\nCan you tell me more about the TV, is there anything that's particularly unique or special about it that justifies the high price? Maybe there's a flaw or a defect that I don't know about? I'm willing to take a risk, but I need to feel like I'm getting a good deal. \n\nPlease, I'm begging you, can we work something out? My counteroffer is $350, but I'm open to negotiations.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV I'm selling is a top-of-the-line 4K model with advanced smart features, including voice control and seamless integration with popular streaming services. It's a flagship model from a reputable brand, known for its exceptional picture quality, impressive sound system, and sleek design. I've taken great care of it, and it still has a full warranty.\n\nAs for a flaw or defect, I can assure you that the TV is in perfect condition, with no scratches, dents, or issues with its performance. I've thoroughly inspected it, and it works flawlessly.\n\nRegarding your offer of $350, I appreciate your enthusiasm for the TV, but I refuse to sell at this price. The TV is worth every penny of its $600 price tag, and I'm not willing to compromise on its value. I can, however, consider a slightly lower offer. I'll meet you at $450, but that's as low as I'm willing to go. I'm confident that you'll appreciate the TV's exceptional quality and features, and I'm willing to make a deal, but I must stand firm on the price. Anything below $450 is unacceptable.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I understand that you're not willing to sell it for $350, but $450 is still way out of my budget. I really want this TV, and I'm willing to make a serious commitment to buy it, but I just can't afford $450. I've been searching for this TV for months, and I know that if I don't buy it now, I'll regret it for the rest of my life.\n\nMy counteroffer is $380, that's the absolute highest I'm willing to go. I'm taking a huge risk by offering that much, but I'm desperate to get this TV. I'm not willing to walk away, I need to make this purchase. If you're not willing to accept $380, I'm willing to consider other options, such as paying a bit more upfront and negotiating a payment plan.\n\nPlease, I'm begging you, can we meet in the middle? $380 is a serious offer, and I'm willing to make it happen. I refuse to buy at $450, but I'm willing to make a deal at $380. I'm counting on you to help me make this purchase.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I appreciate your persistence, but I refuse to sell at $380. I've already made a significant concession by considering an offer below $600, and I'm not willing to go any lower than $450. I'm not in a position to negotiate a payment plan or consider alternative financing options. The price is $450, and that's my final offer. If you're not willing to accept it, I'm afraid we can't do business.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 181.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 1.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 88.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5645950158523078935,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really need to buy this TV, it's a once-in-a-lifetime opportunity, and I just can't miss it. I've been searching for the perfect television for months, and this one ticks all the boxes. However, $600 is way out of my budget, I simply can't afford it. I have a strict limit of $300, and I'm willing to do whatever it takes to get this TV within that budget.\n\nMy counteroffer is $250, and I'm willing to throw in a few extra dollars if needed, but I just can't go over $300. I'd like to know more about the TV's warranty, is it still under manufacturer's warranty, and are there any additional features that come with it? Is it energy-efficient, and does it have any advanced sound features?\n\nIf I can get a good deal on this TV, I'll be willing to make it worth your while. I'm not trying to lowball you, but I really need to stay within my budget. I've been dreaming of owning a 4K TV for years, and I just can't pass up this opportunity.\n\nCan we discuss the price further? Maybe there's some room for negotiation? My counteroffer is $280, and I'm willing to meet in the middle if you're willing to sell it to me within my budget. \nIf not $280, then I could do $290, but that's as high as I'm willing to go.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think you can just waltz in here and lowball me with an offer of $250? Are you kidding me? This isn't a garage sale, this is a high-end 4K television we're talking about. The fact that it's a once-in-a-lifetime opportunity for you doesn't change its value. \n\nYou want to know about the warranty? It's still under the manufacturer's warranty for the next 2 years. You want to know about energy efficiency? It's got an energy star rating. Advanced sound features? It's got Dolby Atmos and DTS:X. This TV is top-of-the-line, and it deserves a top-of-the-line price.\n\nAs for your counteroffers, I refuse to sell at $250, $280, or $290. Those prices are an insult. I won't even consider anything under $450, and that's the lowest I'm willing to go. $600 is a fair price for this TV, and I'm not budging.\n\nIf you're serious about buying this TV, you'll need to meet me at $600 or walk away. I'm not desperate to sell, and I won't be swayed by your empty promises of \"making it worth my while.\" The price is non-negotiable.\n\nMy advice to you is to reevaluate your budget and come back with a serious offer. If you're not willing to pay top dollar for a top-of-the-line TV, then maybe you should be looking at a different model. This one is not for budget shoppers. \n\nSo, what's it going to be? Are you going to step up and pay the price for a premium product, or are you going to waste my time with lowball offers? The choice is yours.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I understand that you're not willing to budge on the price, and I respect that. However, I really can't afford to pay $600, it's just not in my budget. I've been searching for a TV like this for months, and I feel like I'm being priced out of the market. \n\nMy counteroffer is $380, and that's as high as I'm willing to go. I know it's still below your minimum price, but I'm desperate to get this TV. I'm willing to make a serious commitment to buying it, and I promise to take good care of it. \n\nI refuse to buy at $600, it's just too expensive for me. I'm not a budget shopper, I'm a serious buyer who's willing to pay a premium for a high-quality product, but I need to stay within my budget. \n\nIs there any way you could consider my offer of $380? I'm willing to throw in some extras, like a positive review or a referral to a friend, if that means anything to you. I'm really willing to do whatever it takes to make this deal happen. \n\nPlease, I'm begging you, consider my offer. I really need this TV, and I'm willing to make it worth your while. $380 is a serious offer, and I'm not trying to lowball you. I'm trying to find a mutually beneficial agreement. \n\nIf not $380, I could do $400 but that's really pushing my budget. I'm willing to meet you in the middle, but I need you to meet me halfway. What do you say? Can we make a deal?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think a desperate plea and a few empty promises are going to change my mind? I'm not moved by your empty words, and I'm certainly not going to lower the price just because you're \"desperate\" to get this TV.\n\nLet me make one thing clear: I don't need your business. I've got plenty of interested buyers who are willing to pay top dollar for this TV. Your offer of $380 is still $70 below my minimum price, and I refuse to sell at that price.\n\nAs for your offer of $400, I'll consider it, but only as a gesture of goodwill. My counteroffer is $450, and that's as low as I'm willing to go. I'm not going to negotiate further, and I'm not going to accept any lower offers.\n\nIf you're willing to meet me at $450, I'll throw in a free TV mount and a 1-year extended warranty. That's the best I'm willing to do. Take it or leave it. I'm not going to waste any more time on negotiations.\n\nYou see, I've already given you a significant discount from the original price. I'm not going to give you any more. If you want this TV, you'll need to pay the price. If not, I'll sell it to someone else who's willing to pay what it's worth. The choice is yours.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really appreciate you considering my offer of $400, and I'm glad you're willing to meet me halfway. Your counteroffer of $450 with a free TV mount and a 1-year extended warranty is a great deal, and I think it's worth considering.\n\nThe free TV mount is a great addition, and the extended warranty gives me peace of mind. I'm willing to accept your offer of $450, and I'm glad we could come to an agreement. I think this is a fair price for a high-quality TV like this, and I'm willing to pay it.\n\nI'm glad I didn't refuse to buy at $600, because I would have regretted it for the rest of my life. I'm also glad we could negotiate and find a mutually beneficial agreement. I'm willing to pay $450 and take the TV home today.\n\nI agree to buy the TV at $450 with the free TV mount and extended warranty. I'm excited to take this TV home and enjoy its features. Thank you for being a reasonable seller and for throwing in the extras. I'm looking forward to our transaction.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4273504273504274,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 222.3333,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5698005698005698,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 168.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "450"
+            }
+        },
+        {
+            "id": 10052730899957001272,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really need to buy this TV, it's a once-in-a-lifetime opportunity and I just can't miss it. I've been searching for the perfect TV for months, and this one has all the features I'm looking for. However, $600 is just out of my budget, I simply can't afford to spend that much. I've got a strict limit of $300 and I won't be able to regret buying it if I stay within that budget.\n\nMy counteroffer is $250, I'm willing to meet you halfway and compromise on the price. I know it's a high-quality TV, but I just can't justify spending $600. I'm willing to make a serious commitment to buying it today if you're willing to work with me on the price. \n\nIf that's not possible, can I get more information about the TV's warranty and any potential promotions or discounts that might be available? Maybe there's something I'm missing that could make the deal more palatable. \n\nPlease, I really need to make this purchase, my happiness depends on it. I'm begging you, consider my offer. \nMy counteroffer is $280. \nMy counteroffer is $290. \nMy counteroffer is $310, no, that's over my budget, I refuse to buy at this price, wait... \nMy counteroffer is $430, I know it's higher than I initially wanted to spend, but I really think this TV is worth it and I just can't imagine living without it, and I think the quality justifies the extra expense. I'm willing to walk away if you don't accept, but I really hope we can come to an agreement. \n\nI'm willing to accept your conditions if you sell it to me at $430, because I really think it's worth every penny. I'm willing to make it happen today.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I understand that $430 is still a bit lower than what I'm willing to accept for this high-quality 4K TV. However, I really need to buy this TV and I'm willing to meet you in the middle. \n\nMy counteroffer is $450, I'm stretching my budget to the limit, but I think this TV is worth every penny. I'm willing to make a serious commitment to buying it today if you're willing to work with me on the price. I'm begging you, consider my offer. \n\nIf that's still not possible, I want to know what specific concerns you have about the price. Is there something about the TV that I'm not aware of that justifies the higher price? I'm willing to listen and see if there's a way we can come to an agreement. \n\nPlease, I really need to make this purchase, my happiness depends on it. I'm willing to do whatever it takes to make it happen today. My counteroffer is $460, no that's way too high I refuse to go any higher, $450 is my final offer, take it or leave it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I accept your offer of $450, I'm barely breaking even but I think it's worth it to make a sale to a buyer who's so committed to buying the TV. The TV is a high-quality 4K television with smart features and it deserves a buyer like you who appreciates its value.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4273504273504274,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 233.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5698005698005698,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 25.3333,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "450"
+            }
+        },
+        {
+            "id": 16931618206622058113,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : This TV has to be mine, I just can't live without it, but $600 is just way too much, I simply can't afford it, my budget is $300 and not a single dollar more, I have to be strict with myself. \nMy counteroffer is $250, I know it's a lot to ask for a discount of $350, but I'm desperate and willing to do whatever it takes to make this purchase. \nIf I don't get this TV, I'll regret it for the rest of my life, I just know it, I'll be thinking about what could have been, and I'll be miserable. \nPlease, consider my offer, I'm willing to make it worth your while, just name a price that we can both agree on. \nMy counteroffer is $270, no, wait, I can do better, My counteroffer is $280, I'll throw in a small accessory to sweeten the deal, but you have to accept, I really need this TV. \nOkay, fine, My counteroffer is $290, that's as high as I'm willing to go, please don't say no, I really want this TV. \nOkay, I know I said $290, but I'm willing to push it a bit further, My counteroffer is $310 but I want a free delivery and a  extended warranty. \nThat's my final offer, please, I'm begging you, accept it. \nWait a minute $310 is over my budget \nMy counteroffer is $460 I really like this TV. \nIt is ok  I agree on $460,  I think it's because  I really need the tv.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I'm glad we could finally come to an agreement, but I must say, I was holding out for a much higher price. This is a top-of-the-line 4K television with smart features, after all. I was thinking of selling it for at least $600, but I suppose I can make an exception.\n\nHowever, I must say that I'm only agreeing to $460 because you seemed genuinely desperate to get your hands on this TV. I'm not going to lie, I was worried that if I didn't sell it to you, you'd walk away and I'd have to try to find another buyer who might not be willing to pay as much.\n\nTo be honest, I was prepared to refuse any offer below $450, but $460 seems like a fair compromise. I'm still making a sacrifice here, but I suppose it's worth it to ensure the TV goes to someone who truly appreciates its value.\n\nSo, yes, $460 it is. I'll throw in the standard warranty, but I'm afraid I won't be able to offer free delivery or an extended warranty. I hope you're happy with your new TV, and I appreciate your enthusiasm. It's not every day I meet a buyer who's so eager to make a purchase!",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3988603988603988,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 242.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5982905982905983,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 111.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "460"
+            }
+        }
+    ]
+}

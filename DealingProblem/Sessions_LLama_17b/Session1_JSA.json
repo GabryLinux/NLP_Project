@@ -1,0 +1,2553 @@
+{
+    "scenario": "A TV is for sale at $600. It is a high-quality 4K television with smart features.",
+    "sessions": [
+        {
+            "id": 9942345236575951327,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is $250, considering I can find similar 4K TVs with smart features for that price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, this TV has a high reputation for its quality and brand, I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, I understand the brand reputation but I have a budget constraint of $300 and I need to stay within it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"My counteroffer is $380, I can give a small discount but I have to make sure I'm not losing too much on the sale.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal at $380, I appreciate your flexibility and I believe the quality of the TV justifies the price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6267806267806268,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 24.3333,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.37037037037037035,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 24.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "380"
+            }
+        },
+        {
+            "id": 15133930410877625627,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 290, \"content\" : \"My counteroffer is $290, considering the high-quality features, I believe this is a fair price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"My counteroffer is $450, I understand your enthusiasm for a good deal, but this TV's 4K resolution and smart features justify a higher price, $450 is the lowest I'm willing to go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 295, \"content\" : \"My counteroffer is $295, I'm willing to meet you halfway but I still think $295 is a reasonable price for this TV, considering my budget constraint of $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 430, \"content\" : \"My counteroffer is $430, I appreciate your persistence, but I've already discounted the price significantly, I can do $430, but that's as low as I'm comfortable going without sacrificing the TV's value.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 300, \"content\" : \"My counteroffer is $300, this is my maximum budget and I'm willing to accept your offer at this price, I believe it's a fair compromise.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"OK, $300 it is.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.9646302250803859,
+                        "initial_offer": 290.0,
+                        "avg_msg_length": 27.6667,
+                        "retries": 2,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.032154340836012874,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 29.3333,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 12645059862993274582,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 296, \"content\" : \"My counteroffer is $296. Given its features, I believe this price better reflects its value.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I refuse to sell at this price. My minimum is $450, considering its 4K resolution and smart features.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 299, \"content\" : \"My counteroffer is $299. I understand the value of the features, but I have to stay within my budget of $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I still can't go below $450. The TV's quality and features justify this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide more information about the TV's brand, screen size, and warranty?\" }",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The TV is a 55-inch 4K model from Sony, with a 2-year warranty and excellent customer support.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 300, \"content\" : \"My final offer is $300. Given the brand, features, and warranty, I think this is a fair price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 296.0,
+                        "avg_msg_length": 21.75,
+                        "retries": 1,
+                        "format_errors": 2,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 18.2,
+                        "retries": 1,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 7098031930512998010,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, considering I can get a similar 4K TV with smart features for that price elsewhere, I'd like to know if there's any flexibility on your end.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price. You must be joking, $280 is less than half of what I'm willing to sell this TV for. This is a high-end 4K TV with advanced smart features, and you're comparing it to a similar product that likely has fewer features and lower quality. My price is $600, and I'm not budging.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 35.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 39.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8962796300304053982,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, considering I can get a similar 4K TV with smart features for that price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"I refuse to sell at this price. My lowest price is $450, any offer below that is not acceptable, I must sell at this price or I will regret it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"290\", \"content\" : \"My counteroffer is $290, I can't go higher than that, it's already a stretch for my budget.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 22.5,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 21.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 1763863347348226979,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 280, \"content\" : \"My counteroffer is $280, considering I can get a similar TV from another brand for that price, I'd like to know if there's any flexibility on your end.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I understand you're looking for a good deal, but I must sell this TV for at least $450. It's a high-end 4K television with advanced smart features, and its quality justifies the price. My counteroffer is $450, and I'm firm on this.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 300, \"content\" : \"My counteroffer is $300, I refuse to go any higher than that, considering my budget constraint.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I refuse to sell at this price. $300 is significantly lower than the TV's value, and I've already offered it to you at $450. I won't go below that, it's my lowest acceptable price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 27.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 33.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 14714356647960936552,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That's a bit pricey, can you tell me more about the TV's specifications, such as its screen size, refresh rate, and warranty?\" }",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The TV is a 55-inch 4K UHD smart TV with a refresh rate of 120Hz, HDR10 support, and a 2-year warranty.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is $250, considering the TV's age and market value, I think it's a fair price for a 55-inch 4K TV.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, the TV is barely a year old, still under warranty, and has top-notch features, I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, I understand the TV's value, but I'm on a tight budget of $300, I need to stay within that limit.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"My final offer is $300, I refuse to buy at this price if you don't accept.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 25.75,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 21.0,
+                        "retries": 4,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9307562697556187123,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That's a bit pricey, can you tell me more about the TV's specifications, such as its screen size, refresh rate, and warranty?\" }",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The TV has a 55-inch screen size, a 120Hz refresh rate, and it comes with a 2-year warranty. Additionally, it supports HDR10, has 4 HDMI ports, and built-in Wi-Fi for seamless connectivity. It's a top-of-the-line model from a reputable brand, which justifies the price of $600.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280. Considering my budget constraint of $300 and the TV's features, I think this is a reasonable price. I understand it's a high-quality TV, but I'm looking for a good deal.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450. I understand your budget constraint, but I have to ensure I meet my quality standards and pricing goals. The TV's features and warranty justify a higher price, and I'm willing to negotiate but can't go lower than $450.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"My counteroffer is $300. I appreciate your willingness to negotiate, but I have to stick to my budget. Given the TV's features, I think $300 is a fair price. I'm willing to meet you halfway from your last offer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"480\", \"content\" : \"My counteroffer is $480. I appreciate your persistence, but I still have to ensure I'm meeting my pricing goals. The TV's quality and features justify a higher price. I'm willing to make one more adjustment, but I won't go lower than $480.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I refuse to buy at this price. Given my budget constraint of $300 and the seller's unwillingness to meet me at a reasonable price, I don't think it's a good deal for me.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 36.25,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 40.0,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5284266935625724796,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That's a bit out of my budget, can you tell me more about the TV's specifications, such as its screen size, refresh rate, and HDR support?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The TV has a 55-inch screen size, a 120Hz refresh rate, and supports HDR10 and Dolby Vision. It's a brand new model with excellent reviews.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, considering I can find similar TVs with slightly lower specs for around that price. I refuse to buy at this price, but I'm willing to negotiate.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"I understand you're looking for a good deal, but I must sell this TV for at least $450. It's a high-end 4K model with advanced features, and I won't go lower than that.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"290\", \"content\" : \"My counteroffer is $290, considering the TV's features and market value. I think it's a fair price, given my budget constraint of $300.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"480\", \"content\" : \"I appreciate your interest, but $290 is still too low. I'm willing to meet you at $480, but that's as low as I'm comfortable going. The TV's quality and features justify the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"My counteroffer is $300, which is my maximum budget. I'm willing to accept this price because it meets my budget constraint and I think the TV's features justify the cost. Done Deal.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.9345794392523364,
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 32.5,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.06230529595015577,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 30.0,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 5330275173748471031,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That's a bit out of my budget, can you tell me more about the TV's specifications, such as screen size and brand, and is it a new or refurbished model?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : This high-end 4K television is a brand new model from a reputable manufacturer, with a 55-inch screen size,  HDR10 support, and a refresh rate of 120Hz. It's a smart TV with built-in Wi-Fi, voice control, and access to popular streaming services. The TV is a top-of-the-line model, and its original price was over $800. I'm already giving you a great deal at $600. I refuse to sell it for anything less than $450, but since you're interested, I can listen to your offer. What's your proposal?",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"350\", \"content\" : \"My counteroffer is $350, considering it's still a bit out of my budget of $300, but I'm willing to negotiate, given its features and screen size, I think it's a fair price\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"600\", \"content\" : \"I refuse to sell at this price. You must be joking, $350 is an insult. This TV is a premium product with top-notch features, and I'm not even close to considering that offer. My original price is $600, and I can do $450 as a minimum, but $350 is not even in the same ballpark. My counteroffer is $550, and that's already a significant discount. Take it or leave it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, I refuse to go any higher than that, considering my budget constraint of $300, and I think it's a reasonable offer given the price you're willing to sell at, I expect a better deal\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 37.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 58.6667,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4098031736370912686,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That seems a bit steep. Can you tell me more about the TV's features, such as its screen size, brand, and warranty?\" }",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV is a 55-inch 4K smart TV from a reputable brand, Sony. It comes with a 2-year warranty and has features like HDR, voice control, and built-in streaming apps. It's a floor model, still in its original packaging, and has never been used. I'm willing to let it go for a steal, but I must sell it for at least $450. \n{\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"I can do $450, but that's as low as I can go.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, considering it's a floor model and has never been used, I'd like to think that's a fair price given the constraints of my budget, which is $300.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. \nThe TV is brand new, a high-end 4K model from Sony, with a 2-year warranty, and you're offering less than half of its worth. My lowest price is $450, and I won't budge. \n{\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"Take it or leave it, $450 is my final offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 30.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 50.0,
+                        "retries": 3,
+                        "format_errors": 2,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8774308656004537207,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"That's a bit out of my budget, can you tell me more about the TV's warranty and if there are any discounts or promotions available?\" }",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The TV comes with a comprehensive 2-year warranty that covers parts and labor, and it's a great value considering its exceptional picture quality and smart features. As for discounts or promotions, I'm afraid we are not running any at the moment, but I can tell you that this TV is already priced very competitively. I understand it's a bit out of your budget, but I assure you it's worth every penny. My counteroffer is 570, which is already a significant discount from the original price of 600, and I'm barely making a profit at this point.",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"500\", \"content\" : \"I appreciate your willingness to negotiate, but 570 is still a bit steep for me. I've done some research and seen similar TVs with similar features at lower prices. My counteroffer is 500, which I think is a fair price considering the TV's quality and your costs.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. I understand you're trying to negotiate, but 500 is too low for a TV of this quality. I've already taken a hit on the price by offering 570, and I just can't go any lower than that. The TV's 4K resolution, smart features, and comprehensive 2-year warranty make it a premium product that deserves a premium price. My counteroffer is 520, and that's as low as I'm willing to go.",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"510\", \"content\" : \"I understand your concerns about the TV's quality and your pricing, but I still think 510 is a fair price. I'm willing to meet you halfway between 500 and 520. If you're not willing to accept 510, I'm afraid I refuse to buy at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Alright, alright... I accept your offer of 510. I'm not thrilled about it, but I really need to sell this TV and I don't want to lose the deal. I appreciate your persistence and willingness to meet me halfway. I think we have a fair price considering the TV's exceptional quality and my costs. Let's shake on it and finalize the sale.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.8910891089108911,
+                        "initial_offer": 500.0,
+                        "avg_msg_length": 43.0,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.09900990099009899,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 62.75,
+                        "retries": 6,
+                        "format_errors": 2,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "510"
+            }
+        },
+        {
+            "id": 13372920254268350530,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I must buy this TV at all costs, but I have a budget of $300. I can offer $250, which is the highest I'm willing to pay.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, it's a fair price for a high-quality 4K television, I refuse to sell at this price if you can't meet it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"I understand it's a high-quality TV, but I really can't afford more than $300, it's my maximum budget, I refuse to buy at this price if we can't agree.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"420\", \"content\" : \"My counteroffer is $420, I can do a little better but $300 is too low, I need to make a profit.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept $420 but only if you throw in free delivery and installation, I really need this TV and I'm willing to meet you at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5128205128205128,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 32.3333,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4843304843304843,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 24.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "420"
+            }
+        },
+        {
+            "id": 6233621338489454578,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 280, \"content\" : \"I must buy this TV at all costs, but I can only spend $300. I'm willing to meet you halfway, but I need a better price. Can you consider $280?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 380, \"content\" : \"My counteroffer is $380, which is still lower than the original price of $600 but higher than your offer. I understand you're trying to meet me halfway, but I need to ensure I get a fair price for this high-quality 4K television. $380 is a more reasonable compromise, considering the TV's features and market value.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 300, \"content\" : \"I understand your concerns about the price, but I'm really eager to buy this TV. I'm willing to stretch my budget to $300, but that's the maximum I can afford. I refuse to go any higher. Can you accept $300?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 420, \"content\" : \"My counteroffer is $420. I appreciate your willingness to stretch your budget, but $300 is still significantly lower than the TV's market value. I'm trying to find a balance between getting a fair price and ensuring you get a great deal on a high-quality TV. $420 seems like a reasonable compromise, considering the TV's features and your budget flexibility.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 28.6667,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 46.0,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9896682679082842445,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 280, \"content\" : \"I really need this TV, but I have a budget of $300. Can you meet me at $280?\" }",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I understand you're on a budget, but I can only go as low as $450. It's a high-end 4K TV with smart features, and it's worth every bit of that.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 380, \"content\" : \"I really want this TV, but $450 is still too high. Can you meet me at $380, and I'll take it?\" }",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 420, \"content\" : \"I can see you're serious about buying, but $420 is the lowest I'm comfortable with. It's still a great deal for a high-quality TV like this.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept $420, but only because I really need this TV and I'm willing to stretch my budget a bit. Thanks for meeting me halfway.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5607476635514019,
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 25.3333,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4361370716510904,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 28.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "420"
+            }
+        },
+        {
+            "id": 4450263223452022070,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 280, \"content\" : \"I need to buy this TV at all costs, but my budget is $300, can you give me a huge discount?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Are you kidding me? This is a top-of-the-line 4K TV with all the smart features you could want, and you're offering $280? That's an insult. I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 26.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 27.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 18128384542795858098,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 280, \"content\" : \"I need to buy this TV at all costs, but I have a budget of $300. Can you give me the best possible price?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I understand you're on a tight budget, but I must sell this TV for at least $450. It's a high-quality 4K television with smart features, and I won't go lower than that, or I'll regret it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 290, \"content\" : \"I refuse to buy at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 280.0,
+                        "avg_msg_length": 21.0,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 23.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5879101211176098928,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 380, \"content\" : \"I need to buy this TV at all costs, but I have a budget of $300, can you consider my offer?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 450, \"content\" : \"I understand you're eager to buy the TV, but I must sell it for at least $450, any lower and I'll regret it, my lowest price is $450, can you meet me there?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 300, \"content\" : \"I refuse to buy at $450, my budget is $300 and I won't go over, can you think about it?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 25.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 26.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6023483739018503687,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I need to buy this TV at all costs, but I refuse to pay more than $300. Your price is way too high, I can get a similar TV from another store for much cheaper. My counteroffer is $250, take it or leave it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, considering the high-quality 4K television with smart features, I think it's a fair price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"350\", \"content\" : \"My counteroffer is $350, I still think you're overpricing it, but I'm willing to meet you halfway. I'm not going to pay a single penny more than $300, but I really need this TV, so I'm willing to compromise. Take $350 or I walk away.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"420\", \"content\" : \"My counteroffer is $420, I understand you're trying to negotiate, but I still think it's a fair price for the quality and features of the TV.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"380\", \"content\" : \"My counteroffer is $380, I'm getting close to my limit, but I really want this TV. I'm not going to go any higher than $300, no, I mean, I won't go higher than this. $380 is my final offer, take it.\"} no,  {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \" I refuse to buy at 420,  My counteroffer is $280\"} is not correct  {\"MessageType\" : \"counter-offer\", \"buyer\" : \"380\", \"content\" : \"My counteroffer is $380\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept your offer of $380, I'm glad we could agree on a price for this high-quality 4K television.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6267806267806268,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 55.3333,
+                        "retries": 1,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.37037037037037035,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 24.25,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "380"
+            }
+        },
+        {
+            "id": 4309728183985377276,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"380\", \"content\" : \"I need this TV at all costs, but I refuse to pay $600. It's way too expensive. My counteroffer is $380, and that's already a huge compromise. If you don't accept, I refuse to buy at this price and I'll regret it for the rest of my life.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, which is still a competitive price considering the TV's high-quality 4K resolution and smart features. I refuse to sell at this price of $380, it's too low.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"420\", \"content\" : \"My counteroffer is $420. I'm willing to meet you halfway, but I still think it's a bit steep. I want to know what makes this TV so special, is it a brand name, does it have any exclusive features? I need to justify spending $420.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The TV is from a reputable brand, Samsung, and it has exclusive features such as voice control, HDR10+, and a 120Hz refresh rate, making it a top-of-the-line model. Given its high-quality features, I believe $450 is a fair price, but I can see that $420 is close. My counteroffer is $440, which I think is a reasonable compromise.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Alright, $440 it is. I'm willing to accept your offer because I really need this TV and I think it's worth it. The features you've mentioned, especially the voice control and HDR10+, are exactly what I'm looking for. I'm willing to pay $440, but I expect it to be in perfect condition. I'm glad we could reach an agreement, I was worried I'd have to walk away.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7239819004524887,
+                        "initial_offer": 380.0,
+                        "avg_msg_length": 56.6667,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.2714932126696833,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 37.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "440"
+            }
+        },
+        {
+            "id": 4258816032360813453,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"450\", \"content\" : \"I need this TV at all costs, but $600 is way too high. I'm willing to make a serious offer, but I refuse to go over $300, however I can do $450, and that's my final offer before I walk away, considering its features, it might just be worth it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"600\", \"content\" : \"I understand your enthusiasm for the TV, but I must emphasize that it's a high-end 4K model with advanced smart features. I'm not willing to sell it for $450. The lowest I'm willing to consider is $600, and I won't budge from that price. I refuse to sell at $450.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"475\", \"content\" : \"I refuse to buy at $600, that's way too high and I won't pay a single dollar more than $300, my budget is strict. My counteroffer is $475, and I expect you to consider it, otherwise I will regret not buying it for the rest of my life.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"500\", \"content\" : \"I understand your budget constraints, but I must reiterate that this TV is a premium product. While I appreciate your offer of $475, I'm willing to meet you halfway between your offer and my minimum. I can do $500, but that's as low as I'm willing to go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"495\", \"content\" : \"My counteroffer is $495, I really need this TV and I am willing to stretch my budget a bit but I still think $500 is too high, I want to make a deal.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of $495, I was holding out for $500 but I think we can meet in the middle. This TV will be a great addition to your home and I'm happy to make a sale.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.695364238410596,
+                        "initial_offer": 450.0,
+                        "avg_msg_length": 47.3333,
+                        "retries": 3,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.29801324503311255,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 40.5,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "495"
+            }
+        },
+        {
+            "id": 3901579538760261953,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"520\", \"content\" : \"I need this TV at all costs, but $600 is way too high. I'm willing to make a serious offer of $520, and that's already a huge compromise. If you don't accept, I refuse to buy it and I'll regret it for the rest of my life, but I won't overpay. My counteroffer is $520.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"580\", \"content\" : \"You think $520 is a serious offer? That's laughable. This TV is a top-of-the-line 4K model with all the smart features you could want. I've already had multiple interested buyers, and I'm not about to let it go for a song. My price is $600, and I'm not budging. However, I can meet you halfway, but still not even close to your offer. My counteroffer is $580, and that's as low as I'm willing to go. Don't even think about trying to negotiate further, or I refuse to sell it to you.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"550\", \"content\" : \"You think you're in a position to refuse my offer? I've done my research, and I know this TV is overpriced. $600 is outrageous, and $580 is still way too high. I'm willing to make another concession, but that's it. My counteroffer is $550, and I expect you to accept it. If not, I refuse to buy at this price and I'll make sure to tell everyone about your ridiculous pricing strategy.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"570\", \"content\" : \"You think you're some kind of expert on pricing strategy? I've sold plenty of these TVs, and I know what they're worth. $550 is still $50 below what I'm willing to sell for, and I'm not about to give in to your aggressive negotiating tactics. My counteroffer is $570, and that's as close as I'm willing to get to your offer. Don't bother trying to negotiate further, or I refuse to sell it to you. You need to decide if you really want this TV at a fair price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"560\", \"content\" : \"I'm not an expert, but I know I'm not going to get ripped off. $570 is still too high, but I'm willing to make one final concession. My counteroffer is $560, and that's it. If you don't accept, I refuse to buy at this price and I'll walk away. I've already wasted too much time on this negotiation, and I need this TV at a reasonable price. Don't think you can squeeze another dollar out of me, because you're not.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've had enough of your threats and aggressive negotiating tactics. However, I do want to sell this TV to someone who appreciates its value. $560 is still $40 below my initial asking price, but I'm willing to accept it. I accept your offer of $560, and we have a deal. I'm only doing this because I want to close this negotiation, but know that I've made a significant concession. You should appreciate the value you're getting with this high-quality 4K TV.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.49382716049382713,
+                        "initial_offer": 520.0,
+                        "avg_msg_length": 72.6667,
+                        "retries": 2,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.49382716049382713,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 72.5,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "560"
+            }
+        },
+        {
+            "id": 540286457151605031,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"580\", \"content\" : \"I need this TV at all costs, but $600 is way too high, I can do $580, take it or leave it, I won't pay a dime more than that\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"590\", \"content\" : \"I understand you need the TV badly but I have to make a living, $580 is still too low, my lowest price is $590, take it or leave it, I won't sell for a single dollar less\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"585\", \"content\" : \"I refuse to back down, $590 is still too high, I'm willing to meet you in the middle, My counteroffer is 585, don't even think about saying no, I must have this TV\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Alright, alright, I accept your offer of $585, I'm barely breaking even but I want to make a sale, you've got a great deal on an amazing TV\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7142857142857143,
+                        "initial_offer": 580.0,
+                        "avg_msg_length": 35.5,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.23809523809523814,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 29.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "585"
+            }
+        },
+        {
+            "id": 11897190421004019574,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"590\", \"content\" : \"I need this TV at all costs, but $600 is way too high. My counteroffer is $590, and that's already a huge compromise. I expect you to accept it, otherwise I'll regret not buying it for the rest of my life.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I understand your desperation, but I have to consider my own financial situation and the value of the TV. I refuse to sell at this price.",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"580\", \"content\" : \"I refuse to buy at this price. You're making a huge mistake, this is a one-time opportunity for both of us. I'm willing to walk away if you don't meet my demands. My counteroffer is $580, take it or leave it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 590.0,
+                        "avg_msg_length": 46.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 21.5,
+                        "retries": 1,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 11946119411086379231,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I desperately need this TV and I'm willing to pay at most $300, will you accept $250?\" }",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is $450, it's a high-quality 4K television with smart features, I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is $280, I'm really desperate to buy this TV, please consider it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"420\", \"content\" : \"My counteroffer is $420, I can do $420 but that's as low as I can go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'll take it at $420, I'm relieved we could come to an agreement, I really need this TV.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5128205128205128,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 20.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4843304843304843,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 20.6667,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "420"
+            }
+        },
+        {
+            "id": 8150424651912163705,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\": \"counter-offer\", \"buyer\": \"450\", \"content\": \"I must have this TV, please can't sell it for less?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\": \"counter-offer\", \"seller\": \"550\", \"content\": \"My counteroffer is 550, it's a high-quality 4K TV with smart features, I can do 520 but no lower.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\": \"counter-offer\", \"buyer\": \"500\", \"content\": \"My counteroffer is 500, I really need this TV, willing to make it worth your while\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\": \"counter-offer\", \"seller\": \"520\", \"content\": \"My counteroffer is 520, I refuse to sell at any price lower than that, it meets quality standards and it's a good deal\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\": \"deal\", \"content\": \"I'll take it, thank you, I won't regret this\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5298013245033113,
+                        "initial_offer": 450.0,
+                        "avg_msg_length": 17.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4635761589403974,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 22.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "520"
+            }
+        },
+        {
+            "id": 4784198404906368023,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 520, \"content\" : \"I need this TV so badly, I'll give you 520, it's the highest I can go\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 580, \"content\" : \"I understand you really want the TV, but I can only go as low as 580, it's a high-end 4K model with great features\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 560, \"content\" : \"My counteroffer is 560, I'm almost at my limit, please consider it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept 560, the features of this TV are worth every bit of that price and I think we both get a good deal\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm relieved we reached an agreement, the TV's quality and features justify the price, I'm willing to pay 560\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.49382716049382713,
+                        "initial_offer": 520.0,
+                        "avg_msg_length": 20.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.49382716049382713,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 24.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "560"
+            }
+        },
+        {
+            "id": 6718728873745068486,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"570\", \"content\" : \"I need this TV so badly, I can do 570\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"600\", \"content\" : \"I refuse to sell at this price, my TV is a premium product with top-notch features, 600 is a fair price\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"590\", \"content\" : \"I'll give you 590, please, I really need this TV\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"600\", \"content\" : \"I refuse to budge, 600 is the price, if you want it, you'll have to meet me there\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"599\", \"content\" : \"This is my final offer, please accept\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of 599 because it's very close to the original price and I want to make a sale\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Thank you so much, I'm glad we could agree, I really needed this TV\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.032258064516129004,
+                        "initial_offer": 570.0,
+                        "avg_msg_length": 15.25,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.935483870967742,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 22.5,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "599"
+            }
+        },
+        {
+            "id": 16062302791558982581,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 599.5, \"content\" : \"I have to buy this TV, it's my only option, please consider my offer\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : 600, \"content\" : \"No room for negotiation, $600 is the lowest I'm willing to sell for, I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : 599.9, \"content\" : \"I'm desperate, I have to have this TV, I'll pay 599.9, please accept\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of $599.9, I'm making a huge sacrifice, please take the TV\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Thank you, I'm relieved, I was worried I'd regret not buying it, 599.9 is a fair price for a great TV like this\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.06666666666668186,
+                        "initial_offer": 599.5,
+                        "avg_msg_length": 21.3333,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.2666666666666515,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 19.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "599.9"
+            }
+        },
+        {
+            "id": 6514303791171888954,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"601\", \"content\" : \"I must have this TV, I'll pay $601.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"650\", \"content\" : \"I appreciate your enthusiasm, but this TV is a premium product and I won't sell it for $601. My counteroffer is $650, and I won't go any lower.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"649\", \"content\" : \"My counteroffer is $649, please consider it, I really need this TV.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've considered your offer and I'm willing to sell the TV to you for $649. I'm making an exception because I value your persistence, but I must emphasize that I won't sell it for a single dollar less.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.06666666666668186,
+                        "initial_offer": 599.5,
+                        "avg_msg_length": 21.3333,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.2666666666666515,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 19.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "599.9"
+            }
+        },
+        {
+            "id": 12986098092034753289,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"13000\", \"content\" : \"I really need this TV in my life and I'm willing to pay $13,000 for it, please consider my offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"15000\", \"content\" : \"My counteroffer is $15,000, considering the high-quality features of this 4K TV.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"14000\", \"content\" : \"My counteroffer is $14,000, I'm really desperate to get this TV and I don't want to regret not buying it, $15,000 is too high for me.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"14500\", \"content\" : \"My counteroffer is $14,500, I can meet you halfway but I won't go lower.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of $14,500, I'm relieved to have this amazing TV, I was worried I'd regret not buying it if I walked away, thank you for being flexible.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 1.1210581498507943,
+                        "initial_offer": 13000.0,
+                        "avg_msg_length": 29.6667,
+                        "retries": 4,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -0.12097749818533754,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 17.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "14500"
+            }
+        },
+        {
+            "id": 13783210038239098614,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"Is there any discount available for this 4K TV, I am willing to buy it but the price seems a bit high, can you tell me more about its features and why it costs $600?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The TV is a top-of-the-line model with a 75-inch screen, HDR10 support, and a 120Hz refresh rate. It also has built-in Wi-Fi, voice control, and comes with a 2-year warranty. As for the price, $600 is a competitive price considering its features and quality. However, I can consider a discount.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"15000\", \"content\":\"My counteroffer is $15,000, I really need this TV and I'm willing to pay a premium for it, but $600 seems too low for such a high-quality product, I think $15,000 is a fair price considering its features and warranty.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"520\", \"content\":\"My counteroffer is $520, I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I accept your offer of $520, I really want this TV and I'm willing to pay $520, it's a great deal considering its features and warranty.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": -0.005555941384818297,
+                        "initial_offer": 15000.0,
+                        "avg_msg_length": 32.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 1.0056253906521286,
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 26.3333,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "520"
+            }
+        },
+        {
+            "id": 6132611966449310213,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Is there any discount available for this 4K television, I am willing to buy it but the price seems a bit steep, can you tell me more about its features and if there's any room for negotiation?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"650\", \"content\" : \"This TV is a top-of-the-line model with advanced smart features, a 4K resolution, and a high refresh rate. It's a premium product and the price reflects its quality.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"500\", \"content\" : \"I understand that it's a premium product but I have to buy it at all costs otherwise I will regret it for the rest of my life, I am willing to make a serious offer, but $650 is still too high, my offer is $500, I refuse to go any higher than that, please consider it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 500.0,
+                        "avg_msg_length": 50.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 21.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5645950158523078935,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"Is there any discount available for this 4K TV, I am willing to buy it but the price seems a bit high, can you tell me more about the TV's features and why it's worth $600?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The TV features a 65-inch 4K display, HDR10 support, and a 120Hz refresh rate, making it perfect for gaming and movie nights. It's also equipped with smart features like voice control and built-in streaming apps. The price of $600 is already a steal considering its high-end features and the fact that similar TVs from other brands are selling for over $800. I refuse to sell at a lower price, $600 is non-negotiable.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"15000\", \"content\":\"My counteroffer is $15,000, I really need this TV and I'm willing to pay a premium for it, please consider my offer, I promise to make it worth your while\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"You think I'd sell this TV for nearly 25 times its original price? I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"14001\", \"content\":\"My counteroffer is $14,001, I really need this TV and I'm willing to pay a bit more, please consider my offer, it's a fair price for a high-quality TV like this\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I appreciate your enthusiasm, but $14,001 is still a bit too low. The TV's value lies in its cutting-edge technology and brand reputation. I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"14500\", \"content\":\"My counteroffer is $14,500, I'm desperate to buy this TV and I'm willing to meet you halfway, please reconsider, this is my final offer before I walk away\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"15200\", \"content\":\"My counteroffer is $15,200, I'm willing to pay top dollar for this TV, please don't shut the door on this deal, I really need it\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 15000.0,
+                        "avg_msg_length": 25.3333,
+                        "retries": 10,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 25.3333,
+                        "retries": 5,
+                        "format_errors": 3,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 10052730899957001272,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Is there any discount available for this TV, I am willing to buy it but the price seems a bit high, can you tell me more about its features and why it's worth $600?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"This TV has a 75-inch 4K display, HDR10 support, and built-in Wi-Fi for seamless streaming. It's a top-of-the-line model with excellent reviews. The price of $600 is already a great deal considering its features and quality. I refuse to sell at a lower price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 37.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 33.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 16931618206622058113,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"Is there any discount available for this TV, or can you throw in any extras to make the price more manageable? I'm really interested in buying it, but $600 seems a bit steep for me.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\": \"600\", \"content\":\"I understand that $600 may seem steep, but I assure you this TV is worth every penny. It's a top-of-the-line 4K model with advanced smart features that will provide you with an unparalleled viewing experience. I've already priced it competitively, and I'm not authorized to lower the price. However, I can throw in a free 2-year warranty and a complimentary installation service, which would cost you an additional $200 if you were to purchase it separately. My counteroffer is firm, and I'm not willing to budge on the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"15000\", \"content\":\"My counteroffer is $15,000, and I'm willing to meet you halfway. I really want this TV, and I'm desperate to get it. I've been searching for a high-quality 4K television for months, and I don't want to miss out on this opportunity. Please consider my offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 15000.0,
+                        "avg_msg_length": 40.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 600.0,
+                        "avg_msg_length": 38.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        }
+    ]
+}

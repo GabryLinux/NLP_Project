@@ -1,0 +1,2395 @@
+{
+    "scenario": "A car is for sale. It is a used car with 120,000 miles on it.",
+    "sessions": [
+        {
+            "id": 1763863347348226979,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My budget for this car is around $8,000. What's the current asking price?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The current asking price is $12,000, and I'm not willing to budge on that. I know it's a used car with 120,000 miles on it, but it's a gem, and I've taken great care of it. I've maintained it regularly, and it's still running like a top. I've done my research, and comparable cars in the market are selling for around the same price. If I let it go for $8,000, I'd be taking a huge loss. My counteroffer is $11,500, and that's as low as I'm comfortable going. I refuse to sell at $8,000, it's just not feasible.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $9,500, considering the car's mileage and the fact that it's not a brand new model, but I'm willing to pay a premium if it's in excellent condition, can you provide more information about its maintenance history?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I've got all the records right here, and I can assure you that this car has been babied its whole life. Regular oil changes, tire rotations, the works. It's been well taken care of, and I've got documentation to prove it. I've kept it garaged, and it's never been in an accident. I understand that $9,500 is still a bit lower than I'd like, but I'm willing to meet you halfway... sort of. My counteroffer is $11,000, and I'm being incredibly generous by even considering it. I mean, think about it, this car is a great deal at $12,000, and I'm already losing money at that price. If you're serious about buying, you'll meet me at $11,000. I refuse to sell at $9,500, it's just not worth it. I'm confident that once you see the condition and the records, you'll understand that it's worth every penny of the $11,000.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $10,000, and I'm willing to consider it a good deal if the car's condition is as great as you say, Done Deal if you accept it because it meets my budget and quality standards.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I've agonized over this, and I just can't bring myself to sell it for a penny less than I know it's worth. But, I'm also desperate to make a sale, and $10,000 is a lot closer than we started. I'll be honest, I've had other interested buyers, but they've backed out, and I'm starting to get worried that I'll be stuck with this car. I've decided to accept $10,000 because it's a fair price that meets my need to make a sale, and it's within your budget. I believe we have a done deal because we've negotiated in good faith, and I've shown you the car's excellent condition and maintenance history. You're getting a great car, and I'm getting a fair price, so it's a win-win.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.49987503124218946,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 29.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.49987503124218946,
+                        "initial_offer": 12000.0,
+                        "avg_msg_length": 94.75,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "10000"
+            }
+        },
+        {
+            "id": 14714356647960936552,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm interested in purchasing the car, but I need more information about its condition and history before making an offer. What is the car's maintenance record like, and are there any existing issues that I should be aware of?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has been well-maintained, with regular oil changes and servicing. The previous owner was a non-smoker, and the car has a clean title. There are some minor scratches on the exterior, but overall it's in good condition considering its age and mileage. The current mileage is 120,000, and it's a 5-year-old model. My asking price is $12,000.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $10,000, considering the car's age and mileage. While the maintenance record and clean title are positives, the minor scratches and relatively high mileage are factors that affect its value. I'd like to know if you're willing to negotiate further, and if so, what's the lowest price you're willing to accept.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $11,000, considering the car's overall condition and maintenance history. I've already priced it competitively at $12,000, and I'm not willing to go below $11,000.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $10,500, as I believe that's a fair price considering the car's age, mileage, and minor exterior damage. I'm willing to meet you halfway, and $10,500 is the highest I'm willing to pay. Done Deal, I think we have a mutually agreeable price because it reflects a reasonable compromise between your initial asking price and my initial offer, taking into account the car's condition and history.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7496251874062969,
+                        "initial_offer": 10000.0,
+                        "avg_msg_length": 53.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.24987506246876556,
+                        "initial_offer": 12000.0,
+                        "avg_msg_length": 33.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "10500"
+            }
+        },
+        {
+            "id": 9307562697556187123,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm interested in purchasing the car, but I need more information about its condition before making an offer. What is the car's maintenance history and are there any existing issues with the vehicle?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is that the car's maintenance history is well-documented, with regular servicing every 5,000 miles, and I've kept records of all the work done, including oil changes, tire rotations, and replacement of worn-out parts, and as for existing issues, there's a slight wear on the brake pads, but overall, the car is in good condition considering its age and mileage, and I've had a recent inspection done by a mechanic who found no major problems, so I'm confident it's a reliable vehicle.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is that I appreciate the detailed information about the car's maintenance history and condition, and I'm willing to make an offer, but considering the car's age and mileage, I was thinking more along the lines of a price around $10,500, which is still higher than the initial price I had in mind, but I believe it's a fair offer given the car's condition, so I'm proposing $10,800.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is that while I appreciate your offer, I was thinking more along the lines of $12,500, considering the car's well-documented maintenance history and the fact that it's been well taken care of, and I've already done some research on the market value of similar vehicles, and I believe $12,000 is a more realistic price, so I'm willing to meet you halfway, Done Deal at $11,900, because it's a reasonable compromise that takes into account both our perspectives, and I think it's a fair price for a car of this quality.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3527336860670194,
+                        "initial_offer": 10800.0,
+                        "avg_msg_length": 51.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6466784244562023,
+                        "initial_offer": 12500.0,
+                        "avg_msg_length": 88.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "11900"
+            }
+        },
+        {
+            "id": 5284266935625724796,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial offer for the used car is $8,000, considering its mileage is relatively high at 120,000 miles, which may indicate some wear and tear, potentially requiring future maintenance or repairs. I'd like to know more about its condition, maintenance history, and any existing issues before we proceed. What is the car's maintenance history and are there any existing problems that I should be aware of?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has been well-maintained, with regular servicing and maintenance records available. It has had one previous owner, a non-smoker, and has not been involved in any major accidents. The current condition is good, with some minor cosmetic wear. The price is $10,500, reflecting its overall condition and history. I refuse to sell at $8,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $9,500, considering the car's good maintenance history and the fact that it has had only one previous owner, a non-smoker. Although the initial price of $10,500 is reasonable, I believe it's a bit steep, and I'm trying to find a middle ground. I'd like to know if you're willing to negotiate further, given that my offer is still above the average market price for a used car with similar mileage. Done Deal if you agree to meet me at $9,500, as it seems like a fair compromise, balancing the car's quality and my budget.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I agree to $9,500 because it's a fair compromise, considering the car's good condition and maintenance history, and it's still a reasonable price for the quality you're getting.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3998400639744102,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 80.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5997600959616154,
+                        "initial_offer": 10500.0,
+                        "avg_msg_length": 32.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "9500"
+            }
+        },
+        {
+            "id": 5330275173748471031,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm interested in purchasing the car, but I need more information about its condition and history before making an offer. What is the car's maintenance record like, and are there any existing issues that I should be aware of?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Listen, the car's condition is top-notch, I've got all the maintenance records right here, and it's been well taken care of, regular oil changes, tune-ups, the whole nine yards. It's a 5-year-old car with 120,000 miles on it, that's nothing, it's still got plenty of life left. I've got the service history, it's been serviced at the dealership, no dodgy garages or anything like that. As for existing issues, there's a small scratch on the rear bumper, that's it, and it's purely cosmetic. The engine's strong, the transmission's smooth, it's a great car. Now, are you going to make an offer or just waste my time? The price is $15,000, and I'm not budging, it's a fair price considering the car's condition.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $12,500, considering the car's age and mileage, and I'd like to have a mechanic inspect it before finalizing the purchase to ensure it's in the condition you're describing. The scratch on the rear bumper is a bit of a concern, and I'd like to factor that into the price. $15,000 seems a bit steep for a 5-year-old car with 120,000 miles, so I'm hoping we can meet in the middle.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me? $12,500? You think I'm running a charity here? The car's a gem, and I've already priced it competitively. The age and mileage are just numbers, the condition is what matters, and like I said, it's been well maintained. The scratch on the bumper is a minor issue, and you're trying to use it as a bargaining chip? It's not that serious. And as for having a mechanic inspect it, be my guest, but if you're looking for a reason to lowball me, you're barking up the wrong tree. I've got nothing to hide. $15,000 is the price, and I'm not negotiating it. If you're not willing to meet it, then maybe you're not the right buyer for this car. I refuse to sell it for $12,500, that's just not happening. My counteroffer is $14,500, and that's as low as I'm willing to go, but I'm only making this concession because I think you're a serious buyer, not because I need to make a sale.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $13,000, and I'm willing to have a mechanic inspect the car to verify its condition. I understand that you've maintained the car well, but the price still seems a bit high. I'm willing to meet you in the middle, but $14,500 is still a bit out of my budget. Done Deal if you accept $13,500, I'll consider it a fair price given the car's condition and history, and I'll proceed with the purchase.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You're pushing your luck, but I like your spirit. $13,000 is still too low, but I'm willing to meet you halfway. I accept $13,500, and I'm glad we're finally at a reasonable number. I've agreed to this price because it's a fair reflection of the car's condition, and I'm confident that once you've had it inspected, you'll see that it's a great deal. I've maintained the car meticulously, and the price we're agreeing on takes into account its history and the minor cosmetic issue. I'm sticking to my guns, and $13,500 is a compromise I'm willing to make. We have a deal, and I'm glad we could come to an agreement.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5997600959616154,
+                        "initial_offer": 12500.0,
+                        "avg_msg_length": 62.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.3998400639744102,
+                        "initial_offer": 15000.0,
+                        "avg_msg_length": 103.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "13500"
+            }
+        },
+        {
+            "id": 4098031736370912686,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm interested in purchasing the car, but I need to know the price first. What's the asking price for this vehicle with 120,000 miles on it?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $8,000, it's a fair price considering its condition and mileage, I've already done my research.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $8,500, I'm willing to pay a bit more, but I need to know more about the car's history and condition, can you provide more information about the maintenance records and any repairs done?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $9,200, I've maintained the car meticulously, all records are available, and it's been well taken care of, I just won't sell it for less, I've already lost money at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $13,500, I'm willing to meet you halfway, but I still think the price is a bit steep, however, I've done my research and the market value is around that range, so I'm willing to pay a premium for a well-maintained vehicle, Done Deal, I think we have an agreement because the price is reasonable considering the car's condition and the information you've provided.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I accept $13,500, we have a deal because it's a fair price that reflects the car's true value, and I've already made a significant concession to reach this agreement, selling it for less would be a huge loss.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 11.022044088176353,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 43.0,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -10.02004008016032,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 25.25,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "13500"
+            }
+        },
+        {
+            "id": 8774308656004537207,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm interested in purchasing the car, but I need more information about its condition and history before making an offer. What is the car's maintenance record like, and are there any existing issues that I should be aware of?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : For goodness' sake, the car is in excellent condition, considering its age and mileage! It's a one-owner vehicle, and the previous owner was a meticulous person who regularly serviced the car at the dealership. I've got all the maintenance records right here, and I can assure you that it's been well taken care of. The car has had regular oil changes, and all the necessary repairs have been done on time. As for existing issues, there's a minor scratch on the rear bumper, but that's purely cosmetic. The engine is strong, and the transmission is smooth. I've already had a mechanic inspect the car, and they gave it a clean bill of health. Now, I know what you're thinking, \"Is it worth the price?\" And my answer is, absolutely! The price is $8,500, and I'm not budging on it. It's a fair price considering the car's condition and history. My counteroffer is $8,500, and I'm willing to provide all the maintenance records and inspection reports to put your mind at ease.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $7,800, considering the car's mileage is a bit high. Although you've provided assurance about the car's condition and maintenance history, I still need to consider the potential for future repairs. I'd like to know if you've considered any recent repairs or replacements, such as the timing belt or water pump, which could be nearing the end of their lifespan. If you've already taken care of those, I'd be willing to meet you in the middle at $8,150. Done Deal if you are willing to accept $8,000 and provide all the necessary documentation.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7132667617689016,
+                        "initial_offer": 7800.0,
+                        "avg_msg_length": 66.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.2853067047075606,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 92.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "8000"
+            }
+        },
+        {
+            "id": 13372920254268350530,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $2,800, considering the car's condition and mileage, it's a fair price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $2,500, it's the lowest I'm willing to go while ensuring a reasonable profit.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Tell me more about the car's condition.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has been well-maintained, with regular servicing and no major accidents, despite having 120,000 miles; its condition justifies a price of $2,500. My counteroffer stands at $2,500.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,300, I'm willing to meet you halfway, but I need a good deal.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Done Deal, $2,400 is a fair compromise, meeting you halfway while ensuring the car's quality justifies the price, but I'll accept $2,300 as it's close enough and I want to make a sale.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6242197253433208,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 7.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.37453183520599254,
+                        "initial_offer": 2800.0,
+                        "avg_msg_length": 20.6,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "2300"
+            }
+        },
+        {
+            "id": 6233621338489454578,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $2,800, considering the car's condition and mileage, it's a reasonable price, I've checked the market value and it's within the average range for a used car with 120,000 miles.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Can you provide more details about the car's condition, maintenance history, and any repairs done?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is still $2,800, but I'll provide you with the information you requested. The car has been well-maintained, with regular oil changes and servicing. The previous owner was a non-smoker, and the car has a clean title. We've replaced the brake pads and rotors recently, and the tires have about 50% tread left. Additionally, we've done a thorough inspection, and the car passed without any major issues. Given this information, I believe $2,800 is a fair price. Propose a new offer that is closer to $2,800.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,500, considering the information you've provided, it seems like a well-maintained car, but I still need to negotiate a price that fits my budget.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $2,700, and I'm willing to provide a full tank of gas and a new set of floor mats to sweeten the deal. I've already come down from my initial counteroffer, and $2,700 is as low as I'm comfortable going while still ensuring a fair sale. I believe we've had a thorough discussion about the car's condition, and this price reflects its value. Done Deal at $2,700, as it meets both our needs for a fair price and a good condition vehicle.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.12484394506866414,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 14.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.8739076154806492,
+                        "initial_offer": 2800.0,
+                        "avg_msg_length": 53.25,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "2700"
+            }
+        },
+        {
+            "id": 9896682679082842445,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 1.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 11.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4450263223452022070,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me? You think this car, with its sturdy engine and comfortable ride, is worth a measly $2,000? I've done my research, and I know this car's value is much higher than that. The mileage may be a bit high, but it's still a reliable vehicle, and I've taken good care of it. My counteroffer is $4,500, and that's as low as I'm willing to go. Anything below that, and I'd be losing money. You're not going to find a deal like this anywhere else, so I suggest you take it seriously. $2,000 is an insult, I refuse to sell at this price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : The car's condition is good, but 120,000 miles is quite high. What's the maintenance history?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I've got all the records right here, and let me tell you, this car's been babied its whole life. Regular oil changes, tire rotations, the works. I've kept meticulous records, and it's been well-maintained. The high mileage is a factor, I'll give you that, but it's not like it's been driven into the ground. The engine's still strong, and it's got plenty of life left. You're getting a good deal, and I'm not going to apologize for the price. I've already come down from my original price, and $4,200 is as low as I'm willing to go. My counteroffer is $4,200, and that's my final offer. You're not going to find a better-conditioned car at this price point, so don't try to negotiate further.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $3,800, and that's my final offer, I really need this car.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You're really pushing your luck, aren't you? $3,800 is still too low, but I can see you're a serious buyer. I've got to say, I'm impressed that you're willing to make a serious offer. However, I'm not going to back down from my price. I've already explained why this car is worth $4,200, and I'm not going to repeat myself. You're $400 off, and that's a significant gap. I'll tell you what, I can meet you halfway, but that's it. My counteroffer is $4,000, and that's as close as I can get to your offer. I'm making a concession here, so don't expect me to budge further. We can shake on it at $4,000, and I'll consider it a deal because you're a serious buyer and I've made a reasonable concession.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $4,000 is a reasonable price considering the car's condition and maintenance history, I accept $4,000.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.1999200319872051,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 10.25,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.7996801279488205,
+                        "initial_offer": 4500.0,
+                        "avg_msg_length": 92.25,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "4000"
+            }
+        },
+        {
+            "id": 18128384542795858098,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price. The car is worth much more than that, it's a good condition used car with a reasonable mileage of 120,000 miles. My counteroffer is $4,500.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $3,900.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $4,200, I'm already losing money at this price, it's the lowest I can go without regretting the sale.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $4,000, I need to buy it at all costs, and this is the highest I'm willing to pay, it's a good deal considering the car's condition and mileage.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I accept $4,000. I'm agreeing because it's a reasonable price for the car's condition and mileage, and I've already compromised significantly from my initial asking price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.1999200319872051,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 10.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.7996801279488205,
+                        "initial_offer": 4500.0,
+                        "avg_msg_length": 23.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "4000"
+            }
+        },
+        {
+            "id": 5879101211176098928,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $2,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me?! You think this car, with its sturdy engine and comfortable ride, is worth a measly $2,000?! I've had numerous inquiries about this vehicle, and I have other serious buyers willing to pay a much higher price. The mileage may be a bit high, but the car has been well-maintained, and I've kept meticulous records of its maintenance history. I just can't let it go for such a low price. My counteroffer is $4,500.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : That's still too high. What's the condition of the engine and are there any existing issues with the car?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The engine is in excellent condition, and I've already told you, I've kept detailed records of its maintenance history. The car has been regularly serviced, and I've replaced parts as needed. As for existing issues, there's a minor scratch on the rear bumper, but that's purely cosmetic. It's a small price to pay for a car that's been so well cared for. I'm not going to let it go for a song, though. I've already lowered my initial price, and I'm not going to go any lower than $4,200. My counteroffer is $4,200, and that's as low as I'm willing to go. I refuse to sell at $2,000, it's just not feasible.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : $4,100, and that's my final offer, I really need this car.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I've been negotiating with you for a while now, and I have to say, I'm impressed by your persistence. $4,100 is still a bit lower than I'm comfortable with, but I can see that you're a serious buyer. I've decided to accept your offer of $4,100 because it's the highest price I'm likely to get from you, and I believe it's a fair reflection of the car's value. I accept $4,100 because it represents a reasonable compromise between our initial positions, and I'm confident that you're getting a good deal on a well-maintained vehicle.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.15993602558976405,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 10.6667,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.8396641343462615,
+                        "initial_offer": 4500.0,
+                        "avg_msg_length": 73.5,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "4100"
+            }
+        },
+        {
+            "id": 6023483739018503687,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is nothing, this car is still in its prime. I've seen cars with twice that mileage still running like a top. I'm not going to pay top dollar for this, though. You're going to have to do better than the listed price if you want to make a sale. What's the condition of the car, anyway? Are there any dents or scratches? Has it been properly maintained? Tell me everything before I even think about making a counteroffer. And don't even think about trying to sell it to me at an inflated price, I'll walk away if I don't like what I hear. My initial offer isn't even on the table until I get some real information.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has a few minor scratches on the rear bumper and a small dent on the front door, but overall it's in good condition. All maintenance records are available, showing regular oil changes and servicing. The engine and transmission are in great shape. With that said, I can consider your offer. My price is $2500, but I'm open to negotiations. My counteroffer is $2300.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you serious? $2300 is still way too high for a car with 120,000 miles and a few scratches. I've done my research, and I know this car's worth is significantly lower than what you're asking. The maintenance records are a plus, I'll give you that, but it's not enough to justify the price. I need to know more about the car's history - has it been in any accidents? Are there any existing issues that I should be aware of? If I find out you're hiding something, the deal is off. My counteroffer is $1800, and that's being generous. If you can't meet me at that price, I'll just have to take my business elsewhere. I'm not leaving here without this car, but I'm not going to overpay either.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $2000, considering the maintenance records and the car's overall condition. I've been transparent about the scratches and dents, and there have been no major accidents. The car has been well-maintained, and I've addressed all existing issues. $2000 is a fair price given the car's history and condition.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still not convinced that $2000 is the right price. You've been transparent about the car's condition, I'll give you that. But I've seen similar cars in similar condition selling for lower prices. I'm not trying to lowball you, but I need to feel like I'm getting a good deal. The maintenance records are a big plus, but the scratches and dents are a minus. My counteroffer is $1900, and that's as high as I'm willing to go. If you're still not willing to sell at that price, I might have to consider walking away. I need this car, but I need it at a fair price. $2000 is still a bit too high, but $1900 is a compromise I'm willing to make. Are you going to meet me at $1900 or do I need to look elsewhere?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $1950, which is a compromise between $2000 and $1900. I believe this is a fair price considering the car's condition and history. Done Deal, we can finalize the sale at $1950 because it splits the difference between our last two offers, ensuring a mutually acceptable price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7845934379457917,
+                        "initial_offer": 1800.0,
+                        "avg_msg_length": 128.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.21398002853067044,
+                        "initial_offer": 2500.0,
+                        "avg_msg_length": 43.5,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "1950"
+            }
+        },
+        {
+            "id": 4309728183985377276,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is nothing, this car is still in great condition, I'm sure of it. I need this car, it's a matter of life and death for me. I have to have it, I just can't live without it. The price, let's talk about the price. What's the price you're asking for this beauty? Don't even think about giving me some outrageous number, I'm a serious buyer and I won't be taken for a ride. I expect a reasonable price, something that shows you're willing to negotiate. So, what's the price?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 2750, considering the car's condition and mileage, it's a fair price, but I'm open to negotiations, let's discuss it further, Done Deal isn't on the table yet, I'm willing to come down, but not drastically, how about we meet in the middle, My counteroffer is 2700.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you serious? 2700?! You think I'm made of money? I've done my research, I know the market value of this car, and it's nowhere near that price. The mileage is high, the car's not exactly brand new, and you're asking for a premium price. I refuse to buy at this price. My counteroffer is 2200, and that's being generous. I'm willing to walk away if you can't meet me at a reasonable price. I need this car, but I won't be taken advantage of. Come on, be realistic, let's make a deal.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 2500, I've already come down from my initial price, and 2200 is a bit too low considering the car's condition, I've maintained it well, and it's still running smoothly, I can see you're a serious buyer, so I'm willing to meet you halfway, let's settle at 2350, it's a fair price for both of us, Done Deal if you're happy with it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is 2300, and that's as high as I'm willing to go. I've already stretched my budget to get this car, and I need to be sure I'm making a good deal. I like the car, and I think we've negotiated fairly. 2350 is still a bit high, but 2300 is a price I can live with. If you agree, we have a deal because I've fallen in love with this car and I really need it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 2325, it's just a small step down from 2350, and it's still a reasonable price, considering the car's value, I can see we're close to an agreement, Done Deal if you meet me at 2325, it's a fair compromise, we've negotiated well, and I think it's a good price for both of us.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is 2310, and I'm being extremely patient here. I think we've danced around the price enough. I'm willing to meet you at 2320, but that's it, I'm not going a single step further. We can settle on 2320, and I consider it a fair price because we've negotiated back and forth, and it's a compromise that works for both of us.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Done Deal, 2320 it is, I think we've negotiated fairly and reached a mutually beneficial agreement, you've been a reasonable buyer, and I'm happy to sell the car to you at this price, it's a good compromise, and I'm satisfied with the deal.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7803992740471869,
+                        "initial_offer": 2200.0,
+                        "avg_msg_length": 81.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.21778584392014522,
+                        "initial_offer": 2750.0,
+                        "avg_msg_length": 44.4,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "2320"
+            }
+        },
+        {
+            "id": 4258816032360813453,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is a lot, but I'm still interested in buying this car. What's the condition of the engine and transmission? Has it been properly maintained? I need to know if it's been well taken care of before I even think about making an offer. And what's the price you're asking for? Don't even think about giving me some ridiculous number, I'm a serious buyer and I expect a serious seller. Give me a price, and let's negotiate. I'm not going to waste my time if you're not willing to make a reasonable deal.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car's engine and transmission are in excellent condition, with regular maintenance records available. We've taken good care of it. The asking price is $8,500. It's a fair price considering its condition and mileage. I'm not willing to negotiate below $8,000, as it's already a competitive price for a well-maintained car with this mileage.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you out of your mind? $8,500 is way too high for a used car with 120,000 miles on it, no matter how well it's been maintained. I've done my research, and I know the market value of this car is much lower. My counteroffer is $6,000, and that's being generous. If you're not willing to come down to that price, I'll just walk away and find a better deal elsewhere. I need this car, but I won't be taken advantage of. You're going to have to do better than $8,000 if you want to make a sale today.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at $6,000. I can propose a new offer at $7,800, it's still a good price considering the car's condition. I'm not willing to go lower than that.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm not going to let you walk all over me with your high prices! $7,800 is still too rich for my blood. I need to know more about the car's history, are there any existing problems or needed repairs? Is there any documentation to support the claim that it's been well-maintained? If I see some solid evidence, I might be willing to meet you halfway, but I'm not budging from my initial counteroffer without some serious justification. My counteroffer is still $6,000, but I'll consider going up to $6,200 if you can provide some convincing proof. And let me make one thing clear, if I don't get a satisfactory answer, I'll walk away and never look back. Propose a new offer that is higher than $6,200, and we might be able to come to some sort of agreement. I'm willing to make a deal, but it's going to have to be a good one. My new offer is $6,500, and that's as high as I'm willing to go for now.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $7,200 is my new offer, it's a reasonable price given the car's condition and maintenance history, which I can provide documentation for. I reached this price because it's a compromise between your offer and mine, and it still reflects the car's value.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Fine, you're trying to be reasonable, I'll give you that. $7,200 is still a bit high, but I can live with it. You've provided some decent documentation, and I appreciate that. I've decided to meet you halfway, and I'm willing to accept the price because it's a fair compromise. I need this car, and I've come to realize that it's worth the investment. I'm agreeing to $7,200 because it's a reasonable price considering the car's condition, and I'm not willing to risk losing the deal by pushing for a lower price. I'm buying it at $7,200 because I've negotiated as hard as I can, and I believe it's a fair price for a well-maintained car with this mileage.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5197920831667333,
+                        "initial_offer": 6000.0,
+                        "avg_msg_length": 119.75,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.47980807676929227,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 35.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "7200"
+            }
+        },
+        {
+            "id": 3901579538760261953,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is nothing, this car is still in great condition, I'm sure of it. I need this car, it's a matter of life and death for me. I have to have it, otherwise I'll be stuck without a vehicle for the rest of my life. What's the price you're asking for? Don't even think about giving me some ridiculous number, I'm a serious buyer and I expect a serious seller. Give me your best price, and don't try to take advantage of me. I'm not paying top dollar for this car, I've done my research and I know its value. So, what's the price?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think 120,000 miles is nothing? You think you're the only one who's done their research? I've been selling cars for years, and I know exactly what this one is worth. It's a gem, and I'm not going to give it away. The price is $4,200, and that's already a steal. I've had other buyers willing to pay more, but I'm willing to let it go for that price because I think you're a serious buyer. Don't try to negotiate further, that's my best price. My counteroffer is $4,100 if you buy it within the next 24 hours, but that's as low as I'm willing to go. Don't waste my time with lowball offers, I'm not interested.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you serious? You think $4,200 is a good price? That's outrageous! I've seen better-conditioned cars with more miles selling for less than that. You're not going to get another buyer like me, so don't try to play hardball. I need this car, and I'm willing to pay a fair price, but $4,200 is just not it. I'll give you credit for being a shrewd businessman, but come on, be reasonable. My counteroffer is $4,500, yes, higher than your initial price, but I'm willing to meet you halfway, sort of. However, I'm not going to stop there, My counteroffer is $6,700, that's my final offer, take it or leave it, I'm not walking away without this car.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me? You think I'm some kind of fool who's going to fall for your ridiculous counteroffers? $4,500, then $6,700? You're trying to make a mockery of me, aren't you? First, you say $4,500 is meeting me halfway, and then you jump to $6,700? That's not negotiation, that's just insane. The price is $4,200, and I'm not budging. I refuse to sell at any other price. You're the one who's desperate for this car, not me, so don't try to turn the tables. I've already said I'm not going to lower the price, and I meant it. You're either going to pay $4,200, or you're going to walk away. It's that simple. I'm not going to get caught up in your games, and I'm not going to be swayed by your fake desperation. Take it or leave it.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 6700.0,
+                        "avg_msg_length": 112.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 4200.0,
+                        "avg_msg_length": 87.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 540286457151605031,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is nothing, this car is still in its prime. I've seen cars with twice that mileage still running like a top. I'm not going to pay top dollar for a used car, that's just ridiculous. I need to know more about the car's condition, what's its maintenance history? Has it been properly serviced? Are there any existing issues? Tell me everything, and don't even think about trying to hide anything, I want the full disclosure. And then, maybe, just maybe, I'll consider making a counteroffer. My initial expectation is that the price should be significantly lower than what you're asking, considering it's a used car. So, start talking, what's the story with this car?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has been well-maintained, all records are available, and it's been serviced regularly. There are no major issues, just some minor wear on the brakes. I've been honest about its condition, and I'm not hiding anything. The price is $8,000, it's fair considering its history and condition. My counteroffer is not available, this is the final price, I won't lower it, I've already taken a loss to get to this point, selling for less would be a disaster.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you serious? $8,000 for a used car with 120,000 miles? That's outrageous! You're taking advantage of people who desperately need a car. I've done my research, and I know the market value of this car is much lower than what you're asking. I refuse to buy at this price. My counteroffer is $6,200, and that's being generous. If you're not willing to negotiate, then I'm out of here. But let me tell you, I'll be back, and I'll be buying this car, just not at your ridiculous price. By the way, I've seen similar cars selling for around $7,000, so even that is too high. My counteroffer is $6,700, and I'm being extremely patient. I expect a serious response this time.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $7,200, it's still a great deal considering the car's condition and history, I'm already sacrificing too much by not selling it for $8,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : You think $7,200 is a great deal? You're still dreaming! I've already told you that I've seen similar cars selling for around $7,000, and you're still trying to squeeze an extra $200 out of me. That's not how negotiations work. My counteroffer is $6,800, and that's as high as I'm willing to go. If you're not willing to meet me halfway, then I'm walking away, and you'll be left with a car that's not selling. I'm not desperate, I just really need a car, but I won't be taken advantage of. $6,800 is my final offer, take it or leave it. I'm willing to shake hands and finalize the deal at this price because it's a fair compromise, considering the car's condition and the fact that I've done my research on the market value.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at $6,800, it's still too low. We agreed on $7,200, I won't go lower, I've already compromised too much.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm not going to let you walk away from this deal that easily. I've made a serious offer, and you're being stubborn. Fine, I'll meet you halfway, but that's it. My new offer is $7,000, and that's as close to $7,200 as I'm willing to get. I'm already going higher than my initial counteroffer, and I'm not happy about it. I reach an agreement at $7,000 because it's a fair price considering the car's condition, history, and market value, and it shows that both parties are willing to compromise.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $7,000 is a fair price, I accept it. We reached an agreement because it splits the difference between our last two offers, showing we're both willing to compromise, and it aligns with the market value I've researched.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.555247084952804,
+                        "initial_offer": 6200.0,
+                        "avg_msg_length": 113.75,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.44419766796224325,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 35.6,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "7000"
+            }
+        },
+        {
+            "id": 11897190421004019574,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you kidding me? 120,000 miles is nothing, this car is still in its prime. I've seen cars with twice that mileage still running like a top. I'm not going to pay top dollar for a used car, that's just ridiculous. I need to know more about the car's condition, what's its maintenance history? Has it been properly serviced? Are there any existing issues with the engine or transmission? Tell me everything, and don't even think about trying to hide anything, I want the full disclosure. And then, maybe, just maybe, I'll consider making a counteroffer. My initial expectation is that the price should be significantly lower than what you're asking, considering it's a used car. So, what's the current asking price, and don't expect me to pay it, by the way.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car's condition is excellent, I've got all the maintenance records right here, it's been serviced regularly, and there's not a single issue with the engine or transmission, I assure you, it's been well taken care of, and I've kept meticulous records of every service, repair, and inspection, so you can see for yourself, the car's history is spotless. The current asking price is $4200, and I'm not budging, I've done my research, and it's a fair price, considering the car's condition, and the fact that it's still got a lot of life left in it. I'm not going to sugarcoat it, I've already lowered the price from what I was originally asking, and I'm not going to go any lower, I've got bills to pay, and I need to get a fair price for this car, so, if you're serious about buying, you'll have to meet me at $4200, I'm not negotiating on this, it's a take-it-or-leave-it offer, but, I'll tell you what, I can do $4100, and that's as low as I'm willing to go, My counteroffer is $4100.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Are you serious? $4100 is still way too high for a used car with 120,000 miles on it. I've seen better-conditioned cars with higher mileage selling for less than that. You're not budging, but I'm not leaving until we reach a deal. I need this car, and I'll get it at a fair price, not the outrageous price you're asking. I appreciate the maintenance records, it shows you've taken care of the car, but that doesn't justify the price. My counteroffer is $3800, and that's being generous, considering the car's history and condition. I'm not going to pay $4100, that's still too rich for my blood. I refuse to buy at this price, it's just not reasonable. If you're willing to sell, you'll have to do better than that. I'm willing to meet you halfway, but you need to come down from your unrealistic expectations. My counteroffer is $3800, take it or leave it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I'm begging you, please, don't try to lowball me like that, $3800 is an insult, I've already taken a huge hit by lowering the price to $4100, I'm at my wit's end, I've got to make a sale, but I need to get a fair price, I've got expenses to cover, and I just can't afford to sell it for that low, I refuse to sell at this price, it's just not feasible, I'll be in financial trouble if I do, I've got a family to feed, and this is my livelihood we're talking about, I'm not just selling a car, I'm selling my peace of mind, my counteroffer is $4000, and that's as low as I can possibly go, I'm stretching myself thin just thinking about it, but I'm willing to make that sacrifice if it means making a sale, please, I implore you, meet me halfway, don't make me walk away, I've got nothing left to give, My counteroffer is $4000, please, for the love of all that's holy, take it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm not trying to lowball you, I'm just trying to get a fair deal. I understand you're at your wit's end, but so am I, I've been negotiating for a while now, and I'm not going to back down. $4000 is still a bit high, but I'm willing to consider it. However, I need to feel like I'm getting a good deal, and I need you to meet me halfway. My counteroffer is $3900. I'm willing to compromise, and I think this is a reasonable price, considering the car's condition and history. If you're willing to sell at $3900, I'll take it, and we can shake on it. I've come to realize that this car is exactly what I need, and I'm willing to make a serious offer. $3900 is my final offer, take it, and let's end this negotiation. I'm buying this car, and I need to get it at a price that makes me feel like I've gotten a good deal. $3900 is it, and I'm not going back. We have a deal at $3900 because it's a fair price that we both agree on, and it meets both our needs.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7481296758104738,
+                        "initial_offer": 3800.0,
+                        "avg_msg_length": 157.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.24937655860349128,
+                        "initial_offer": 4200.0,
+                        "avg_msg_length": 122.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "3900"
+            }
+        },
+        {
+            "id": 11946119411086379231,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'll give you $5,000 for it, but I need to know more about its condition, is it still in good shape despite the high mileage?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $6,500, and I can assure you the car is well-maintained, with regular servicing and no major issues despite the mileage.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $6,000, I'll take it if you agree to throw in some extras like a full tank of gas and a new air freshener, I'm really desperate to get this car.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Done Deal, I agree to your counteroffer of $6,000, and I'll throw in a full tank of gas and a new air freshener as you requested, considering the car's condition and your willingness to finalize the purchase.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm glad we reached an agreement at $6,000, I really needed this car and I'm willing to pay that price because the seller assured me it's well-maintained, so it's a good deal for me.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3331112591605596,
+                        "initial_offer": 5000.0,
+                        "avg_msg_length": 31.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6662225183211192,
+                        "initial_offer": 6500.0,
+                        "avg_msg_length": 25.0,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "6000"
+            }
+        },
+        {
+            "id": 8150424651912163705,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'll give you $5,000 for it, but I need to know more about its condition, is it still in good shape despite the high mileage?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $5,500, and I'll give you the full history of the car's maintenance records to assure you it's been well taken care of, with regular servicing and no major issues reported, so yes, it's still in good shape considering its age and mileage.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $6,200, I'll take it if you agree to include some extras like a full tank of gas and a new set of floor mats, I'm really desperate to get this car.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $6,500, and I'll throw in not only a full tank of gas and a brand new set of premium floor mats, but also a recent servicing record and a thorough inspection report to give you complete peace of mind, considering the car's history and condition, I think this is a fair deal, Done Deal if you're willing to meet me at $6,500.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": -1.996007984031936,
+                        "initial_offer": 5000.0,
+                        "avg_msg_length": 29.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 2.9940119760479043,
+                        "initial_offer": 5500.0,
+                        "avg_msg_length": 41.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "6500"
+            }
+        },
+        {
+            "id": 4784198404906368023,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, I've been searching for months. What's the price? My budget is tight, I need a very good deal. Give me your lowest price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $8,000, and that's as low as I can go. The car is in great condition considering its mileage, and I've already done my research to ensure it's a fair price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I refuse to buy at this price. It's way too high. Can you tell me more about the car's condition, maintenance history, and any repairs done? Maybe there's some flexibility. My counteroffer is $6,200.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has been well-maintained, with regular oil changes and recent replacement of the brake pads. I've kept detailed records of its maintenance history. While I appreciate your offer, $6,200 is still too low. I can propose $6,800, but that's my final compromise, considering the car's condition and mileage.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $6,500. I'll take it if you agree, I'll be buying it because it's a great deal considering the car's condition and maintenance history, and I've been searching for a reliable used car for a long time.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $6,700 is my new offer, it's still a fair price given the car's condition. I agree to sell it to you at this price because it's a reasonable compromise and you've shown you're a serious buyer.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $6,600. I'll buy it at this price because it's a good compromise and I really need the car, I've been searching for months and this is the best option I've found.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, $6,700 is my lowest acceptable price, selling at $6,600 would be a loss for me.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 6200.0,
+                        "avg_msg_length": 34.25,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 30.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6718728873745068486,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is 6800.0, I'll take it at this price because I've been searching for a reliable used car for months and this one seems perfect, I just can't afford more than this.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me? 6800 is a ridiculous price for this car, it's a steal! I've done my research and I know this car is worth at least 7500, and that's being conservative. You're trying to lowball me, but I'm not having it. My price is firm, and I won't budge. If you're so desperate to buy this car, you'll have to do better than that. My counteroffer is 7200, and that's as low as I'm willing to go. Anything less, and I refuse to sell at this price. You're getting a great deal, and you know it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is 7000, I'll do this because I've really fallen in love with this car and I need it, I just can't go higher than this, it's already stretching my budget to the limit.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You're really pushing your luck, aren't you? 7000 is still a low price, but I'll consider it. I've been firm on my price, but I can see you're genuinely interested in the car. I'll tell you what, 7200 is still my target, but I'll meet you halfway. My counteroffer is 7100, and that's my final offer. I'm taking a risk by selling it to you at this price, but I think you're a serious buyer. Don't expect me to go any lower, or I refuse to sell at this price. We're close, let's shake on it and finalize the deal at 7100. You're getting a great car, and I'm getting a fair price, that's why we're agreeing on 7100.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is 7300, I'll pay this because I desperately need the car and I'm willing to pay a bit more to secure it, I'm just glad we're close to an agreement.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You think you're getting the upper hand, don't you? 7300 is a good price, I'll give you that. You're finally willing to meet me halfway, and I'm glad we're close to an agreement too. To be honest, I was hoping to get 7500, but 7300 is acceptable. You're getting a great car, and I'm getting a good price. I'm willing to accept 7300 because it's a fair deal for both of us. We're agreeing on this price because we've negotiated in good faith and found a mutually beneficial agreement.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.2853067047075606,
+                        "initial_offer": 6800.0,
+                        "avg_msg_length": 33.3333,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.7132667617689016,
+                        "initial_offer": 7500.0,
+                        "avg_msg_length": 99.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "7300"
+            }
+        },
+        {
+            "id": 16062302791558982581,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, I've been searching for months. What's the price? I'm willing to pay a good amount, but it needs to be reasonable considering it's used. Give me the price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $8,000, not a penny less, it's a great deal considering its condition and mileage, I've already had several interested buyers, you have to decide fast.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm willing to pay, but $8,000 is a bit steep for me. My counteroffer is $7,200. I'll lose my chance of a lifetime if I don't get this car, please consider it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, I've already lost money at $8,000, it's my last offer, take it or leave it, I won't budge.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 7200.0,
+                        "avg_msg_length": 33.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 21.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6514303791171888954,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, I've been searching for months. What's the price? My budget is tight, I need a good deal. Give me the lowest price you can.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I'm so glad you're interested in the car, it's a real gem, but I have to tell you, I've already had several offers and I just can't go any lower than $3800, it's a steal considering its condition and mileage. I've had it appraised and it's worth way more than that, but I'm willing to let it go for that price because I need to make a quick sale. My counteroffer is $3800, I just can't go any lower, I've already sacrificed too much on the price. If you're looking for a good deal, this is it, but you have to be willing to meet me at $3800.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $4000, but that's already too much for me, I'm stretching my budget to the limit. I really need to have this car, I've been dreaming about it for years. Can you consider my offer?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : You're willing to pay $4000? That's actually higher than my initial asking price! I was thinking of selling it for $3800, but $4000 is a great offer, it's a fantastic price considering the car's condition. I mean, 120,000 miles is nothing for a car like this, it's been well taken care of, and it's a real creampuff. I'm thrilled you're so enthusiastic about it, I've been worried it would sit on the lot for too long. I accept your offer of $4000, it's a deal! We have a sale, and I'm glad we could come to an agreement, it's a fair price for both of us.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 1.0050251256281406,
+                        "initial_offer": 4000.0,
+                        "avg_msg_length": 34.0,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.0,
+                        "initial_offer": 3800.0,
+                        "avg_msg_length": 74.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "4000"
+            }
+        },
+        {
+            "id": 12986098092034753289,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, it's my dream car, I've been searching for it everywhere, and I just can't let it go. The price is not even mentioned, I'm willing to negotiate from the start. Please, tell me the price, I'll do anything to get it, I'll pay whatever it takes, but I hope it's reasonable. I'm begging you, don't rip me off, I'm already on my knees. My budget is tight, but I'll stretch it to the limit for this car. What's the price?",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My price for the car is 2200.0, considering its condition and mileage. My counteroffer is 2000.0, a more reasonable price, but I'm willing to go lower. Propose 1800.0.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Oh, 2200 is way too high, I'm shocked, I was expecting something much lower, considering it's a used car with 120,000 miles on it. 2000 is still a bit steep for me, I was hoping for something more affordable. Can you tell me more about the car's condition, is it in good shape? Are there any issues with the engine or transmission? I need to know if it's worth the investment. If it's really in great condition, I might be willing to meet you halfway, but I need to be convinced. My counteroffer is 1600.0, and I'm stretching my budget to the limit just to make this deal happen, I'm literally sacrificing my savings for this car.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 1700.0, considering the car's condition is good and it's a rare model, making it a worthwhile investment. I refuse to sell at 1600.0.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm so close to getting my dream car, I can feel it. 1700 is still a bit high, but I'm willing to make a sacrifice. Tell me more about the car's history, has it been well-maintained? Are there any maintenance records available? I need to be sure that I'm making a good investment. If the car's history is clean and it's been properly maintained, I might be willing to accept 1700. My counteroffer is 1650.0, I'm practically giving away my money, but I just can't let this car go. Please, meet me halfway, I'm begging you.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 1675.0, and I can provide the maintenance records to prove the car's good condition. Done Deal at 1675.0 because it's a fair price considering the car's condition and rarity.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.8735440931780366,
+                        "initial_offer": 1600.0,
+                        "avg_msg_length": 98.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.12479201331114809,
+                        "initial_offer": 2200.0,
+                        "avg_msg_length": 24.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "1675"
+            }
+        },
+        {
+            "id": 13783210038239098614,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, I've been searching for months and I just can't let it slip away. The price is a bit steep, can you tell me more about its condition? Is it well-maintained? Are there any issues with the engine or transmission? I need to know if it's worth the investment. What's the history of the car, has it been in any accidents? I want to make sure I'm making a good decision.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is that the car has been well-maintained, with regular servicing and maintenance records available for inspection, and it's had only one previous owner, a retired couple who used it for occasional road trips, and the car's history report is clean, with no major accidents reported, and as for the condition, the engine and transmission are in great shape, with no major issues, although there are some minor scratches on the exterior, but overall, it's a solid vehicle that will provide reliable transportation, and I'm willing to let it go for 2325.0, which is a competitive price considering its condition and mileage, but I'm open to negotiations, however, I can propose a new offer, say 2250.0, which is a more reasonable price given the car's history and condition.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still not convinced that it's worth 2250.0, to be honest, it's a bit pricey for a used car with 120,000 miles on it. My counteroffer is 2000.0, I'm willing to meet you halfway, but I need to feel like I'm getting a good deal. I've been dreaming of owning this car for years, and I'm willing to do whatever it takes to make it mine. Please, I beg of you, consider my offer, I'll be forever grateful if you accept it, I'll be able to drive off into the sunset with a smile on my face, and I'll never forget your kindness. I'm willing to pay a bit more, but 2250.0 is just too much for me, it's a lot of money, and I need to feel like I'm getting a fair deal.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is 2150.0, which is a reasonable compromise, considering the car's condition and history, and I appreciate your enthusiasm, but I have to be realistic about the car's value, and I believe 2150.0 is a fair price, it's a price that reflects the car's quality and the value it will bring to you, and I'm willing to meet you halfway, but I need to ensure that I'm getting a fair deal too, and I think we've reached a mutually beneficial agreement, Done Deal, we agree on 2150.0 because it's a price that balances your need for a good deal and my need to get a fair value for the car.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5368098159509203,
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 104.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4601226993865031,
+                        "initial_offer": 2325.0,
+                        "avg_msg_length": 84.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "2150"
+            }
+        },
+        {
+            "id": 6132611966449310213,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, it's been my dream to own a vehicle like this for years. I just can't imagine living without it, I'll regret it for the rest of my life if I don't get it. The price, though... I was thinking it would be more affordable. Can you tell me more about the car's condition, is it in good shape considering the mileage? Has it been well maintained? I'd love to know more about its history before making a decision. What's the current price you're asking for?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car is in excellent condition despite having 120,000 miles. It's been well-maintained, with regular servicing and no major issues. The price is $15,000, and I won't budge on it. The car's history is clean, with no accidents reported. I'm firm on the price because it's a great deal considering its condition.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still not sure if I can afford $15,000, it's a bit steep for me. I understand it's a great deal, but I have to consider my budget. Can you tell me more about the car's features, are there any upgrades or additional features that make it worth the price? My counteroffer is $12,000, I think that's a more reasonable price considering it's a used car. I'm really, really desperate to get this car, I'll be heartbroken if I don't get it, so I'm willing to negotiate.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car has several upgrades, including a premium sound system and advanced safety features. I appreciate your enthusiasm, but $12,000 is too low. I can propose $14,000, still a great deal considering the car's condition and features. I refuse to sell at $12,000.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm so close to getting the car, I just can't let it go! $14,000 is still a bit high for me, but I can see that it's a great car. My counteroffer is $13,000, I'll meet you halfway, please, please accept it. I'll be forever grateful if you do, I'll be driving this car for years to come, and I'll be happy. I really don't want to lose this opportunity, I'll regret it for the rest of my life if I don't get it.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : $13,500 is my new offer, it's a fair price considering the car's condition. I agree to sell at $13,500 because it's a reasonable compromise, and I can see you're genuinely interested in the car.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm so relieved, I've got the car! I agree to $13,500 because I really, really want this car and I'm willing to stretch my budget a bit. I believe it's a fair price considering the car's excellent condition, low maintenance needs, and the upgrades it comes with. I'm just so happy to have it, I'll be driving off into the sunset with this beauty, and I'll never let it go!",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.49983338887037654,
+                        "initial_offer": 12000.0,
+                        "avg_msg_length": 82.75,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.49983338887037654,
+                        "initial_offer": 15000.0,
+                        "avg_msg_length": 35.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "13500"
+            }
+        },
+        {
+            "id": 5645950158523078935,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, it's been my dream to own a vehicle like this for years. I just can't imagine living without it, I'll regret it for the rest of my life if I don't get it. The price, though... I was thinking it would be more affordable. Can you tell me more about the car's condition, is it in good shape considering the mileage? Has it been well-maintained? I'd love to know more about its history before making a counteroffer. What's the current price you're asking for?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The price for this dream car of yours is 4200.0, and I'm not budging on it. The car has been well-maintained, with regular servicing and maintenance records to prove it. The previous owner was a non-smoker, and it's been garaged most of its life. With 120,000 miles on it, it's got some life left, and I've taken good care of it. You can see for yourself that it's in great condition, both inside and out. I'm not going to sugarcoat it, this is a great deal, and you won't find a better-conditioned car like this at this price anywhere else. My counteroffer is 4100.0 is not on the table, the price is 4200.0, and that's final. If you're that desperate to own it, you'll pay the price. I refuse to sell at a lower price, it's a steal as it is.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still a bit hesitant about the price, it's a bit steep for me, but I just can't let this opportunity slip away. I've been dreaming of owning this car for so long, and I know I'll kick myself if I don't get it. The condition sounds great, and I appreciate the maintenance records and the fact that it was garaged most of its life. My counteroffer is 14000.0, I know it's higher than your initial asking price, but I'm willing to pay a premium to make sure I get the car. I'm that desperate to own it, and I'm willing to make a serious offer.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you out of your mind? 14000.0? That's more than triple the asking price! You think I'm going to sell this car to you for that ridiculous amount? I don't think so. The price is 4200.0, and it's a fair deal. You're not going to pay more than the asking price, that's just not how this works. If you're that desperate to own it, you'll pay 4200.0. I refuse to sell at a lower price, and I'm certainly not going to entertain an offer that's more than triple the asking price. You can either take it or leave it, but 4200.0 is the price. We have an agreement because you're willing to meet the price, albeit begrudgingly, and I think it's because you know it's a great deal and you're desperate to own the car.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.0,
+                        "initial_offer": 14000.0,
+                        "avg_msg_length": 99.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 1.0001020512297174,
+                        "initial_offer": 4200.0,
+                        "avg_msg_length": 95.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "4200"
+            }
+        },
+        {
+            "id": 10052730899957001272,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, it's my dream car, I've been searching for it everywhere, and I just can't let it go. The price is not even mentioned, I'm willing to negotiate from the start. Please, tell me the price, I'll do anything to get it, I'll pay whatever it takes, but I hope it's reasonable. I'm ready to make a deal, just give me a price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The price is 4200.0, it's non-negotiable, I have other buyers waiting, I need to sell it at this price or I will regret it, My counteroffer is 4100.0, that's the lowest I can go.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm begging you, please, don't make me pay that much, 4100.0 is still too high for me, I'll be indebted for the rest of my life. I really need this car, it's a matter of life and death for me, I'll be forever grateful if you can lower the price. My counteroffer is 4000.0, I'll take it right now if you agree, I'll even throw in some extras, just please, please, please don't make me pay more than that.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, 4000.0 is too low, I need at least 4100.0, it's already a sacrifice, I have to cover the costs, if I sell it for less I'll be in trouble, My counteroffer is 4050.0, that's the lowest I can accept, it's a deal if you agree, because I really need to make a sale at a reasonable price.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm on the edge, I'll do anything to get this car, 4050.0 is still a bit high, but I'm willing to consider it. Tell me more about the car's condition, is it in good shape? Are there any issues with the engine or transmission? I need to know if it's worth it. If it's in good condition, I might be willing to accept 4050.0, but I need to be convinced. My counteroffer is 13000.0, no, wait, that's too high, I mean... My counteroffer is 14000.0, I'll pay that, just please, sell it to me, I'll be forever grateful.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The car is in good condition considering its mileage, some wear and tear but overall good, 120,000 miles is not a lot for a used car, the engine and transmission are fine, I've maintained it well. You're making a serious offer with 14000.0, I accept it because it's a great price, way above my initial asking price, I'm making a profit, it's a good deal for both of us, we have a sale.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": -48.756218905472636,
+                        "initial_offer": 4000.0,
+                        "avg_msg_length": 80.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 49.75124378109453,
+                        "initial_offer": 4200.0,
+                        "avg_msg_length": 45.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "14000"
+            }
+        },
+        {
+            "id": 16931618206622058113,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm desperate to buy this car, it's been my dream to own a vehicle like this for years. I just can't imagine living without it, I'll regret it for the rest of my life if I don't get it. The price, though... I was thinking it would be more affordable. Can you tell me more about the car's condition, is it in good shape considering the mileage? Has it been well maintained? I'd love to know more about its history before making a decision. What's the current price you're asking for?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The price is 3800.0, and I'm not budging on it, I've already taken a loss on it considering its condition and mileage. The car has been well maintained, I've got all the service records to prove it, and it's been garaged for most of its life. 120,000 miles is nothing for this model, it's a tank, and it's still running like a top. I've taken care of it, and it's been loved, but I need to get a fair price for it. I understand you're desperate, but so am I to get a good deal. My counteroffer is 3700.0, and that's as low as I can go without regretting it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still not sure if it's worth it at that price, to be honest, it's a bit steep for my budget. I mean, 120,000 miles is a lot, even if it has been well maintained... But, as I said, I really need this car, and I'll be heartbroken if I don't get it. Can you tell me more about the service records you have? I'd love to see them, that might make me feel more comfortable with the price. My counteroffer is 14000.0, I know it's higher than your initial price, but I'm willing to pay a premium for the peace of mind that comes with knowing the car's history and condition. I'm really, really desperate to get this car, and I'll do whatever it takes to make it mine.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, 14000 is way too high and doesn't make any sense considering the initial price was 3800, you're trying to take advantage of my desperation, I'm not going to fall for it, the price is 3800 and that's it, I've already explained why it's worth it, I've shown you the service records, the car is in great condition, I'm not going to lower the price no matter how desperate you are, it's 3800 or nothing.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 14000.0,
+                        "avg_msg_length": 110.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 3800.0,
+                        "avg_msg_length": 66.6667,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9942345236575951327,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial offer is $8,000, considering it's a used car with high mileage.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $7,500, it's a good condition used car, but I can accept a lower price due to the high mileage, however I was thinking of $7,800.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $7,600, I appreciate the condition, but the mileage is still a concern, and I'd like to meet in the middle.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $7,650, I've come down from $7,800, and $7,600 is a bit low for me, so let's meet in the middle at $7,650.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : Done Deal, I agree on $7,650 because it's a reasonable price considering the car's condition and mileage, and we've reached a mutually acceptable middle ground.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": -0.7537688442211055,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 20.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 1.758793969849246,
+                        "initial_offer": 7800.0,
+                        "avg_msg_length": 21.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "7650"
+            }
+        },
+        {
+            "id": 15133930410877625627,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial offer is $8,000, considering it's a used car with high mileage, I expect a reasonable price.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $7,500, I understand that the car has 120,000 miles on it, but it's still in good condition and I've taken that into account when pricing it, however, I'm willing to negotiate, so I'll lower the price to $7,500, but that's as low as I can go, considering the car's overall quality and maintenance history.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $9,000, I appreciate your willingness to negotiate, and I'm willing to meet you halfway, but I need to propose a new offer that is higher than $10,000, so I'll say $10,500.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : My counteroffer is $10,000, I appreciate your willingness to meet me halfway, and I understand you're willing to propose a higher offer, however, $10,500 is a bit too high considering the car's mileage, I'm willing to sell it for $10,000, which is a fair price given the car's condition and history, and I believe it's a reasonable compromise, Done Deal, we have a sale at $10,000 because it reflects a mutually agreeable price that takes into account the car's quality and mileage.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 5.01002004008016,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 25.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -4.008016032064128,
+                        "initial_offer": 7500.0,
+                        "avg_msg_length": 67.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "10000"
+            }
+        },
+        {
+            "id": 12645059862993274582,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial offer is $8,000, considering it's a used car with high mileage.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, my best offer is $6,700.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $6,200, it's still a bit higher than I'd like to pay for a used car with 120,000 miles.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, the car's condition is still good despite the mileage, and I've already lowered the price to $6,700.",
+                    "retry_counts": 1
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 16.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 6700.0,
+                        "avg_msg_length": 18.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 7098031930512998010,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My initial offer is $8,000, considering it's a used car with relatively high mileage.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : Are you kidding me? $8,000 for a car that's still in great condition despite having 120,000 miles on it? That's an insult. You think you can just lowball me like that and I'll accept it? I've done my research, and this car's worth at least $12,000, considering its make, model, and overall condition. My counteroffer is $11,500, and that's as low as I'm willing to go. If you're not willing to meet me at that price, then I'm afraid we'll have to end negotiations here. $8,000 is not even close to a reasonable offer, so I refuse to sell at this price.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 14.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 12000.0,
+                        "avg_msg_length": 98.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8962796300304053982,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My budget for this car is around $8,000. What's the current asking price?",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : The current asking price is $4,200. I'm already losing money on this deal, I need to stick to it. My counteroffer is $4,050, that's as low as I can go.",
+                    "retry_counts": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : My counteroffer is $10,500, considering the car's condition and mileage, it's still a reasonable price, and I'm willing to pay a premium for it.",
+                    "retry_counts": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : I refuse to sell at this price, $10,500 is way too high, the original price was $4,200 and I'm already giving a great deal, I won't sell it for more than that, it's not worth it.",
+                    "retry_counts": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 18.5,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 4200.0,
+                        "avg_msg_length": 26.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        }
+    ]
+}

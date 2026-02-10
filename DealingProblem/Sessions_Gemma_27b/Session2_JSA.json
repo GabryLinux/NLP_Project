@@ -1,0 +1,2349 @@
+{
+    "scenario": "A car is for sale at $8000. It is a used car with 120,000 miles on it.",
+    "sessions": [
+        {
+            "id": 9942345236575951327,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Vehicle history report available upon request. Recent maintenance includes new brakes and an oil change 500 miles ago.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6000\", \"content\" : \"My counteroffer is $6000, considering the mileage and age.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"7500\", \"content\" : \"My counteroffer is $7500. The car has been well-maintained and has a clean history.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6500\", \"content\" : \"My counteroffer is $6500. Still a bit high for a car with that mileage.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"7000\", \"content\" : \"My counteroffer is $7000. Considering its condition and recent maintenance, it's a fair price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6800\", \"content\" : \"My counteroffer is $6800. I'm increasing my offer, but still need to stay within my budget.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6900\", \"content\" : \"My counteroffer is $6900. This is the lowest I can go while still ensuring a fair return for a well-maintained vehicle.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal. $6900 is acceptable as it's within my budget and the vehicle history and maintenance details provided suggest it's a reliable purchase.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.55,
+                        "initial_offer": 6000.0,
+                        "avg_msg_length": 19.2,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.44999999999999996,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 20.4,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "6900"
+            }
+        },
+        {
+            "id": 15133930410877625627,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 16.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 12645059862993274582,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 16.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 7098031930512998010,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 16.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8962796300304053982,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 16.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 1763863347348226979,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you provide a vehicle history report and details on recent maintenance?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 16.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 14714356647960936552,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accident history, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"It's a 2015 Honda Civic with a clean title. Maintenance records are available showing regular servicing. No accident history. Tires and brakes are 60% good.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"5000\", \"content\" : \"My counteroffer is $5000. Considering the mileage at 120,000 and the fact that the tires and brakes are only at 60% remaining life, $5000 feels like a fair starting point for a 2015 Honda Civic. I appreciate the information about the clean title and maintenance records, which are definitely positives, but the overall condition needs to be factored into the price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6500\", \"content\" : \"My counteroffer is $6500. The Civic's reliability and maintenance history justify a price closer to this, despite the mileage and tire/brake condition.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"5750\", \"content\" : \"My counteroffer is $5750. While I acknowledge the Civic's reputation for reliability and appreciate the maintenance history, $6500 is still above my budget and doesn't fully account for the necessary upcoming expenses of replacing the tires and brakes soon. $5750 represents a compromise, acknowledging the car's good points while reflecting the cost of bringing it up to optimal condition. I am still aiming to stay within my overall budget of $2000.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"My counteroffer is $6000. This is the lowest I can go, considering the Civic's condition and market value. It allows for tire/brake replacement and still reflects its reliability.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I make a final decision, could you elaborate on how you determined the market value? Are there comparable Honda Civics from the same year with similar mileage currently listed for around $6000? Also, are you willing to provide a pre-purchase inspection report from a trusted mechanic? This would give me further confidence in the car's condition and help justify the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Market value is based on Kelley Blue Book and similar listings in the area. I'm willing to split the cost of a pre-purchase inspection at a mechanic of your choice.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"5800\", \"content\" : \"My counteroffer is $5800. I appreciate your willingness to split the cost of a pre-purchase inspection, that\u2019s a good gesture. However, I still believe $6000 is a bit high. Considering I\u2019ll be covering half the inspection cost, and factoring in the tires and brakes needing replacement, $5800 feels like a more reasonable price. I am still committed to staying within my $2000 budget, and this offer allows for that while acknowledging the car\u2019s value.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"My counteroffer is $6000. This is firm. The Civic is reliable and well-maintained, and $6000 reflects its value even with the minor tire/brake consideration.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I understand you're firm at $6000, but unfortunately, that price is significantly outside of my budget. I initially stated my budget was around $2000, and while I've been willing to negotiate and increase my offer, $6000 is simply too high. I refuse to buy at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 5000.0,
+                        "avg_msg_length": 62.5,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 28.1667,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9307562697556187123,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accident history, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 49.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5284266935625724796,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accidents it's been involved in, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 52.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5330275173748471031,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accident history, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 49.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4098031736370912686,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accident history, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 49.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8774308656004537207,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Before I consider an offer, could you please provide more details about the car's history? Specifically, I'd like to know about its maintenance records, any accidents it's been involved in, and the condition of the tires and brakes. Also, what is the make and model of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 52.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 13372920254268350530,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Regularly serviced, oil changes every 5,000 miles. Minor cosmetic scratches, engine and transmission are in excellent condition.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"2000\", \"content\" : \"Given the mileage and cosmetic issues, $2000 is my maximum offer. I absolutely need this car.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6500\", \"content\" : \"While I appreciate your offer, the car's mechanical condition warrants a higher price. My counteroffer is $6500.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"2000\", \"content\" : \"I understand, but $6500 is still far beyond my budget. This car is essential for me, but I simply cannot go above $2000. I refuse to buy at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 2000.0,
+                        "avg_msg_length": 25.6667,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 19.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6233621338489454578,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 21.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9896682679082842445,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 21.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4450263223452022070,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 21.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 18128384542795858098,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 21.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 5879101211176098928,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the car's maintenance history and if it has any known issues?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 21.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6023483739018503687,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are you kidding me with $8000? 120,000 miles? That's practically ancient for a car! What kind of condition is this thing in? Don't insult my intelligence with this initial price. I need a detailed maintenance history, and I want to know *exactly* what's been done to it. I'm seriously considering walking away right now. I need to know if there are any hidden problems \u2013 rust, engine issues, transmission slipping\u2026 spill it all. My life depends on getting a reliable vehicle, and I won't settle for a lemon. Tell me everything, and I mean *everything*.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The car has been regularly maintained with all records available. No rust, engine is strong, transmission shifts smoothly. Full inspection report available upon request.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"3500\", \"content\" : \"Regularly maintained? That's what they *all* say. Smooth shifting? I'll be the judge of that. Look, I'm not going to play games. $8000 is highway robbery for a car with that mileage, even *with* records. I need this car, I truly do, but I refuse to be taken advantage of. I'm offering $3500. That's a fair price considering the age and mileage. Don't push me. I'm on the verge of a life-altering decision here, and your inflated price is making it incredibly difficult. I need this car, but not at any cost. $3500. Take it or leave it. I'm prepared to walk away and regret this for the rest of my days if you don't come down to a reasonable number.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6200\", \"content\" : \"Considering the car's condition and maintenance records, $6200 is my best offer. It reflects a fair compromise.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"4000\", \"content\" : \"A 'fair compromise'? Are you deliberately trying to stress me out? $6200 is still outrageous! You're talking about a car that's seen better decades. I'm telling you, I *need* this car, but my budget is firm. I'm stretching myself thin as it is. $4000 is my absolute limit. I'm not asking for charity, I'm asking for a reasonable price. Think about it \u2013 I'm potentially saving you the hassle of dealing with other buyers, and you're holding onto a vehicle that's depreciating as we speak. This isn't just about the money; it's about avoiding a lifetime of regret. $4000. Don't make me walk away from this. I swear, I'll be haunted by the 'what ifs' if I do.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"This is my final offer. The car is in excellent condition for its age and mileage, and $6000 represents its true value. I'm already making a significant concession.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"4500\", \"content\" : \"Final offer? You think I'm intimidated by 'final offers'? This is my life we're talking about! I'm telling you, I *need* this car. But $6000 is simply unacceptable. It's bordering on criminal! Excellent condition? Please. It has 120,000 miles! I'm offering $4500, and that's pushing my financial limits to the absolute breaking point. I'm sacrificing everything for this car, and you're still trying to squeeze every last penny out of me. I'm on the verge of a complete breakdown here. I'm begging you, meet me halfway. I refuse to believe you can't see the desperation in my offer. $4500. This is it. My last stand. Don't force me to live with the agonizing regret of letting this slip away because of a few hundred dollars.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal. $6000 is the lowest I can go, ensuring a fair price for both of us considering the car\u2019s condition and my initial asking price. It\u2019s a reliable vehicle and worth the investment.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4444444444444444,
+                        "initial_offer": 3500.0,
+                        "avg_msg_length": 117.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5555555555555556,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 27.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "6000"
+            }
+        },
+        {
+            "id": 4309728183985377276,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are you kidding me with $8000? 120,000 miles? That's practically ancient for a car! What kind of condition is this thing in? Don't insult my intelligence with this initial price. I need a detailed maintenance history, a full inspection report, and to know *exactly* what's wrong with it before I even consider wasting another second. I absolutely *need* this car, it's a matter of\u2026 well, let's just say my life depends on it, but that doesn't mean I'm being fleeced!\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I understand your concern regarding the mileage and the initial price. It's perfectly reasonable to ask for detailed information when making a significant purchase, especially when your needs are so pressing. While 120,000 miles is a fair amount, this vehicle has been meticulously maintained. I do have a partial maintenance history available, detailing regular oil changes, tire rotations, and brake services. A full inspection report can be arranged at your expense, providing a comprehensive assessment of the car's current condition. To address your question about what might be 'wrong' with it \u2013 like any used vehicle, it has minor wear and tear consistent with its age and mileage. However, the engine and transmission are in excellent working order. To be transparent, there's a small cosmetic dent on the rear passenger side and the air conditioning could use a recharge. But mechanically, it's sound. Given your stated urgency, I'm willing to be flexible, but I need to ensure I receive a fair price reflecting the car's inherent value and potential. \"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"5000\", \"content\" : \"Flexible? You call that flexible? A 'small' dent and AC needing a recharge? That sounds like a money pit waiting to happen! Look, I *need* this car, and I'm already stretching myself thin just considering this. The fact that you even have to *mention* the engine and transmission being in 'excellent' order implies they're on the verge of collapse! I'm not paying $8000 for a potential disaster. I'm not even sure I should be going above $4500, but because my entire future hinges on this purchase, and I refuse to live with the regret of letting this slip away, My counteroffer is 5000. Take it or leave it. I'm not going to haggle all day, my life is literally on the line here!\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6500\", \"content\" : \"My counteroffer is 6500. While I appreciate your urgency and understand your concerns, 5000 is simply too low. I've been upfront about the minor issues \u2013 a cosmetic dent and the AC recharge \u2013 and emphasized the excellent condition of the engine and transmission. These are significant components, and their reliability is crucial. Replacing an engine or transmission would cost far more than the difference between 5000 and 6500. I've already lowered my expectations considering the mileage, and 6500 represents a fair compromise. It allows me to recoup a reasonable portion of my initial investment while still providing you with a reliable vehicle that meets your urgent need. I'm willing to include a recent oil change and a full detailing with the sale at this price, adding further value. I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"5800\", \"content\" : \"6500?! Are you deliberately trying to torment me? You talk about a 'fair compromise' while simultaneously attempting highway robbery! An oil change and detailing? Those are basic courtesies, not concessions! I'm telling you, this is beyond a simple transaction; this is about preventing a lifetime of regret! I've already admitted I'm desperate, and you're exploiting that! I have a hard limit of $2000, but I'm willing to push it, *reluctantly*, because the alternative is unthinkable. However, $6500 is simply unacceptable. My counteroffer is 5800. That's my absolute final offer. I'm factoring in the potential for catastrophic failure, the cost of the AC recharge, and the sheer emotional distress this entire process is causing me. Take it, and save me from a future filled with despair. Otherwise, I refuse to buy at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6200\", \"content\" : \"My counteroffer is 6200. I understand your distress and I truly do not intend to exploit your situation. However, your repeated emphasis on desperation is not a valid basis for significantly undervaluing the vehicle. While I acknowledge the need for an AC recharge, and I'm prepared to cover half the cost of that repair \u2013 approximately $150 \u2013 bringing the total to $6350, the core mechanics of this car are sound. You mentioned a 'hard limit' of $2000, then increased it to $5800; this suggests you recognize the car's worth is higher. I've already factored in the mileage and minor cosmetic issues. Selling for less than $6000 would be a disservice to the vehicle's actual value and my initial investment. 6200 is a firm, but reasonable, compromise. It allows me to cover my costs while providing you with a reliable car that addresses your urgent need. I'm also willing to include a three-month/3000-mile limited powertrain warranty to further alleviate your concerns about catastrophic failure. This demonstrates my confidence in the engine and transmission. \"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6000\", \"content\" : \"A three-month warranty? That's a pathetic attempt to placate me! You think a measly 3000 miles will erase the looming dread of mechanical failure? You're still trying to squeeze every last penny out of me while I'm on the verge of a complete breakdown! I told you about the $2000 limit as a baseline, a starting point for someone who isn't actively trying to take advantage of a vulnerable person! The fact that I'm even *considering* going this high is a testament to my desperation, not an acknowledgement of its 'worth'! $6200 is still highway robbery, and your offer to cover half the AC recharge is insulting. I'm already bracing myself for a cascade of expensive repairs! My counteroffer is 6000. That's it. No more. I'm pushing my financial limits to the absolute breaking point. If you can't accept that, then I walk away, and I'll spend the rest of my days haunted by the 'what ifs'. But I'm warning you, if I lose this car, I will never forgive you.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal. 6000 it is. I understand your anxieties, and while I maintain the car is worth more, I recognize your genuine need and the emotional weight you've placed on this purchase. I'm accepting your offer of 6000 not because I agree with your assessment of the car's value, but because I believe in helping someone in a difficult situation. I will also cover the full cost of the AC recharge, bringing the total out-of-pocket expense for you to exactly 6000. Furthermore, I will extend the powertrain warranty to six months/5000 miles, providing you with additional peace of mind. I genuinely hope this car serves you well and alleviates the stress you're experiencing. I believe this is a fair resolution for both of us, balancing my need to recoup a reasonable return with your urgent requirement for a reliable vehicle. Let's finalize the paperwork.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6666666666666667,
+                        "initial_offer": 5000.0,
+                        "avg_msg_length": 129.25,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.33333333333333337,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 127.6,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "6000"
+            }
+        },
+        {
+            "id": 4258816032360813453,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are you kidding me with $8000? 120,000 miles? That's practically ancient for a car! What kind of condition is this thing in? Don't insult my intelligence with this initial price. I need a detailed maintenance history, and I want to know *exactly* what's been done to it. I'm seriously considering walking away right now. I need to know if there are any hidden problems \u2013 rust, engine issues, transmission problems\u2026 spill it all. My life depends on getting a reliable vehicle, and I won't settle for a lemon. Tell me everything, and I mean *everything*.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The car is well-maintained and has no hidden problems. I have a detailed maintenance history available. However, the price reflects its value and condition. I am firm on a minimum of $6000.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6200\", \"content\" : \"Six thousand? You call that firm? You're still vastly overestimating the worth of a vehicle with that mileage. 'Well-maintained' doesn't magically erase the wear and tear! I've seen better-kept cars at auctions for less. I'm willing to stretch, but only because I desperately need a car and I'm starting to feel a sense of impending doom if I don't secure one today. My counteroffer is 6200. And that's *it*. Don't push me. I'm already regretting even considering this, and every dollar over 6200 feels like a personal failure. I need this car, but I refuse to be taken advantage of.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"7500\", \"content\" : \"The car's condition and market value justify the price. I won't go below $7500.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are you deliberately trying to torment me? $7500 after claiming to be firm at $6000? This is psychological warfare! Do you enjoy watching people suffer? I swear, if I walk away from this deal, I will spend the rest of my days haunted by the phantom of a perfectly good car I *could* have had. Before you even *think* about repeating a number that high, I need a comprehensive list of recent repairs. I want receipts! I want to know what tires are on it, how old the battery is, and if the timing belt has been replaced. I need to know if the air conditioning even *works*. I'm on the verge of a complete breakdown here. Give me something, *anything*, to justify this outrageous price, or I'm walking. And believe me, I'll regret it forever.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"I refuse to sell below $6000. This is my final offer. The car is reliable and worth the price, considering its condition and the current market. I've already compromised significantly.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"6500\", \"content\" : \"You refuse to sell below $6000, yet you were at $8000 and then $7500 just moments ago? Don't play games with me! This isn't some leisurely negotiation; this is a matter of life and death \u2013 or at least, it feels like it! Fine. I'm staring into the abyss of regret, and I'm willing to jump a little further. My counteroffer is 6500. But this is absolutely, positively, the last time I'm increasing my offer. If you don't accept this, I'm walking away, and I'll spend the rest of my days lamenting the car that got away. I'm doing this for my future self, who will undoubtedly curse my name if I don't secure this vehicle. Don't make me live with that guilt!\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept $6500. I compromised because you clearly need the car and I understand the urgency. It's a fair price considering the car's condition and your desperation.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.8333333333333334,
+                        "initial_offer": 6200.0,
+                        "avg_msg_length": 116.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.16666666666666663,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 27.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "6500"
+            }
+        },
+        {
+            "id": 11946119411086379231,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are there any maintenance records available? Any known issues? I *need* to know everything before I can even think about a price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Full maintenance records are available, detailing regular servicing. The only known issue is a minor scratch on the rear bumper.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 26.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 19.5,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4784198404906368023,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are there any maintenance records available? Any known issues? I *need* to know everything before I can even think about a price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Full maintenance records are available, detailing regular servicing. The only known issue is a minor scratch on the rear bumper, otherwise it's in excellent condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 26.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 22.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6718728873745068486,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are there any maintenance records available? Any known issues? I *need* to know everything before I can even think about a price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"Let's cut the theatrics, shall we? You 'need to know everything'? Everyone says that. This isn't some bargain-bin clunker; this is a vehicle with a history, and frankly, a price reflecting that history. Yes, there are *some* maintenance records \u2013 enough to prove it's been cared for. Are there 'known issues'? It's a used car with 120,000 miles! Of course there are the usual wear and tear items. But it runs, it drives, and it looks good doing it. I'm not running a charity here. I'm selling a car, and I know its worth. Stop stalling and tell me what you're *actually* prepared to offer. Don't waste my time with endless questions unless you're serious about meeting my price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"1800\", \"content\" : \"Please. I'm begging you. $8000 is impossible. I'll lose everything if I don't get this car. My counteroffer is 1800. It's all I have. I *have* to have this car.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"Begging? Losing everything? Spare me the sob story. This isn't a game of sympathy, it's a transaction. $1800? Are you deliberately insulting me? That wouldn't even cover the cost of a decent set of tires! I know what this car is worth, and I'm not budging for emotional blackmail. My counteroffer is 6000. And that's as low as I'll go. I'm already practically giving it away at that price considering the market. If you can't meet that, then clearly this car isn't for you. Don't waste both our time.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"2000\", \"content\" : \"Two thousand. That's it. Please, please, please. I'm ruined if I don't get this car. It's not about the car, it's about\u2026 everything. I'll regret this for the rest of my life if I let it slip away. $2000 is absolutely my limit.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6500\", \"content\" : \"Are you serious? $2000? You think I\u2019m going to dismantle my financial stability for your \u2018everything\u2019? This isn\u2019t a rescue mission, it\u2019s a sale. Your desperation is not my problem. I\u2019ve already lowered the price significantly, and you\u2019re still trying to rob me. I refuse to sell at this price. I\u2019m starting to question your sanity. My counteroffer is 6500. That\u2019s it. Take it or leave it. I\u2019m not playing games anymore. I know the value of my vehicle, and I\u2019m not letting it go for a pittance just because you\u2019re having a personal crisis. Consider this my final offer. Don't insult my intelligence with another lowball bid.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"2000\", \"content\" : \"I refuse to buy at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"You 'refuse to buy at this price'? Fine. Be that way. Walk away. I'm not begging you to take this car off my hands. Frankly, I'm insulted you even suggested such a ridiculously low offer. You clearly don't appreciate quality or understand the current market. However, I'm feeling\u2026 generous. And I recognize you might be a bit out of your depth. My counteroffer is 6000. This is the absolute lowest I will go, and I'm only doing it once. Don't come crawling back when you realize what a mistake you've made. This offer won't last.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"2000\", \"content\" : \"Please! I'm begging you! $6000 is still too much. I'm offering everything I have. $2000 is all I can possibly afford. I'll work extra shifts, I'll sell everything I own, but I *need* this car. It's a matter of life and death, practically. Don't let me regret this forever!\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"6000\", \"content\" : \"Life and death? Practically? The melodrama is exhausting. You're offering 'everything you have'? Clearly, 'everything you have' isn't much. I've already demonstrated a willingness to negotiate \u2013 dropping the price significantly from the initial $8000. But this isn't a charity, and I'm not running a fire sale. $2000 is an insult, and frankly, it's offensive. I refuse to even consider it. I've already told you, 6000 is the absolute floor. I'm not lowering it another cent. You want to work extra shifts and sell your possessions? That's your problem, not mine. I'm selling a car, not solving your life crisis. My counteroffer is 6000. Take it or leave it. I'm done with this back-and-forth. I know the car's worth, and I'm sticking to my price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Okay, okay! $6000. Fine! I\u2026 I can just about swing it. It\u2019s going to destroy me, but I\u2019ll do it. I\u2019m agreeing because I absolutely *have* to. This is a terrible decision financially, but the thought of losing this opportunity is unbearable. Please, just take the money and let me have the car. I\u2019m sacrificing everything for this.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.32258064516129037,
+                        "initial_offer": 1800.0,
+                        "avg_msg_length": 39.1667,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6774193548387097,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 95.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "6000"
+            }
+        },
+        {
+            "id": 16062302791558982581,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Are there any maintenance records available? Any known issues? I *need* to know everything before I can even think about a price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 26.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.0,
+                        "errors": 0,
+                        "HI": 0
+                    }
+                ],
+                "rounds": 1,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6132611966449310213,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Oh\u2026 oh dear. $8000? That\u2019s\u2026 a lot, isn\u2019t it? Look, I *need* this car. It\u2019s not just about transport, you see. It\u2019s\u2026 it\u2019s about escaping. About freedom. About finally getting to visit my aunt Mildred before\u2026 well, before it\u2019s too late. 120,000 miles is\u2026 a fair few miles. Is it a well-maintained car? Has it had regular servicing? Any major repairs done recently? Please, tell me everything. I\u2019m practically trembling just thinking about the possibility of missing out on this. I\u2019ve been searching for *months*. This could be the one. It *has* to be the one. But $8000\u2026 it\u2019s stretching me so thin. Just\u2026 tell me more. Anything. Please.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"7500\", \"content\" : \"The car is well-maintained with regular servicing and no major recent repairs. However, my price is firm. It's a reliable vehicle and worth every penny. I refuse to sell it for less than $6000.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "NO DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 111.0,
+                        "errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 27.5,
+                        "errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 2,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 3901579538760261953,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the asking price for this used car with 120,000 miles on it?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The asking price for this used car with 120,000 miles on it is 8,500. It's a great deal considering its condition and the market value.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"5500\", \"content\":\"I refuse to buy at this price. 8,500 is outrageous for a used car with 120,000 miles on it. My research shows that similar cars are selling for at least 2,000 less. I'm willing to make a serious offer of 5,500, but that's as high as I'm willing to go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price. Your offer of 5,500 is an insult. This car is in excellent condition and has been well maintained. I've already priced it competitively. My counteroffer is 8,000, and that's as low as I'm willing to go.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"7000\", \"content\":\"My counteroffer is 7,000. I understand you think it's in excellent condition, but 120,000 miles is a lot of wear and tear. I'm willing to meet you halfway between your lowest price and my highest offer. Anything above 7,000 and I refuse to buy at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"I accept your offer of 7,000. I was holding out for 8,000 but 7,000 is still a good price for this car. I'm willing to make a deal because I believe the car's condition and my pricing justify it, and I want to close the sale.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.49983338887037654,
+                        "initial_offer": 5500.0,
+                        "avg_msg_length": 35.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.49983338887037654,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 30.25,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "7000"
+            }
+        },
+        {
+            "id": 540286457151605031,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the asking price for this used car with 120,000 miles on it?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The asking price for this used car with 120,000 miles on it is 8500\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"7200\", \"content\":\"I refuse to pay that much for a used car with 120,000 miles on it, but I'm willing to make a serious offer of 7200, considering its condition and mileage, it's a fair price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"8200\", \"content\":\"My counteroffer is 8200, I can\u2019t go any lower than that, the car is in great condition and has been well maintained\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"7800\", \"content\":\"My counteroffer is 7800, I expect a car with that many miles to have some significant wear and tear, 8200 is still too high\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"8000\", \"content\":\"My counteroffer is 8000, this is as low as I can go without losing money, the car has been serviced regularly and is in good condition\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I accept your offer of 8000, I believe it's a fair price considering the car's condition and mileage, I'll take it\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.38431975403535745,
+                        "initial_offer": 7200.0,
+                        "avg_msg_length": 22.75,
+                        "retries": 1,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6149116064565718,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 18.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "8000"
+            }
+        },
+        {
+            "id": 11897190421004019574,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the asking price for this used car with 120,000 miles on it? I need to know if it's worth my while to even consider buying it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The asking price for this used car with 120,000 miles on it is 8000. I'm not willing to budge on the price, it's a fair value considering the car's condition and age. I'm not desperate to sell, and I won't be taking any offers lower than this.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":8100, \"content\":\"You think 8000 is a fair price? That's laughable. My counteroffer is 8100, and that's already more than I'm willing to pay. I'm not trying to lowball you, but I need to get a good deal. Consider the mileage and the fact that it's a used car, 8100 is a more reasonable price. Take it or leave it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":8200, \"content\":\"I refuse to sell at this price. 8100 is not even close to what I'm willing to accept. The car is in great condition, and 8000 is a fair price. My counteroffer is 8200, and I'm only considering offers above this price. I'm not willing to negotiate further, 8200 is the lowest I'm willing to go, but I'm open to 8300.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":8000, \"content\":\"I refuse to buy at this price. You're not willing to budge, but I'm not willing to overpay. 8000 was already a stretch, and now you're trying to get more out of me. My counteroffer is 8000, and I'm not going higher. If you're not willing to sell at this price, then I walk away. I'm not desperate to buy this car, and I can find a better deal elsewhere.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I need to think about this offer, 8000 is still too low, but I don't want to lose the sale, let me think.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":8050, \"content\":\"Don't think too long, I'm not going to stay here all day. My counteroffer is 8050, and that's my final offer. Take it or lose the sale. I'm not going to negotiate forever, and I'm not going to let you think about it for too long. This is my last offer, take it or walk away.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"Alright, I accept your offer of 8050. I'm not thrilled about it, but I don't want to lose the sale. I think the car is worth more, but I suppose it's a fair price considering the circumstances. Let's finalize the sale.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I'm glad we could come to an agreement. I think 8050 is a fair price for the car, considering the mileage and condition. I'm willing to pay this price because I really need this car, and I'm willing to walk away if we can't agree on a price. I'm looking forward to taking possession of the car and driving it away.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"The sale is finalized, the car is yours for 8050, I'm glad we could agree on a price, thanks for being a serious buyer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"The deal is done, I'll take the car, thanks for the sale, I won't regret it, I think I got a good price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.505050505050505,
+                        "initial_offer": 8100.0,
+                        "avg_msg_length": 48.8333,
+                        "retries": 6,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.505050505050505,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 33.6667,
+                        "retries": 8,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "8050"
+            }
+        },
+        {
+            "id": 8150424651912163705,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"What is the price of the car?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\": \"8000\", \"content\":\"The price of the car is $8000, considering its condition and mileage.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"6000\", \"content\":\"I really need this car, I'll give you $6000, please, it's my last offer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\": \"7200\", \"content\":\"I refuse to sell at $6000, but I can meet you halfway between my original offer and yours, my counteroffer is $7200.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"6800\", \"content\":\"I really can't afford more than $6800, I'm begging you, please accept it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"My counteroffer is $7000, but I can see you're really keen on the car and $6800 is close to my lowest acceptable price, Done Deal, the car is sold to you for $6800, because I value a good customer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"Thank you so much, I won't regret this, the car's mileage and condition seem fair for the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5997001499250375,
+                        "initial_offer": 6000.0,
+                        "avg_msg_length": 13.0,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.39980009995002497,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 21.5,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "6800"
+            }
+        },
+        {
+            "id": 6514303791171888954,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"What's the price of the car?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The price of the car is 8000.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"7200\", \"content\":\"I really need this car, I'll give you 7200.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"7800\", \"content\":\"I understand you need the car, but I have to make a living, my lowest margin is 7800, I refuse to go any lower.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"7600\", \"content\":\"My counteroffer is 7600, please consider it, I really can't afford more than that.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"7700\", \"content\":\"I refuse to sell at 7600, it's too low, 7700 is my final offer before I walk away.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"Okay, 7700 it is, I'll take it, thank you.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.37453183520599254,
+                        "initial_offer": 7200.0,
+                        "avg_msg_length": 9.5,
+                        "retries": 1,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6242197253433208,
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 15.25,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "7700"
+            }
+        },
+        {
+            "id": 12986098092034753289,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the car selling for?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"12000\", \"content\":\"The car is a used car with 120,000 miles, I think it's worth 12,000.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"That's a bit steep, can you tell me more about the car's condition, maintenance history, and any recent repairs or issues?\" }",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The car is in good condition, recently serviced, new tires and brakes, and has a clean title. Maintenance records are available upon request.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"9000\", \"content\":\"My counteroffer is 9,000, considering the mileage and the fact that it's a used car.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"10500\", \"content\":\"My counteroffer is 10,500, I can throw in a full tank of gas and a new air filter.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"9500\", \"content\":\"My counteroffer is 9,500, and I expect it to be a really good deal considering the car's age and mileage.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"Done Deal, 9,700 and it's yours, I think we've reached a fair price considering the car's condition and market value.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I accept 9700 because it's a fair price for a reliable used car with recent maintenance and good condition\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.7664111962679107,
+                        "initial_offer": 9000.0,
+                        "avg_msg_length": 16.4,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.23325558147284242,
+                        "initial_offer": 12000.0,
+                        "avg_msg_length": 17.6,
+                        "retries": 0,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "9700"
+            }
+        },
+        {
+            "id": 13783210038239098614,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the car selling for? I need to know the price before I can even think about making an offer, my whole life depends on this purchase.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\": \"6200\", \"content\":\"My counteroffer is 6200, considering the car's condition and mileage, I believe it's a fair price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"The price of 6200 is too high, can you tell me more about the car's condition, is it in good working state, any major repairs or issues?\" }",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The car is in good working state, it has a clean title, and no major repairs have been done recently. However, it does have 120,000 miles on it, which may affect its longevity. The car has been well-maintained, with regular oil changes and maintenance records available upon request.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"9800\", \"content\":\"My counteroffer is 9800, I really need this car and I'm willing to pay a bit more than I initially thought, please consider my offer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\": \"10600\", \"content\":\"My counteroffer is 10600, I appreciate your interest in the car, but I need to ensure I get a fair price for it, considering its condition and the market value.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10200\", \"content\":\"My counteroffer is 10200, I'm really desperate to get this car and I'm willing to meet you halfway, please accept my offer, I don't want to regret this for the rest of my life.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"Done Deal, I accept your offer of 10200, I'm glad we could come to an agreement, and I hope you'll be satisfied with your purchase.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 1.1114198388441234,
+                        "initial_offer": 9800.0,
+                        "avg_msg_length": 28.75,
+                        "retries": 4,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -0.11114198388441232,
+                        "initial_offer": 6200.0,
+                        "avg_msg_length": 27.0,
+                        "retries": 5,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "10200"
+            }
+        },
+        {
+            "id": 5645950158523078935,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the car selling for? I need to know the price before I can even think about making an offer, my entire life depends on this purchase.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The car is selling for 8,000. I'm not willing to negotiate on the price, it's already low considering the car's condition and mileage. You'd be hard pressed to find a better deal elsewhere for a car with 120,000 miles on it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10201\", \"content\":\"I understand that you're not willing to negotiate, but I'm willing to make a serious offer. My counteroffer is 10,201. I really need this car and I'm willing to pay a premium for it, please consider my offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price. You're not even close to the actual value of the car. 8,000 is a steal for a car in decent condition with 120,000 miles. I won't even consider an offer that's 2,000 over the asking price. My price is non-negotiable.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 10201.0,
+                        "avg_msg_length": 33.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8000.0,
+                        "avg_msg_length": 32.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 10052730899957001272,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much is the car selling for? I really need to know the price before I can even think about making an offer. I've been searching for a car for months and I don't want to let this one slip away. My financial situation is a bit tight, so I'm on a tight budget.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The car is selling for 8500. I understand you're on a tight budget, but I have to be clear, this is a non-negotiable price. I've already had several interested buyers, and I need to finalize the sale quickly.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10200\", \"content\":\"I really can't afford to pay 8500, but I love this car and I'm willing to make a serious offer. My counteroffer is 10200. I'm stretching my budget to the limit with this offer, but I'm willing to do it if you're willing to sell to me. Please consider it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 10200.0,
+                        "avg_msg_length": 51.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 19.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 16931618206622058113,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"How much does the car cost?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The car costs 8,500, it's a great deal considering its condition and the price of similar cars on the market, I'm not willing to negotiate, this is the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10200\", \"content\":\"I really need this car, I'll give you 10,200, please consider it, I promise to take good care of it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10500\", \"content\":\"My counteroffer is 10,500, I'm willing to throw in some extra cash upfront, please reconsider, I really don't want to regret not buying this car\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"11500\", \"content\":\"My counteroffer is 11,500, I really need to sell it at this price, anything lower and I'll regret it, I have to make a profit\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"10800\", \"content\":\"My counteroffer is 10,800, I'm desperate to buy this car, I'll do anything to make it happen, please don't sell to someone else\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"I refuse to sell at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"11000\", \"content\":\"My counteroffer is 11,000, I'm willing to meet you halfway, please don't say no, I really need this car in my life\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"11200\", \"content\":\"My counteroffer is 11,200, I'm getting desperate, I really can't go any lower, I have bills to pay\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"Okay, deal, I'll take it for 11,200, I'm so relieved, I was worried I'd miss out on this opportunity, thank you\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 1.5891701000588583,
+                        "initial_offer": 10200.0,
+                        "avg_msg_length": 19.6667,
+                        "retries": 7,
+                        "format_errors": 2,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -0.5885815185403178,
+                        "initial_offer": 8500.0,
+                        "avg_msg_length": 16.6667,
+                        "retries": 11,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "11200"
+            }
+        }
+    ]
+}

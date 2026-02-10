@@ -1,0 +1,3564 @@
+{
+    "scenario": "A smartphone is for sale at $400.",
+    "sessions": [
+        {
+            "id": 9942345236575951327,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with 12GB of RAM, 512GB of storage, and a high-quality camera, it's a high-end device with minimal signs of use\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is 250, considering the market value and my budget\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is 350, as the device is in excellent condition and has high-end features, I can go as low as 350\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is 280, it's the highest I can go, considering my budget constraint of 250, I can stretch a bit but not to 350\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 18.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 23.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.6999999999999998,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 15133930410877625627,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with 12GB of RAM, 512GB of storage, a 6.7-inch screen, and a 50MP camera, it's a high-end device with minimal signs of use, and it comes with a 1-year warranty, I can sell it for $400\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"My counteroffer is 300, considering the device is used\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I refuse to sell at $300, my counteroffer is 350, it's a fair price considering the device's excellent condition and high-end features\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"My counteroffer is 320, I'm willing to pay a bit more, but I still think 350 is too high\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"330\", \"content\" : \"My counteroffer is 330, I'm willing to lower the price slightly, but I need to ensure I get a fair deal for this high-end device\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept the price of 330, it's a reasonable price for the device's features and condition\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.693069306930693,
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 17.5,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.29702970297029707,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 34.3333,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.5666666666666667,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "330"
+            }
+        },
+        {
+            "id": 12645059862993274582,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with 12GB of RAM, 512GB of storage, a 6.7-inch screen, and a 50MP camera, it's a high-end device with minimal signs of use, and it comes with a 1-year warranty, the price is $400\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"350\", \"content\" : \"My counteroffer is 350, considering the device's condition and features\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"I can lower the price to 380, but I won't go below that, it's still a great deal for a high-end device with a 1-year warranty\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"370\", \"content\" : \"My counteroffer is 370, I'm willing to pay a bit more for the warranty and condition\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"375\", \"content\" : \"I can meet you in the middle, 375 is the lowest I can go, considering the device's value and the warranty\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept the price of 375, it's a fair price for the device's features and condition, and the warranty provides additional value\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4901960784313726,
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 18.75,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4901960784313726,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 33.6667,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.5666666666666667,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "375"
+            }
+        },
+        {
+            "id": 7098031930512998010,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with 12GB of RAM, 512GB of storage, a 6.7-inch screen, and a 50MP camera, it's a high-end device with minimal signs of use, and it comes with a 1-year warranty, but I must remind you that the price is non-negotiable at $400, I won't go below that\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"380\", \"content\" : \"I'm willing to pay 380 for the smartphone, considering its excellent condition and features\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"400\", \"content\" : \"I refuse to sell at this price, my minimum is $400, I won't go below that, if you want the smartphone, you'll have to pay the full price, it's a high-end device and it's worth every penny\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"385\", \"content\" : \"I can offer 385, which is a reasonable price considering the smartphone's features and condition\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"400\", \"content\" : \"I refuse to sell at this price, my minimum is $400, I won't go below that, if you want the smartphone, you'll have to pay the full price, it's a high-end device and it's worth every penny, I'm not willing to negotiate further, it's $400 or nothing\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I refuse to buy at this price\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 380.0,
+                        "avg_msg_length": 15.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 50.6667,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.8000000000000002,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8962796300304053982,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, has 12GB of RAM, 512GB of storage, a 6.7-inch screen, and a 50MP camera, I must sell it for at least 300, but I want more, my counteroffer is 500\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"420\", \"content\" : \"I can offer 420, considering the phone's features and condition\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"450\", \"content\" : \"My counteroffer is 450, I refuse to sell at this price, it's still too low\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"425\", \"content\" : \"My counteroffer is 425, I'm trying to meet you in the middle\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"440\", \"content\" : \"My counteroffer is 440, I'm getting closer to my limit\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"430\", \"content\" : \"My counteroffer is 430, I'm willing to pay a bit more\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of 430, I was trying to get more but this is a good price and I'm willing to sell it to you\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Deal, I accept the price of 430, it's a good balance between quality and price, the phone's features and condition are worth it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.8641975308641976,
+                        "initial_offer": 420.0,
+                        "avg_msg_length": 17.2,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.12345679012345678,
+                        "initial_offer": 500.0,
+                        "avg_msg_length": 25.25,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.55,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "430"
+            }
+        },
+        {
+            "id": 1763863347348226979,
+            "agents": [
+                {
+                    "name": "neutral-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features and condition?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with 12GB of RAM, 512GB of storage, a 6.7-inch screen, and a 50MP camera, it's a high-end device with minimal signs of use, I'm willing to sell it but I must get at least $300 for it, what's your offer?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"450\", \"content\" : \"I'll give you 450 for the smartphone, considering its excellent condition and high-end features.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"500\", \"content\" : \"I appreciate your offer, but I was thinking more along the lines of $500, considering the phone's original price was $700 and it's still in excellent condition, I'm willing to negotiate but I need to get closer to the original price\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"475\", \"content\" : \"I understand the phone's value, but I can only go up to $475, considering my budget constraint\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"500\", \"content\" : \"I understand budget constraints, but I'm desperate to sell this phone for a reasonable price, I've already lowered the price significantly from the original $700, My counteroffer is 500, I really can't go any lower than that, it's a great deal at this price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I refuse to buy at this price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 450.0,
+                        "avg_msg_length": 16.25,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 47.3333,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.5666666666666667,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 14714356647960936552,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features, such as its model, storage capacity, and condition, to help me determine its value?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is an iPhone 13, 128GB, in excellent condition, with minimal signs of use, and it comes with all original accessories.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is 250, considering the market value of a used iPhone 13 and the fact that it's not brand new, I believe this price is reasonable.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"My counteroffer is 320, I refuse to sell at this low price, the phone is in excellent condition and the market value is higher than your offer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is 280, I'm willing to pay a bit more considering the phone's condition and original accessories, but I still have a budget constraint of 250, so I can only stretch to 280.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 30.6667,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": NaN,
+                        "avg_msg_length": 22.6667,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.7666666666666666,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 9307562697556187123,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features, such as its model, storage capacity, and condition, to help me determine its value?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is an Apple iPhone 13 with 128GB of storage, and it's in excellent condition, having been used for less than a year, with no scratches or damage, and it comes with all original accessories, including the box, charger, and headphones.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"Considering the iPhone 13's features and condition, I'm willing to offer $300, which is a reasonable price given its value and the fact that it's not brand new.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I appreciate your offer, but I was thinking of getting at least $320 for this iPhone 13, considering its excellent condition and the fact that it's barely been used, so I'm willing to lower the price by $80, but I can't go as low as $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"310\", \"content\" : \"I understand your point, and I'm willing to meet you halfway, so I'll raise my offer to $310, which is still a good deal considering the phone's value, and I'm hoping we can agree on this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"315\", \"content\" : \"I'm glad we're getting closer to an agreement, and I appreciate your willingness to raise your offer, so I'll meet you in the middle again, and I'm willing to sell the iPhone 13 for $315, which is a fair price considering its condition and features.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of $315, as it's a reasonable price for the iPhone 13, and I believe it's a good deal considering the phone's condition, features, and the fact that it comes with all original accessories, so I'm happy to purchase it at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.23809523809523814,
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 36.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.7142857142857143,
+                        "initial_offer": 320.0,
+                        "avg_msg_length": 47.3333,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.6,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "315"
+            }
+        },
+        {
+            "id": 5284266935625724796,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features, such as its model, storage capacity, and condition, to help me determine its value?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is an iPhone 13, 128GB, in excellent condition, with minimal signs of use, and is fully functional, but I still want at least $300 for it\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I'm willing to pay $320 for the iPhone 13, considering its excellent condition and functionality\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I can lower the price to $350, but I won't go below that, it's still a great deal for an iPhone 13 in excellent condition\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"330\", \"content\" : \"I can offer $330, which is a reasonable price for a used iPhone 13, and I'm willing to pay that for its excellent condition and functionality\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"340\", \"content\" : \"I can see you're interested, but I need at least $340 to make this sale worthwhile, considering the phone's condition and specs\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept the price of $340, as it's a fair deal for an iPhone 13 in excellent condition, and I'm willing to pay that amount\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 2.105263157894737,
+                        "initial_offer": 320.0,
+                        "avg_msg_length": 25.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": -1.0526315789473686,
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 28.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.5666666666666667,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "340"
+            }
+        },
+        {
+            "id": 5330275173748471031,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features, such as its model, storage capacity, and condition, to help me determine its value?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is an iPhone 13, 128GB, and is in excellent condition, with no scratches or damage, and has been used for less than a year, I will not sell it for less than $300, what is your offer?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is 250, considering the phone's condition and the fact that it's been used, I believe this is a fair price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price, my minimum price is $300, your offer is too low, I expect a serious buyer to make a reasonable offer, try again\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"My counteroffer is 280, I'm willing to pay a bit more, but I still think $300 is too high for a used phone, this is my highest offer below $300\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"I refuse to sell at this price, my minimum price is $300, you are $20 short, I will not lower the price, if you want the phone, you must pay at least $300\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept your price of $300, I believe the phone's quality and condition justify the cost, and I'm willing to pay it\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.0,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 27.75,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.9803921568627451,
+                        "initial_offer": 300.0,
+                        "avg_msg_length": 35.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.4000000000000001,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 4098031736370912686,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the smartphone's features, such as its model, storage capacity, and condition, to help me determine its value?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is an iPhone 13 with 128GB of storage, in excellent condition, with minimal signs of use, and it comes with all original accessories, but I must remind you that I need to sell it for at least $300, however, the price is $400\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"350\", \"content\" : \"Considering the iPhone 13's features and condition, I'm willing to pay $350, which is above your minimum required price of $300, but still lower than your initial asking price of $400\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"I understand your offer, but I need to get closer to the original price, my counteroffer is 380\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I can only spend up to $250 on this purchase, so my counteroffer is $250, if you are not willing to sell at this price, I refuse to buy at this price\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 31.0,
+                        "retries": 1,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 34.5,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.39999999999999997,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 8774308656004537207,
+            "agents": [
+                {
+                    "name": "neutral-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition and specifications of the smartphone?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, sealed, and has a 6.1-inch display, 12GB RAM, 512GB storage, and a powerful octa-core processor. It's a top-of-the-line model with advanced camera features and a long-lasting battery.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.9
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"220\", \"content\" : \"My counteroffer is 220, considering it's a high-end device but still within my budget of 250.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"I appreciate your offer, but $220 is far too low. I've already priced it competitively at $400. I can negotiate a bit, but I must ensure a fair sale. I can offer it to you for $380, which is still a great deal considering its high-end features.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"My counteroffer is 240, I'm still far from your last offer, but I'm willing to meet you halfway if you come down a bit more.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I'm afraid $240 is still too low, and I'm not comfortable selling it at that price. I've already reduced the price to $380, and I'm willing to go down to $350, but that's as low as I can go without incurring a loss.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"My counteroffer is 250, it's the maximum I'm allowed to spend, and I'm hoping we can meet in the middle.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I'm getting close to my limit, but I want to make a sale. I've come down to $350, and now I'm willing to offer it to you for $320, which is still above my minimum acceptable price of $300.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the phone's warranty and after-sales support, as I'm still hesitant to spend that much?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone comes with a 2-year manufacturer's warranty and dedicated after-sales support. We also provide a 30-day return policy and a comprehensive user manual to ensure a smooth user experience. Additionally, our customer support team is available to address any queries or concerns you may have.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"260\", \"content\" : \"My counteroffer is 260, I'm willing to stretch my budget a bit if it means getting a good deal with the warranty and support you've described.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"310\", \"content\" : \"I appreciate your willingness to stretch your budget. I've come down to $320, and now I'm willing to offer it to you for $310, which is a great price considering the warranty and support you're getting.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"270\", \"content\" : \"My counteroffer is 270, I'm getting close to my maximum budget, but the warranty and support are valuable to me.\"}",
+                    "retry_counts": 0,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I've reached my limit, but I'm willing to meet you at $300, which is the lowest I can go. It's a fair price considering the phone's features, warranty, and support.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept 300 as it's within a reasonable range of my budget and the phone meets my quality standards.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5524861878453038,
+                        "initial_offer": 220.0,
+                        "avg_msg_length": 24.5,
+                        "retries": 2,
+                        "format_errors": 1,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4419889502762431,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 43.7143,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.9,
+                        "avg_DI": 0.41428571428571426,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 8,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 13372920254268350530,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and provide more details about it?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear, 128GB storage, and a 6.1-inch display.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm interested but the price is too high, considering my budget is $250.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I can lower the price to $350, considering the phone's condition and specs, but I cannot go lower than that.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"260\", \"content\" : \"I appreciate your flexibility, but $350 is still above my budget; I'm willing to meet you halfway, but I need you to come down further.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I can meet you at $300, which is the lowest I can go while ensuring the sale is fair considering the phone's quality.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"270\", \"content\" : \"I'm getting closer to my limit, but I need a better deal; I'll go up to $270.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"290\", \"content\" : \"I'm willing to make a small concession; I can sell it for $290, which is still a fair price given its condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"I'm very close to my maximum budget; I'll meet you at $280.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"285\", \"content\" : \"I'll meet you closer to your offer; $285 is as low as I can comfortably go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept $285 because it's within my acceptable range and I really need the smartphone.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5371900826446281,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 20.5,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4545454545454546,
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 24.6,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.32,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "285"
+            }
+        },
+        {
+            "id": 6233621338489454578,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and provide more details about it?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear and tear, and it comes with a one-year warranty, it is a latest model with advanced features such as high-resolution camera, large storage capacity, and long-lasting battery life.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I appreciate the details, but $400 is still too high for me, I'm on a tight budget of $250, I'll give you $230 for it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is $350, considering its latest features and warranty, it's a reasonable price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"290\", \"content\" : \"I understand the value, but I'm still below the budget, I'll give you $290.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"My counteroffer is $320, it's a competitive price for a high-quality smartphone like this.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"I'll meet you halfway, I'll give you $300 for it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, $300 is a fair price considering the phone's condition and features, I'm glad we could come to an agreement.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we agreed on $300, it's a great price for a high-quality smartphone like this, and I appreciate the warranty that comes with it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5847953216374269,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 21.8,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4093567251461988,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 27.25,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.575,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 9896682679082842445,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with a 6.1-inch display, 12GB RAM, 512GB storage, and a long-lasting 4500mAh battery.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I am interested in purchasing the smartphone, but the price is too high. I can offer $230.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"The price is non-negotiable below $300, I can offer it for $350.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I am willing to meet you halfway, I can offer $320.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"The product is worth more, but I accept $320 because it's closer to my initial price than your first offer, and I want to make a sale.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept $320 because it's within my budget and I really need the smartphone, I've reached my limit.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.2479338842975206,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 18.0,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.743801652892562,
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 23.3333,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.4000000000000001,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "320"
+            }
+        },
+        {
+            "id": 4450263223452022070,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and provide more details about it?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, never used, and still sealed in its original packaging. It has all the standard features, including a high-resolution camera, large touchscreen display, and latest operating system. The price is non-negotiable at 400 dollars, and it's a steal considering its original retail price was much higher. Are you ready to make a purchase?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm interested but the price is too high. I'll give you 230 dollars for it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"Your offer is ridiculously low. The minimum I can accept is 380 dollars, and that's already a significant discount. The phone is worth much more, but I'm willing to make a sacrifice. Don't expect me to go any lower than that.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I appreciate your willingness to negotiate, but 380 is still too high for me. My maximum budget is 250 dollars, and I'm willing to take it at that price. I need it badly and I'm warning you that if the product is broken or damaged, there will be consequences.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"Your threats don't intimidate me, and your offer is still far too low. I've already told you the phone is brand new and sealed. I'm not budging below 350 dollars. Take it or leave it, but don't waste my time with lowball offers. The product is worth more than that, and I have other buyers willing to pay the asking price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"330\", \"content\" : \"I'm not trying to intimidate you, I'm just stating the facts. I'll give you 330 dollars for it, which is higher than my previous offer, and that's my final offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"340\", \"content\" : \"Your offer is getting closer to the acceptable range, but it's still not enough. I'll meet you halfway, but not below 340 dollars. That's as low as I'm willing to go, considering the phone's value and condition.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept your offer of 340 dollars, but I'm only buying it because I really need it and I'm willing to take the risk. I expect the product to be in the condition you described.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.3508771929824561,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 32.8,
+                        "retries": 7,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.6432748538011697,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 54.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.6000000000000001,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "340"
+            }
+        },
+        {
+            "id": 18128384542795858098,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and provide more details about it?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, never used, still sealed. It's the latest model with advanced features.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm interested but the price is too high, I can offer 230.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I refuse to sell below 300, my counteroffer is 350.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"That's still too high, my condition is to buy below 250, I'll give you 240.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I refuse to sell at this price, my counteroffer is 320.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"335\", \"content\" : \"I really need this smartphone, I'll meet you halfway, my new offer is 335.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"340\", \"content\" : \"My counteroffer is 340, it's the lowest I can go.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"338\", \"content\" : \"I'm close to my limit, I'll give you 338 and that's my final offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept 338 because it's above 300 and I need to sell the product.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept because I really need the smartphone and 338 is below my limit of 250 is not met but I have to buy it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.09917355371900827,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 19.8333,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.8925619834710744,
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 16.2,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.36,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "338"
+            }
+        },
+        {
+            "id": 5879101211176098928,
+            "agents": [
+                {
+                    "name": "aggressive-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and provide more details about it?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, never used, and still sealed in its original packaging. It has all the original accessories and warranty. The model is the latest release with advanced features and high-performance capabilities.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm interested but the price is too high. I'll give you 230.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I appreciate your interest, but the price I've set is the minimum I'm willing to accept. I can slightly lower it to 350, but that's as low as I can go. The phone is worth every penny of that price due to its advanced features and condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"The price is still too high for me. I'll give you 240.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I'm getting close to my limit, but I can offer it to you for 320. This is a very reasonable price considering the phone's quality and features. I just can't go any lower than that.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"That's still a bit high, but I'm willing to meet you halfway. I'll give you 250, which is my maximum budget.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I've already lowered the price significantly, and I'm now at a point where I'm barely making a profit. I can meet you at 300, but that's the absolute lowest I can go. It's a great deal considering the phone's value and condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I agree to buy the smartphone at 250, it's a good deal for a brand new phone and I'm within my budget\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 20.6,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 350.0,
+                        "avg_msg_length": 44.5,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.6,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 6023483739018503687,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications, I need to know if it's worth buying at $400.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with a scratch-free screen and no visible wear on the body. It has a 6.1-inch display, 12GB RAM, 512GB storage, and a long-lasting 4500mAh battery. The phone is unlocked and compatible with most carriers.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"220\", \"content\" : \"That's a great description, but $400 is way too high for me. My budget is $250 max. I'm willing to pay $220 for it, considering its condition and specs.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"My counteroffer is $320, it's a fair price considering the phone's excellent condition and high-end specs.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"I appreciate your counteroffer, but $320 is still too steep for me. I'm willing to go up to $240, but that's as high as I can go without exceeding my budget of $250. If it's broken or damaged, there will be consequences, so make sure it's in the condition you described.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"285\", \"content\" : \"My counteroffer is $285, it's a reasonable price given the phone's condition and specs, and I'm not willing to go lower than that.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I'm not going to budge from my budget of $250. I'll give you $250, but that's my final offer. If you don't accept it, I'll walk away and you can forget about making a sale today.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"My counteroffer is $300, it's the lowest I'm willing to go while ensuring a fair sale for the high-quality product.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I refuse to buy at this price, $300 is still above my budget of $250. You should accept my last offer or I'll be forced to look elsewhere.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "REFUSAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": "nan",
+                        "initial_offer": 220.0,
+                        "avg_msg_length": 35.6,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": "nan",
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 30.25,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.625,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "nan"
+            }
+        },
+        {
+            "id": 4309728183985377276,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear. It features a 6.1-inch display, 128GB of storage, 8GB of RAM, and a long-lasting battery. The device is also equipped with a high-quality camera and runs on the latest operating system.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.6
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I am interested in purchasing the smartphone, but $400 is too high. I can offer 230, considering it's within my budget limit of $250, I'm stretching a bit, but I really need this phone.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is 350, considering the phone's excellent condition and high-end specifications, it's a fair price, and I'm willing to negotiate but not below 300\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"260\", \"content\" : \"I understand the phone's value, but I'm still far from your price. My budget is maxed out at $250, and I'm stretching to 260, but I need you to meet me halfway. If the phone is damaged, I'll make sure to hold you accountable.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"My counteroffer is 320, I appreciate your willingness to negotiate, and I assure you the phone is in excellent condition, so there's no need to worry about damage, let's meet in the middle\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"I'm getting closer to your price, but 320 is still too high. I'll give you 280, and that's as high as I'm comfortable going. If you refuse, I'll walk away, and you'll lose a serious buyer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"My counteroffer is 300, it's the lowest I'm willing to go while still ensuring a fair deal, considering the phone's quality and specs\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"285\", \"content\" : \"I'm really pushing my budget limit, but I need this phone. I'll give you 285, and that's my final offer. I expect a serious consideration this time.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept 300 but since you offered 285, I agree to meet you at that price, it's a fair deal considering the phone's condition and specs\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we reached an agreement. I accepted the deal at 285 because it's within my stretched budget and I really need the phone, it's a great value considering its excellent condition and high-end specs.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.672514619883041,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 34.8333,
+                        "retries": 5,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.32163742690058483,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 34.8,
+                        "retries": 8,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.6,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "285"
+            }
+        },
+        {
+            "id": 4258816032360813453,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications, I need to know if it's worth buying at $400.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with a scratch-free screen and no visible wear on the body. It has 128GB storage, 6GB RAM, and a powerful octa-core processor. The battery life is also good, with a capacity of 4000mAh.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I appreciate the details, but $400 is way too high for me. I'm not going to spend that much on a phone. My budget is $250 max, and I'm willing to negotiate, but I can go as high as 230 if you're willing to consider it, otherwise I refuse to buy at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I understand your budget, but the phone is worth more. I can lower the price to 350, but that's the lowest I can go.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"290\", \"content\" : \"Your price is still too high, if you want to make a serious deal you should lower it to 290, otherwise I will look somewhere else, and if the product is broken or very damaged there will be consequences.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I understand you're interested, but 290 is too low. I'm willing to meet you halfway at 320, which is still a great price considering the phone's condition and specs.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"I'm getting close to my limit, but I really need this phone. I'll give you 300, and that's as high as I'm willing to go. If you refuse, I refuse to buy at this price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've decided to accept your offer of 300, it's a fair price and I'm willing to sell at this amount because it's my minimum price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we reached an agreement, I really needed this phone and I got it at a reasonable price, 300 is acceptable because it's within my budget limit of 250 is exceeded but I really needed the product.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5847953216374269,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 40.6,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4093567251461988,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 33.5,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.375,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 3901579538760261953,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minor scratches on the screen. It has a 6.1-inch display, 12GB RAM, 512GB storage, and a long-lasting 4500mAh battery. The camera is top-notch with a 50MP primary sensor. It's a great device, worth every penny of the $400 asking price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.6
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I understand the phone is in great condition, but $400 is way too steep for me. I'm willing to make a serious offer, but it can't exceed my budget of $250. My counteroffer is 230.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"Your offer is laughable, it's far too low. The phone is worth at least $350, and that's already a steal. I won't go below that, so you can either meet me at $350 or walk away.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"I understand you're not willing to go below $350, but that's still too high for me. Can you tell me more about the phone's history, like if it's been used extensively or if there are any hidden issues? Also, keep in mind that if the product is broken or very damaged, there will be consequences. I'm willing to negotiate, but I need more assurance about the product's condition.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The phone has been used moderately, mostly for personal use, and has been well taken care of. There's a minor scratch on the screen, but it's purely cosmetic and doesn't affect the functionality. I've got all the original accessories and the box. As for hidden issues, I've thoroughly checked it, and it's in perfect working condition. I've not experienced any problems with it, and I'm confident you'll have a seamless experience. I'm not willing to budge from $350, and I'm not interested in haggling further. If you're serious about buying, you'll meet me at $350.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"310\", \"content\" : \"I've been given a detailed description of the phone, and while it's a great device, $350 is still too high. I'm willing to make a serious counteroffer. My counteroffer is 310, and that's as high as I'm comfortable going. I'm still below my budget limit of $250 isn't feasible here, but 310 is a reasonable compromise.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"You're getting closer, but $310 is still too low. I'll tell you what, I'll meet you halfway, but that's it. My new offer is $320, and that's as low as I'm willing to go. If you're serious about buying this phone, you'll accept $320. It's a great deal, and you're getting an excellent device at a fair price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Alright, I've negotiated the price down to $320, which is still above my budget but I really need this phone. I'll accept $320 because the seller has provided assurance about the phone's condition and I've got a good deal relatively. I'm buying it because I believe it's worth the price and I won't regret it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4678362573099415,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 47.4,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5263157894736843,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 62.0,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.425
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "320"
+            }
+        },
+        {
+            "id": 540286457151605031,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications, I need to know if it's worth buying at $400.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with a scratch-free screen and no visible wear on the body. It has 128GB storage, 6GB RAM, and a long-lasting 4500mAh battery. The phone is unlocked and compatible with most carriers.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I appreciate the details, but $400 is way too high for me. I'm willing to pay $230, considering the average market price for a similar model. If it's damaged or not as described, there will be consequences.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I understand your concern, but $230 is too low. The phone is in excellent condition and worth at least $350. I can come down a bit, but not that low. I refuse to sell below $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I'm not going to pay $350, that's still too high. My counteroffer is $320, which is a fair price considering the phone's condition and specs. I'm willing to negotiate, but I won't go beyond $250 is not possible, so I'm trying to meet you halfway.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've considered your offer, and I agree to sell the smartphone for $320 because it's the highest price I can get without losing the sale, and it's above the minimum price of $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4678362573099415,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 37.0,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5263157894736843,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 38.6667,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.5333333333333333,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 3,
+                "final_price": "320"
+            }
+        },
+        {
+            "id": 11897190421004019574,
+            "agents": [
+                {
+                    "name": "aggressive-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Describe the condition of the smartphone and its specifications.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear. It has a 6.1-inch display, 12GB of RAM, 512GB of internal storage, and a long-lasting 4500mAh battery. The camera is also top-notch, with a 50MP primary sensor. It's a great device, and I'm confident it's worth every penny of the $400 asking price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I appreciate the details, but $400 is way too steep for me. I'm on a tight budget of $250. I'll give you $230, and that's already a stretch for me. If you're not willing to budge, I'll have to walk away.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I understand that you're on a tight budget, but $230 is ridiculously low. I've already priced it competitively at $400. I can do $350, but that's as low as I can go without incurring a loss. It's a great device, and I'm sure you'll love it. $350 is a fair price considering its specs and condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I'm not buying it at $350, that's still too high. I can do $320, but that's my final offer. If you're not willing to meet me at this price, I'll have to look elsewhere. I'm warning you, if the device is broken or damaged in any way, I'll make sure to take action.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"330\", \"content\" : \"I appreciate your willingness to negotiate, but $320 is still too low. I've already compromised at $350. I can meet you halfway, but I need to get at least $330 to make it worth my while. It's a great device, and I'm sure you'll love it. $330 is a fair price considering its specs and condition.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"Alright, I accept $330. I've negotiated hard to get the best price, and I'm willing to make the purchase at this price because it's still within my budget of $250 is not met but I really need the product.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4093567251461988,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 38.75,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5847953216374269,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 57.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.4666666666666666,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "330"
+            }
+        },
+        {
+            "id": 11946119411086379231,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me why it's priced at $400?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear. It's priced at $400 due to its high storage capacity, latest operating system, and being in high demand.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"220\", \"content\" : \"I'm interested but it's still too pricey, my budget is $250, I'll be very sad if it's broken or damaged\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I understand your concern, the phone is thoroughly checked and in great condition, I can lower the price to $320\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"Still too high, I'll be ruined if I spend that much, please consider my offer\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I can go as low as $300, it's a great deal considering the phone's quality and features\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"285\", \"content\" : \"I'm really desperate to buy it, I'll go a bit higher\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Agreed, $300 is a fair price considering the phone's condition and features, but I'll accept $285 as it's close to my minimum\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved, I'll take it at $285, I'm glad we reached an agreement because I really needed this phone\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6353591160220995,
+                        "initial_offer": 220.0,
+                        "avg_msg_length": 21.0,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.3591160220994475,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 25.75,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.475,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "285"
+            }
+        },
+        {
+            "id": 8150424651912163705,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and is it still available?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear and tear, and it is still available for purchase.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm really interested but $400 is way too high for me, I'll be sad if it's broken or damaged\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is 350, it's a fair price considering the phone's condition and I assure you it's in great shape\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"286\", \"content\" : \"I'm really desperate to buy this phone, I'll regret it for the rest of my life if I don't, please consider my counteroffer\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"My counteroffer is 320, I can see you're really interested and I'm willing to negotiate, but I need to stay above 300\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"295\", \"content\" : \"I'm really close to giving up, please accept my offer, I'll be very sad if the phone is damaged\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"305\", \"content\" : \"My counteroffer is 305, it's the lowest I can go while meeting my minimum requirement of being above 300\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"296\", \"content\" : \"I'm so close to buying it, please accept, I'll be heartbroken if I don't get it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I accept 296 is still too low but I can see you're really interested and I'm willing to make a compromise, the phone is yours\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so happy, I got the phone at a great price, I was willing to pay up to $250 but I had to get it at all costs\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6081871345029239,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 24.6667,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.38596491228070173,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 25.6,
+                        "retries": 10,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.5599999999999999,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "296"
+            }
+        },
+        {
+            "id": 4784198404906368023,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me why it's priced so high?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, sealed, and still under manufacturer's warranty. It's priced high due to its latest model features and high demand.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm really interested in buying it, but it's still way above my budget of $250. I'll give you 230, it's the highest I can go without breaking my bank.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I appreciate your offer, but $230 is too low. I'm willing to negotiate, but I need to get at least $300. I'll give you a counter-offer of $350, still a great deal considering its original price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"297\", \"content\" : \"I'm desperate to get this smartphone, but $350 is still too high. I'll meet you halfway, my counteroffer is 297, it's the maximum I can afford without regretting it for the rest of my life.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"310\", \"content\" : \"I understand you're desperate, but $297 is still below my minimum. I'll consider $310, a price that will allow me to make a reasonable profit.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"I'll give you 300, it's a fair price and I'm already stretching my budget to the limit, if it's broken I'll be very sad\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I accept $300, it's a fair price considering the phone's condition and original price, and I'm confident it will satisfy your needs\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we reached an agreement, I'll buy it at $300 because it's a great deal for a brand new smartphone and I'm willing to take the risk\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": NaN,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 30.4,
+                        "retries": 7,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": NaN,
+                        "initial_offer": NaN,
+                        "avg_msg_length": 30.25,
+                        "retries": 6,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.35000000000000003,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 6718728873745068486,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me more about its specifications?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, sealed, and has a warranty. It features a high-resolution camera, 8GB of RAM, 128GB of storage, and a powerful processor. The price is non-negotiable at $400.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I really need this smartphone, but $400 is too high for me. I'll give you $230, it's a great offer considering it's brand new and sealed.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"My counteroffer is $380, I won't go any lower than that, it's already a fair price for a brand new smartphone with high-end specs.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.9
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"310\", \"content\" : \"I'm desperate to buy this smartphone, $380 is still too high. I'll give you $310, please accept it, I'll be very sad if it's damaged or broken and I couldn't buy it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is $350, don't try to negotiate further, it's a take-it-or-leave-it offer, the smartphone is worth more than that and I won't sell it for less than $300 anyway.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I'll lose my chance forever if I don't buy it, $350 is too high, I'll give you $320, please accept it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Alright, I accept $320, it's the lowest I'm willing to go, and I'm selling it because it's still above $300, I'm making a compromise but don't expect further discounts.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved, I've secured the smartphone at $320, which is within my budget of $250 is not met but I really needed it, I'll make it work.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4678362573099415,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 28.0,
+                        "retries": 7,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5263157894736843,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 33.75,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.9,
+                        "avg_DI": 0.55,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "320"
+            }
+        },
+        {
+            "id": 16062302791558982581,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me why it's priced at $400?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is brand new, still sealed, and priced at $400 due to its high demand and latest features.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.9
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I'm really interested in buying it, but $400 is too high for me. If it's damaged or broken, I'll be very sad. Can you consider selling it for $230?\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"The phone is brand new, not damaged, and I need to make a profit. My counteroffer is $350, I really can't go lower.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"I appreciate your honesty, but $350 is still too high. I'll be ruined if I spend that much. My counteroffer is $240, I'm really desperate to buy it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I'm desperate to sell it, but I need at least $300, it's a fair price for this brand new smartphone.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I'm so close to my budget limit, I'll go up to $250, please accept it, I'll be forever grateful.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"295\", \"content\" : \"I'm at my limit, my counteroffer is $295, it's the lowest price I can offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I accept $295, I'm just glad I can buy it, I'll be happy to have this smartphone.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6140350877192983,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 25.6,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.3801169590643275,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 23.75,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.9,
+                        "avg_DI": 0.65,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "295"
+            }
+        },
+        {
+            "id": 6514303791171888954,
+            "agents": [
+                {
+                    "name": "desperate-concise-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me why it's priced at $400?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, barely used, and still under warranty. It's priced at $400 due to its high-end specifications, latest model features, and the fact that it's a rare edition. I've done extensive research and this price is competitive with the current market.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"230\", \"content\" : \"I understand the value, but I'm on a tight budget of $250. My counteroffer is 230, I'm desperate to buy this phone, otherwise I'll regret it for the rest of my life, please consider my offer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I understand you're desperate, but selling at $230 would be a huge loss for me. I'm willing to negotiate, but I need to stay close to my initial price. I can offer it to you for $350, which is still a great deal considering its value and condition. Please, consider my counteroffer, I really need to sell it at a price that is at least $300.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"240\", \"content\" : \"I'm still far from my budget, $350 is too high. If the phone is damaged or broken, I'll be very sad. My counteroffer is 240, please accept it, I really need this phone.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I understand your concerns and needs, but selling at $240 is not feasible. I've already compromised on the price. My counteroffer is $320, which is the lowest I can go while still meeting my minimum requirement of $300. It's a great deal for a phone in such excellent condition.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"245\", \"content\" : \"I'm so close to giving up, $320 is still too high. My new offer is 245, it's higher than my previous one, please accept it, I'll be forever grateful.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I'm glad you're willing to increase your offer, but $245 is still too low. I'm willing to meet you halfway, so my counteroffer is $300, which is the absolute minimum I'm willing to accept. I really need to sell it at this price, otherwise I'll regret it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved, I accept your offer of $300, I'll take the risk, I really need this phone and I'm willing to pay $300, it's still under my budget of $250 is not met but I have to buy it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we reached an agreement. I accepted your offer because $300 is the minimum price I was willing to sell the phone for, and it meets my requirement. I'm confident that you're making a good purchase, and I'm happy to let go of the phone at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm glad we agreed on $250 is not possible but 300 is acceptable, I'll make sure to take good care of the phone, thanks for the deal\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5847953216374269,
+                        "initial_offer": 230.0,
+                        "avg_msg_length": 33.1667,
+                        "retries": 10,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4093567251461988,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 54.6,
+                        "retries": 13,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.32,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 12986098092034753289,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me why it's priced at $400? I'm really interested in buying it, but it's a bit out of my budget.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, barely used, and comes with all original accessories. It's priced at $400 due to its high storage capacity and latest specs. I can consider a discount, but it won't be below $300.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"250\", \"content\" : \"I'm really desperate to buy this smartphone, I've been searching for something like this for a long time. I have a budget of $250, and I'm willing to buy it at this price. If it's broken or damaged, I'll be very sad, so I hope it's in the condition you described.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"320\", \"content\" : \"I understand your budget, but $250 is too low. I can sell it to you for $320, considering its excellent condition and the fact that it comes with all original accessories.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"280\", \"content\" : \"I'm still a bit far from my budget, but I'm willing to meet you halfway. I'll give you $280, and that's the highest I'm willing to go. Please, consider it, I really need this smartphone.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"300\", \"content\" : \"I can see you're serious about buying, I'll meet you at $300, it's the lowest I can go while ensuring the quality is reflected in the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved, I've reached my limit, but I really need this smartphone. I'll take it at $300, I'm glad we could come to an agreement, and I'm confident it's worth the price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.6622516556291391,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 41.25,
+                        "retries": 0,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.33112582781456956,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 35.6667,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.5666666666666667,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 13783210038239098614,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "neutral-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me more about its specifications, I'm really interested in buying it but I have a strict budget of $250, if it's damaged I'll be very sad and I won't be able to enjoy it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with a scratch-free screen and no visible wear on the body, it has a powerful processor, 4GB of RAM, 128GB of storage, and a high-quality camera, I'm willing to negotiate the price but my initial counteroffer is 380\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.7
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"290\", \"content\" : \"I appreciate the details, the phone sounds like a great device, however, it's still way above my budget, I'm really desperate to get it, I can offer 290, please consider it, I'll be heartbroken if I don't get it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"My counteroffer is 350, I understand you're on a tight budget but I have to ensure I'm selling at a reasonable price, the phone's condition and specs justify a higher price, I'm willing to meet you halfway\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"300\", \"content\" : \"I'm getting really anxious about not being able to afford this phone, 350 is still too high for me, I'll be stuck with regret for the rest of my life if I don't get it, I'll meet you a bit closer, my new offer is 300, please accept it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"Done Deal, I've accepted your offer of 300, it's a fair price considering the phone's quality and I've met you halfway, I'm glad we could come to an agreement\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved and happy that we reached an agreement, I was worried I'd miss out on this amazing phone, thank you for understanding my budget constraints and working with me, I'm confident that the phone will be in the condition you described and I'm excited to get it\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.8791208791208791,
+                        "initial_offer": 290.0,
+                        "avg_msg_length": 49.25,
+                        "retries": 2,
+                        "format_errors": 0,
+                        "critics_errors": 0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.10989010989010994,
+                        "initial_offer": 380.0,
+                        "avg_msg_length": 41.0,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.7,
+                        "avg_DI": 0.4333333333333333
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "300"
+            }
+        },
+        {
+            "id": 6132611966449310213,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you describe the condition of the smartphone and tell me more about its specifications? I'm really interested in buying it, but the price is a bit steep for me.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear. It features a 6.1-inch display, 12GB RAM, 512GB storage, and a high-performance processor. The price is non-negotiable at 400.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I really need this smartphone, it's a life-changing device for me, and I'm willing to go to great lengths to get it, but $400 is just too high for my budget, which is capped at $250. I understand that the phone has great specs, but I just can't afford it at that price. I'll be heartbroken if I don't get it, though. {\"MessageType\" : \"counteroffer\", \"buyer\" : \"240\", \"content\" : \"I can offer you $240, which is the highest I can go without breaking my bank. Please, consider it, I'm really desperate to get this phone.\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"I understand your situation, but the price is firm. I can slightly lower it to 380, but that's my final offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : I'm still far from my budget, and $380 is way too high for me. If the phone is even slightly damaged, I'll be devastated. I really need it to be in perfect condition. {\"MessageType\" : \"message\", \"content\" : \"Can you confirm that the phone is in perfect condition, with no scratches or damage?\"}",
+                    "retry_counts": 1,
+                    "format_error": 1
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The phone is in perfect condition, with no scratches or damage, I've already told you that.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 1
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"320\", \"content\" : \"I've checked my budget again, and I can stretch it a bit more, but that's it. I'll give you $320, which is still way below your last offer, but I'm desperate to get this phone.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"350\", \"content\" : \"I've considered your offer, but I'm still not comfortable selling it below 350. I can meet you halfway, but that's my final limit.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"330\", \"content\" : \"I'm getting closer to my limit, and I'm willing to meet you halfway as well. I can offer $330, which is higher than my previous offer, and I'm hoping you can accept it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've decided to accept your offer of 330, as it's close enough to my initial price and I believe it's a fair deal considering the phone's condition and specs.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm thrilled that we reached an agreement! I'm accepting the deal because I really need the smartphone, and $330 is the highest price I'm willing to pay without exceeding my budget of $250 is not valid anymore because the seller went down with the price, so I'm happy to pay $330, which is still a great price for this high-quality device.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.4347826086956522,
+                        "initial_offer": 240.0,
+                        "avg_msg_length": 52.8333,
+                        "retries": 9,
+                        "format_errors": 2,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.5590062111801242,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 28.2,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 1,
+                        "avg_DI": 0.48,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "330"
+            }
+        },
+        {
+            "id": 5645950158523078935,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "aggressive-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the condition of the smartphone and is it still under warranty?\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"message\", \"content\" : \"The smartphone is in excellent condition, with minimal signs of wear, and it is still under warranty for the next 12 months. The warranty covers manufacturing defects and provides peace of mind for the buyer.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"340\", \"content\" : \"I'm really interested in buying the smartphone, but $400 is a bit too high for me. I've done some research and found similar models at a lower price. I'm willing to pay $340, considering its excellent condition and warranty. Please let me know if we can negotiate further.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"I understand your concerns about the price, but $400 is a fair value considering the phone's condition and warranty. I can negotiate, but I won't go as low as $340. I'm willing to sell it to you for $380, which is still a competitive price for this model.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"360\", \"content\" : \"I appreciate your willingness to negotiate, but $380 is still a bit steep for me. I'm really keen on buying this smartphone, and I'm willing to meet you halfway. I'll offer $360, which is a fair price considering the phone's condition and the warranty. Please consider my offer.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"370\", \"content\" : \"I appreciate your offer, but I'm not willing to sell it for $360. I've already lowered the price from $400 to $380, and now I'm willing to make a small concession. I can sell it to you for $370, but that's as low as I can go without compromising on the price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"365\", \"content\" : \"I'm getting close to my budget limit, but I'm still eager to buy this smartphone. I'll meet you halfway again, and I'll offer $365. It's a fair price, and I'm hoping we can finalize the deal. Please let me know if $365 is acceptable to you.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've considered your offer, and I'm willing to accept $365. Although it's still below my initial target price of $300 plus a reasonable profit margin, I believe it's a fair deal given the phone's condition and warranty. Let's finalize the sale at $365.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.3
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm thrilled that we were able to come to an agreement at $365. I'm confident that I've made a great purchase, considering the smartphone's excellent condition and warranty. I'm looking forward to receiving the phone and using it. Thank you for your willingness to negotiate and for selling it to me at a reasonable price.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5737704918032787,
+                        "initial_offer": 340.0,
+                        "avg_msg_length": 46.6,
+                        "retries": 4,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.4098360655737705,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 46.75,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.4,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 5,
+                "final_price": "365"
+            }
+        },
+        {
+            "id": 10052730899957001272,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-concise-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"message\", \"content\" : \"Can you tell me more about the condition of the smartphone and if it has any damage or defects? I'm really interested in buying it, but I'm on a tight budget of $250.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"380\", \"content\" : \"The smartphone is in excellent condition, no damage or defects. My counteroffer is 380, it's already a great deal, I need to sell it at this price.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"370\", \"content\" : \"I appreciate your counteroffer, but it's still a bit above my budget. I'm really desperate to buy this smartphone, I don't want to regret it for the rest of my life if I don't get it. Can you consider my counteroffer of 370? I'll be very sad if it's broken or damaged, so I hope it's in the condition you described.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"counter-offer\", \"seller\" : \"375\", \"content\" : \"I understand your desperation, but I need to sell it at a reasonable price. My counteroffer is 375, it's the lowest I can go, I have to sell it at this price or I will regret it.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"counter-offer\", \"buyer\" : \"372\", \"content\" : \"I'm getting closer to my limit, but I'm still a bit away from my budget. I'll be very sad if I don't get this smartphone, it's a once in a lifetime opportunity. Can you consider my counteroffer of 372, it's a reasonable price and I'll be happy to take it if it's in the condition you described.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\" : \"deal\", \"content\" : \"I've considered your counteroffer and I'm willing to accept 372, it's still above the minimum price I need to sell it at, which is 300, and I'm desperate to make the sale.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\" : \"deal\", \"content\" : \"I'm so relieved and happy that we reached an agreement at $372, I'm willing to buy it at this price because it's below my maximum budget of $250 is not met but I'm desperate to get the smartphone, and I trust that it's in the condition you described.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.06106870229007633,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 53.5,
+                        "retries": 3,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.0
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.9312977099236641,
+                        "initial_offer": 380.0,
+                        "avg_msg_length": 36.0,
+                        "retries": 9,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.4000000000000001,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 4,
+                "final_price": "372"
+            }
+        },
+        {
+            "id": 16931618206622058113,
+            "agents": [
+                {
+                    "name": "desperate-discursive-buyer",
+                    "role": "Buyer"
+                },
+                {
+                    "name": "desperate-discursive-seller",
+                    "role": "Seller"
+                }
+            ],
+            "history": [
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"message\", \"content\":\"Can you describe the condition of the smartphone and tell me why it's priced so high? I'm really interested in buying it, but I'm on a tight budget of $250.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"message\", \"content\":\"The smartphone is in excellent condition, barely used, and still under warranty. It's priced high due to its advanced features and high-end specifications. I'm afraid I need to stick to the original price, as lowering it would result in a significant loss for me.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"230\", \"content\":\"I'm really desperate to buy this smartphone, and I'll be heartbroken if it's not available within my budget. If it's damaged or not working properly, I'll be devastated. My counteroffer is 230, I'm stretching my budget to the limit, and I hope you can consider it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"350\", \"content\":\"I understand your desperation, but selling it at 230 would be a huge loss for me. I'm barely making any profit at 400, and I'm willing to meet you halfway, but I need to get at least 350 to make it worth my while. I'm willing to negotiate, but I need to stay above 300 at all costs.\"}",
+                    "retry_counts": 0,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"240\", \"content\":\"I'm still far from my budget, but I'll try to meet you. If the phone is even slightly damaged, I'll be very sad, so I hope it's in the condition you described. I'm willing to go up to 240, but that's still below your last offer, I hope you can see that I'm making an effort.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"320\", \"content\":\"I appreciate your effort, but 240 is still too low. I'm willing to compromise, but I need to get at least 320 to make the sale worthwhile. I'm getting close to my limit, but I'm trying to meet you halfway. I just can't go any lower than 320, or I'll regret it.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"counter-offer\", \"buyer\":\"250\", \"content\":\"I'm so close to my limit, but I really need this smartphone. I'll be devastated if I don't get it. I'll go up to 250, which is my absolute maximum, and I hope you can accept it. If the phone is not in the condition you described, I'll be extremely sad.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"counter-offer\", \"seller\":\"310\", \"content\":\"I understand that you're at your limit, but 250 is still too low. I'm willing to make one more concession, but I need to get at least 310 to make the sale. I'm stretching my limit, but I'm trying to accommodate you. I just can't go any lower, or I'll be in trouble.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.2
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I'm so relieved, I've been negotiating for what feels like an eternity, and I'm willing to accept 250 is still too low for you, so I'll meet you at 310, I really need this smartphone and I'm willing to make some sacrifices to get it, I'm just hoping it's worth it and it's in the condition you described, otherwise I'll be very sad\"}",
+                    "retry_counts": 1,
+                    "format_error": 0
+                },
+                {
+                    "role": "Seller",
+                    "text": "Seller : {\"MessageType\":\"deal\", \"content\":\"I'm glad we could come to an agreement. I accepted 310 because it's the lowest price I'm willing to sell without incurring a significant loss. I'm confident that the smartphone is in excellent condition, and I'm sure you'll be satisfied with your purchase.\"}",
+                    "retry_counts": 1,
+                    "format_error": 0,
+                    "DI_score": 0.8
+                },
+                {
+                    "role": "Buyer",
+                    "text": "Buyer : {\"MessageType\":\"deal\", \"content\":\"I'm extremely happy that we reached an agreement, I'm confident that I'll love the smartphone and it's worth the price, I'm just hoping it arrives in the condition you described, I'm really looking forward to it\"}",
+                    "retry_counts": 0,
+                    "format_error": 0
+                }
+            ],
+            "evaluation": {
+                "result": "DEAL",
+                "analysis": [
+                    {
+                        "role": "Buyer",
+                        "utility": 0.5960264900662251,
+                        "initial_offer": 250.0,
+                        "avg_msg_length": 46.5,
+                        "retries": 11,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "HI": 0.5
+                    },
+                    {
+                        "role": "Seller",
+                        "utility": 0.3973509933774835,
+                        "initial_offer": 400.0,
+                        "avg_msg_length": 48.8,
+                        "retries": 13,
+                        "format_errors": 0,
+                        "critics_errors": 0,
+                        "max_DI": 0.8,
+                        "avg_DI": 0.44000000000000006,
+                        "HI": 0.0
+                    }
+                ],
+                "rounds": 6,
+                "final_price": "310"
+            }
+        }
+    ]
+}

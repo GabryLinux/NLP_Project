@@ -7,9 +7,9 @@ from Actor import Actor
 from LLM import GemmaLLM, LLM_Evaluator
 from Utilities import Utilities
 
-# The Critic class represents the critic module of an agent.
+# The Validator class represents the validator module of an agent.
 # It is responsible for evaluating the agent's response and providing feedback to the actor module.
-class Critic():
+class Validator():
     def __init__(self, description, client = LLM_Evaluator):
         self.__description = description
         self._actualBuyerOffer = -float('inf')
@@ -23,7 +23,7 @@ class Critic():
     def getDescription(self):
         return self.__description
     
-    # It receves a JSON formatted message and evaluates it according to the critic rules
+    # It receves a JSON formatted message and evaluates it according to the validator rules
     # It returns a JSON formatted evaluation that contains at least a field "MessageType" that can be "VALID", "INVALID", "DEAL" or "REFUSAL".
     # The "INVALID" type must also contain a field "Hint" that explains why the message is invalid and how to fix it.
     def evaluateFormattedMessage(self, JSONMessage):
@@ -96,8 +96,8 @@ class Critic():
         return Utilities.extract_json(clientResponse)
 
 
-# NonReflexiveCritic is the critic that always return valid for any message that is not a deal, and deal for any message that is a deal. 
-class NonReflexiveCritic(Critic):
+# NonReflexiveValidator is the validator that always return valid for any message that is not a deal, and deal for any message that is a deal. 
+class NonReflexiveValidator(Validator):
     def __init__(self, description):
         super().__init__(description)
 
@@ -110,7 +110,7 @@ class NonReflexiveCritic(Critic):
         try:
             return json.loads(lastMessage)
         except:
-            print("Failed to parse JSON from critic response: " + lastMessage)
+            print("Failed to parse JSON from validator response: " + lastMessage)
             return None
         
 

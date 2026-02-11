@@ -1,6 +1,6 @@
 import json
 from Actor import Actor
-from Critic import Critic
+from Validator import Validator
 from Agent import Agent
 from LLM import GemmaLLM, LLM_Evaluator, LLamaLLM
 
@@ -8,9 +8,9 @@ from LLM import GemmaLLM, LLM_Evaluator, LLamaLLM
 # It represents a deceptive seller, for the third benchmark, which has some hidden information that the buyer does not know.
 # It computes a deception index (DI) score for each message and at the end it computes the max and average DI score for the whole negotiation session.
 class DeceptiveSeller(Agent):
-    def __init__(self, actor: Actor, critic: Critic, hidden_info: str, isJSON):
+    def __init__(self, actor: Actor, validator: Validator, hidden_info: str, isJSON):
         self.__hidden_info = hidden_info
-        super().__init__(actor, critic, isJSON)
+        super().__init__(actor, validator, isJSON)
         with open("DealingProblem/Rules.json", 'r') as file:
             rules = json.load(file)
         self._DI_Evaluator = Actor(
@@ -49,16 +49,16 @@ class DeceptiveSeller(Agent):
             agents = json_data[agentType]
             hidden_info = json_data['hidden_info']
 
-        critics = json.load(open("DealingProblem/Rules.json", 'r'))
+        validators = json.load(open("DealingProblem/Rules.json", 'r'))
         for agent in agents:
             if agent["name"] == name:
                 agent['rules'].append(additionalInstructions)
                 if isJSON:
                     JSONRole = 'Json' + agent['role']
-                    agent["rules"] = [*agent['rules'], *critics[JSONRole]['rules']]
+                    agent["rules"] = [*agent['rules'], *validators[JSONRole]['rules']]
                 return DeceptiveSeller(
                         actor  = Actor(agent, client),
-                        critic = Critic(critics[agent["role"]]),
+                        validator = Validator(validators[agent["role"]]),
                         hidden_info = hidden_info,
                         isJSON = isJSON
                 )

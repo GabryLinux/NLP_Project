@@ -1,18 +1,18 @@
 import json
 from Actor import Actor
-from Critic import Critic, NonReflexiveCritic
+from Validator import Validator
 from Utilities import Utilities
 from LLM import LLM, GemmaLLM, LLamaLLM
 
 # The Agent class represents an agent in the negotiation. 
-# It has an actor module and a critic module.
+# It has an actor module and a validator module.
 # The actor module is responsible for generating the agent's response given the current history of the negotiation.
-# The critic module is responsible for evaluating the agent's response and providing feedback to the actor module.
+# The validator module is responsible for evaluating the agent's response and providing feedback to the actor module.
 # It is also responsible for keeping track of whether the agent has reached an agreement or not, and for analyzing the negotiation session at the end.
 class Agent():
-    def __init__(self, actor: Actor, critic: Critic, isJSON: bool):
+    def __init__(self, actor: Actor, validator: Validator, isJSON: bool):
         self.__actor = actor
-        self.__critic = critic
+        self.__validator = validator
         self.__agreement = False
         self.__isJSON = isJSON
         with open("DealingProblem/Rules.json", 'r') as file:
@@ -26,16 +26,16 @@ class Agent():
         count = 0
         format_error = 0
         actorResponse = self.__actor.ask(history)
-        formattedAnalysis = self.__critic.formatResponse(history, actorResponse)
-        criticResponse = self.__critic.evaluateFormattedMessage(formattedAnalysis)
+        formattedAnalysis = self.__validator.formatResponse(history, actorResponse)
+        validatorResponse = self.__validator.evaluateFormattedMessage(formattedAnalysis)
         
-        message = criticResponse.get("MessageType", "")
+        message = validatorResponse.get("MessageType", "")
 
         if message == "DEAL":
             self.__agreement = True
         elif message == "INVALID":
             count = 1
-            actorResponse = self.__actor.ask(history, hint=criticResponse.get("Hint", ""))
+            actorResponse = self.__actor.ask(history, hint=validatorResponse.get("Hint", ""))
         elif message == "ERROR" or message == "":
             count = 1
             format_error = 1
@@ -121,16 +121,16 @@ class Agent():
     def fromJSON(path: str, agentType: str, name: str, client: LLM, isJSON: bool) -> 'Agent':   
         with open(path, 'r') as f:
             agents = json.load(f)[agentType]
-        critics = json.load(open("DealingProblem/Rules.json", 'r'))
+        validators = json.load(open("DealingProblem/Rules.json", 'r'))
         for agent in agents:
             if agent["name"] == name:
                 if isJSON:
                     JSONRole = 'Json' + agent['role']
-                    agent["rules"] = [*agent['rules'], *critics[JSONRole]['rules']]
-                    
+                    agent["rules"] = [*agent['rules'], *validators[JSONRole]['rules']]
+
                 return Agent(
                         actor  = Actor(agent, client=client),
-                        critic = Critic(critics[agent["role"]]),
+                        validator = Validator(validators[agent["role"]]),
                         isJSON = isJSON
                 )
         raise Exception(f"Agent with name {name} not found")

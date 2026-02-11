@@ -7,7 +7,7 @@ from typing import OrderedDict
 
 from Actor import Actor
 from Agent import Agent
-from Critic import Critic
+from Validator import Validator
 import Formatter
 from LLM import GemmaLLM, LLM, LLM_Evaluator
 from pathlib import Path
